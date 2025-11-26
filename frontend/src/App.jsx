@@ -1,0 +1,160 @@
+import { useState } from 'react';
+import {
+  Navigation,
+  SearchBar,
+  CategorySection,
+  ChatMessage,
+  LoadingIndicator,
+} from './components';
+import { categories } from './data/categories';
+import { getAnswerByQuestionId } from './data/mockAnswers';
+import { getChartById } from './data/mockCharts';
+import { getAnalysisByQuestionId } from './data/mockAnalysis';
+import { getFollowUpByQuestionId } from './data/mockFollowUp';
+
+function App() {
+  const [messages, setMessages] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [expandedCategory, setExpandedCategory] = useState('budget-economy');
+
+  // Handle question click (from category or follow-up)
+  const handleQuestionClick = async (questionIdOrText, questionText) => {
+    // Determine if this is a main question (has ID) or follow-up (just text)
+    const isMainQuestion = typeof questionIdOrText === 'string' && questionIdOrText.startsWith('q');
+    const displayText = questionText || questionIdOrText;
+
+    // Add user message
+    const userMessage = {
+      id: `msg-${Date.now()}`,
+      role: 'user',
+      content: displayText,
+      timestamp: new Date(),
+    };
+    setMessages((prev) => [...prev, userMessage]);
+
+    // Show loading
+    setIsLoading(true);
+
+    // Simulate API delay (500ms)
+    await new Promise((resolve) => setTimeout(resolve, 500));
+
+    // Get answer data (only for main questions)
+    const answerData = isMainQuestion ? getAnswerByQuestionId(questionIdOrText) : null;
+    const analysisData = isMainQuestion ? getAnalysisByQuestionId(questionIdOrText) : null;
+    const followUpData = isMainQuestion ? getFollowUpByQuestionId(questionIdOrText)?.followUpQuestions || [] : [];
+
+    // Get chart data if charts exist
+    const chartData = answerData?.charts
+      ? answerData.charts.map((chartId) => getChartById(chartId)).filter(Boolean)
+      : [];
+
+    // Create AI message
+    const aiMessage = {
+      id: `msg-${Date.now() + 1}`,
+      role: 'ai',
+      content: answerData?.answer ||
+        `Dette er et opfølgende spørgsmål. I en fuld implementation ville dette spørgsmål blive behandlet af AI-systemet og give et detaljeret svar.\n\nFor at se et komplet eksempel, vælg venligst et af hovedspørgsmålene fra kategorierne.`,
+      charts: chartData,
+      sources: answerData?.sources || [],
+      analysis: analysisData,
+      followUp: followUpData,
+      timestamp: new Date(),
+    };
+
+    setMessages((prev) => [...prev, aiMessage]);
+    setIsLoading(false);
+  };
+
+  // Handle search bar submit
+  const handleSearch = (query) => {
+    if (!query.trim()) return;
+
+    // For demo, we'll just show a generic response
+    const userMessage = {
+      id: `msg-${Date.now()}`,
+      role: 'user',
+      content: query,
+      timestamp: new Date(),
+    };
+
+    const aiMessage = {
+      id: `msg-${Date.now() + 1}`,
+      role: 'ai',
+      content: `Jeg kan hjælpe dig med spørgsmål om:\n\n- 💰 Budget og økonomi\n- 👥 Sociale tilbud, psykiatri og målgrupper\n- 📚 Reformer, lovgivning og politiske aftaler\n- 📊 Mønsteranalyse, budgetopfølgning og prognoser\n\nVælg venligst en kategori eller klik på et specifikt spørgsmål for at få detaljeret information.`,
+      followUp: [],
+      timestamp: new Date(),
+    };
+
+    setMessages([userMessage, aiMessage]);
+  };
+
+  // Toggle category expansion
+  const toggleCategory = (categoryId) => {
+    setExpandedCategory((prev) => (prev === categoryId ? null : categoryId));
+  };
+
+  return (
+    <div className="min-h-screen bg-kaia-dark">
+      {/* Navigation */}
+      <Navigation />
+
+      {/* Main Container */}
+      <div className="max-w-7xl mx-auto px-4 py-6 space-y-6">
+        {/* Search Bar */}
+        <SearchBar onSubmit={handleSearch} placeholder="spørg mig..." />
+
+        {/* Categories Section (show when no messages) */}
+        {messages.length === 0 && (
+          <div className="space-y-4 animate-fade-in">
+            {categories.map((category) => (
+              <CategorySection
+                key={category.id}
+                category={category}
+                isExpanded={expandedCategory === category.id}
+                onToggle={() => toggleCategory(category.id)}
+                onQuestionClick={handleQuestionClick}
+              />
+            ))}
+          </div>
+        )}
+
+        {/* Chat Messages */}
+        {messages.length > 0 && (
+          <div className="space-y-6 animate-fade-in">
+            {messages.map((message) => (
+              <ChatMessage
+                key={message.id}
+                message={message}
+                onFollowUpClick={handleQuestionClick}
+              />
+            ))}
+          </div>
+        )}
+
+        {/* Loading Indicator */}
+        {isLoading && <LoadingIndicator />}
+
+        {/* Back to Categories Button (when in chat mode) */}
+        {messages.length > 0 && !isLoading && (
+          <div className="flex justify-center pt-8">
+            <button
+              onClick={() => setMessages([])}
+              className="btn-secondary flex items-center gap-2"
+            >
+              <span>←</span>
+              <span>Tilbage til kategorier</span>
+            </button>
+          </div>
+        )}
+      </div>
+
+      {/* Footer */}
+      <footer className="max-w-7xl mx-auto px-4 py-8 text-center text-gray-500 text-sm">
+        <p>K.A.I.A - Kalundborg AI Assistent Demo</p>
+        <p className="mt-2">Udviklet med React, Tailwind CSS og Recharts</p>
+      </footer>
+    </div>
+  );
+}
+
+export default App;

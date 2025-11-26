@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-kaia-border;
+  }
+
+  body {
+    @apply bg-kaia-dark text-kaia-text antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+  }
+
+  code, pre {
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  }
+}
+
+@layer components {
+  /* Glass Card */
+  .glass-card {
+    @apply bg-kaia-card backdrop-blur-xl border border-kaia-border rounded-xl;
+  }
+
+  /* Smooth Transitions */
+  .smooth-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Button Base */
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium smooth-transition;
+  }
+
+  .btn-primary {
+    @apply btn bg-kaia-blue text-white hover:bg-blue-600 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply btn bg-kaia-card hover:bg-white/10 border border-kaia-border;
+  }
+
+  /* Chat Message Bubbles */
+  .chat-bubble-user {
+    @apply bg-kaia-blue text-white px-4 py-3 rounded-2xl max-w-2xl ml-auto;
+  }
+
+  .chat-bubble-ai {
+    @apply glass-card px-6 py-4 max-w-4xl;
+  }
+
+  /* Category Accordion */
+  .category-section {
+    @apply glass-card p-6 smooth-transition hover:bg-white/10;
+  }
+
+  /* Follow-up Question Chips */
+  .chip {
+    @apply px-4 py-2 bg-kaia-card border border-kaia-border rounded-full text-sm smooth-transition hover:bg-kaia-blue hover:border-kaia-blue cursor-pointer;
+  }
+
+  /* Analysis Panel */
+  .analysis-panel {
+    @apply glass-card p-6 space-y-4;
+  }
+
+  .analysis-section {
+    @apply space-y-2;
+  }
+
+  .analysis-title {
+    @apply text-lg font-semibold flex items-center gap-2;
+  }
+
+  /* Chart Container */
+  .chart-container {
+    @apply glass-card p-6 rounded-xl;
+  }
+
+  /* Input Field */
+  .input-field {
+    @apply w-full bg-kaia-card border border-kaia-border rounded-lg px-4 py-3 text-kaia-text placeholder-gray-500 focus:outline-none focus:border-kaia-blue smooth-transition;
+  }
+
+  /* Scrollbar Styling */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full hover:bg-white/20;
+  }
+}
+
+@layer utilities {
+  /* Gradient Text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent;
+  }
+
+  /* Typing Animation */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+
+  .typing-animation {
+    overflow: hidden;
+    border-right: 2px solid #3B82F6;
+    white-space: nowrap;
+    animation: typing 2s steps(40, end), blink 0.75s step-end infinite;
+  }
+
+  /* Pulse Animation */
+  @keyframes pulse-subtle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+  }
+
+  .pulse-subtle {
+    animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
