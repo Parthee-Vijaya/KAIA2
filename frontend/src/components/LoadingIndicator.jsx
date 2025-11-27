@@ -43,7 +43,8 @@ const LoadingIndicator = () => {
                   ease: 'easeInOut',
                   delay: index * 0.15,
                 }}
-                className="w-2 h-2 bg-kaia-blue rounded-full"
+                    className="w-2 h-2 rounded-full"
+                    style={{ backgroundColor: '#0056A7' }}
               />
             ))}
           </div>

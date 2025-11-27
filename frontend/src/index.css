@@ -39,19 +39,24 @@
     @apply px-4 py-2 rounded-lg font-medium smooth-transition;
   }
 
-  .btn-primary {
-    @apply btn bg-kaia-blue text-white hover:bg-blue-600 active:scale-95;
-  }
+        .btn-primary {
+          @apply btn text-white active:scale-95;
+          background-color: #0056A7;
+        }
+        .btn-primary:hover {
+          background-color: #004085;
+        }
 
   .btn-secondary {
     @apply btn bg-white hover:bg-gray-50 border border-kaia-border text-kaia-text;
   }
 
-  /* Chat Message Bubbles */
-  .chat-bubble-user {
-    @apply bg-kaia-blue text-white px-5 py-3 rounded-2xl max-w-2xl ml-auto shadow-sm;
-    position: relative;
-  }
+        /* Chat Message Bubbles */
+        .chat-bubble-user {
+          @apply text-white px-5 py-3 rounded-2xl max-w-2xl ml-auto shadow-sm;
+          background-color: #0056A7;
+          position: relative;
+        }
 
   .chat-bubble-user::after {
     content: '';
@@ -61,14 +66,14 @@
     width: 0;
     height: 0;
     border: 8px solid transparent;
-    border-left-color: #2563EB;
+    border-left-color: #004085;
     border-bottom: 0;
     margin-bottom: -8px;
   }
 
   .chat-bubble-ai {
     @apply bg-white border border-gray-200 rounded-2xl px-6 py-5 max-w-5xl shadow-sm;
-    border-left: 4px solid #3B82F6;
+    border-left: 4px solid #0056A7;
   }
 
   /* Category Accordion */
@@ -80,10 +85,14 @@
     @apply border-l-4 shadow-md;
   }
 
-  /* Follow-up Question Chips */
-  .chip {
-    @apply px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-sm smooth-transition hover:bg-kaia-blue hover:border-kaia-blue hover:text-white hover:shadow-sm hover:scale-105 cursor-pointer text-kaia-text;
-  }
+        /* Follow-up Question Chips */
+        .chip {
+          @apply px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-sm smooth-transition hover:text-white hover:shadow-sm hover:scale-105 cursor-pointer text-kaia-text;
+        }
+        .chip:hover {
+          background-color: #0056A7;
+          border-color: #0056A7;
+        }
 
   /* Analysis Panel */
   .analysis-panel {
@@ -214,9 +223,17 @@
 }
 
 @layer utilities {
-  /* Gradient Text */
+  /* Gradient Text - Kalundborg farver */
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent;
+    background: linear-gradient(135deg, #0056A7 0%, #D40000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Subtle Gradient Background */
+  .bg-gradient-subtle {
+    background: linear-gradient(135deg, rgba(255, 237, 213, 0.3) 0%, rgba(255, 255, 255, 1) 50%, rgba(219, 234, 254, 0.3) 100%);
   }
 
   /* Shadow System - Layered depth */

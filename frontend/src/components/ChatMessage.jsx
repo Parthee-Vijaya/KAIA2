@@ -56,7 +56,7 @@ const ChatMessage = ({ message, onFollowUpClick }) => {
               className="absolute right-0 bottom-0 w-0 h-0"
               style={{
                 border: '8px solid transparent',
-                borderLeftColor: '#2563EB',
+                borderLeftColor: '#004085',
                 borderBottom: 'none',
                 transform: 'translateX(100%)',
               }}
@@ -77,7 +77,7 @@ const ChatMessage = ({ message, onFollowUpClick }) => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3 }}
             style={{
-              borderLeft: '4px solid #3B82F6',
+              borderLeft: '4px solid #0056A7',
             }}
           >
             {/* Copy button - appears on hover */}

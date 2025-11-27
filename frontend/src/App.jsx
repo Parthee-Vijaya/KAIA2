@@ -9,7 +9,7 @@ import {
   TrendCharts,
 } from './components';
 import { categories } from './data/categories';
-import { dashboardMetrics, dashboardTrends } from './data/dashboardMetrics';
+import { dashboardTrends } from './data/dashboardMetrics';
 import { getAnswerByQuestionId } from './data/mockAnswers';
 import { getChartById } from './data/mockCharts';
 import { getAnalysisByQuestionId } from './data/mockAnalysis';
@@ -114,23 +114,60 @@ function App() {
       {/* Navigation */}
       <Navigation />
 
-      {/* Sticky Search Bar */}
-      <div className="sticky top-[73px] z-40 bg-white/95 backdrop-blur-xl border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 py-6">
-          <SearchBar onSubmit={handleSearch} placeholder="spørg mig..." />
+      {/* Hero Section with Search (show when no messages) */}
+      {messages.length === 0 && (
+        <div className="relative bg-gradient-to-br from-red-50 via-white to-blue-50 border-b border-gray-200 overflow-hidden">
+          {/* Decorative elements - Kalundborg farver */}
+          <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-15 -translate-y-1/2 translate-x-1/2" style={{ backgroundColor: '#D40000' }}></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full blur-3xl opacity-15 translate-y-1/2 -translate-x-1/2" style={{ backgroundColor: '#0056A7' }}></div>
+          
+          <div className="relative max-w-7xl mx-auto px-6 py-16">
+            {/* Hero Content */}
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full mb-6 shadow-sm border border-gray-100">
+                <svg className="w-4 h-4" style={{ color: '#D40000' }} fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                  <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
+                </svg>
+                <span className="text-sm font-medium text-gray-700">For direktion, ledelse og chefer</span>
+              </div>
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                Hvad skal du vide?
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Få hurtig adgang til økonomiske data, analyser og strategiske indsigt for beslutningsstøtte
+              </p>
+            </div>
+
+            {/* Search Bar - Hero Style */}
+            <div className="max-w-4xl mx-auto">
+              <SearchBar onSubmit={handleSearch} placeholder="Skriv dit spørgsmål her..." hero={true} />
+            </div>
+          </div>
         </div>
-      </div>
+      )}
+
+      {/* Sticky Search Bar (show when in chat mode) */}
+      {messages.length > 0 && (
+        <div className="sticky top-[73px] z-40 bg-white/95 backdrop-blur-xl border-b border-gray-200">
+          <div className="max-w-7xl mx-auto px-6 py-6">
+            <SearchBar onSubmit={handleSearch} placeholder="spørg mig..." />
+          </div>
+        </div>
+      )}
 
       {/* Main Container */}
       <div className="flex-1 max-w-7xl mx-auto w-full px-6 py-8">
         {/* Dashboard (show when no messages) */}
         {messages.length === 0 && (
-          <div className="space-y-8 animate-fade-in">
-            {/* Key Metrics Cards */}
-            <KeyMetricsCards metrics={dashboardMetrics} />
+          <div className="space-y-10 animate-fade-in -mt-4">
+            {/* Key Metrics Cards - Roterer automatisk hvert 20. sekund */}
+            <div>
+              <KeyMetricsCards />
+            </div>
 
             {/* Dashboard Layout: Categories left, Trends right */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
               {/* Left: Categories */}
               <div className="lg:col-span-2 space-y-4">
                 <div className="mb-6">
@@ -201,8 +238,8 @@ function App() {
 
       {/* Footer */}
       <footer className="max-w-7xl mx-auto px-4 py-8 text-center text-gray-400 text-sm border-t border-gray-200 mt-8">
-        <p>K.A.I.A - Kalundborg AI Assistent Demo</p>
-        <p className="mt-2">Udviklet med React, Tailwind CSS og Recharts</p>
+        <p>K.A.I.A - Kalundborg AI Assistent</p>
+        <p className="mt-2">Internt værktøj for direktion, ledelse og chefer</p>
       </footer>
     </div>
   );

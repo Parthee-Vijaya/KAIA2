@@ -11,10 +11,15 @@ export default {
         'kaia-dark': '#FFFFFF',
         'kaia-card': 'rgba(0, 0, 0, 0.03)',
         'kaia-border': 'rgba(0, 0, 0, 0.1)',
-        'kaia-blue': '#3B82F6',
+        'kaia-blue': '#0056A7', // Kalundborg blå
+        'kaia-red': '#D40000',  // Kalundborg rød
         'kaia-text': '#1F2937',
         'kaia-text-light': '#6B7280',
         'kaia-gray': '#F9FAFB',
+        
+        // Kalundborg Kommune officielle farver
+        'kalundborg-red': '#D40000',
+        'kalundborg-blue': '#0056A7',
         
         // Semantic colors
         'kaia-success': '#10B981',
@@ -43,7 +48,8 @@ export default {
         'glow-green': '0 0 20px rgba(16, 185, 129, 0.3)',
       },
       backgroundImage: {
-        'gradient-primary': 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
+        'gradient-primary': 'linear-gradient(135deg, #0056A7 0%, #003d7a 100%)', // Kalundborg blå gradient
+        'gradient-kalundborg': 'linear-gradient(135deg, #D40000 0%, #0056A7 100%)', // Kalundborg rød til blå
         'gradient-success': 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
         'gradient-subtle': 'linear-gradient(to bottom, #F9FAFB 0%, #FFFFFF 100%)',
         'gradient-glass': 'linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%)',

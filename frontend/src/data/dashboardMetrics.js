@@ -1,50 +1,511 @@
 // K.A.I.A Dashboard - Key Metrics Data
+// 40 forskellige cards der roterer hvert 20. sekund
 
-export const dashboardMetrics = {
-  budgetBalance: {
+// 10 Budgetbalance cards (forskellige områder)
+const budgetBalanceCards = [
+  {
+    id: 'budget-jobcenter',
     label: 'Budgetbalance',
-    value: '-73M',
-    unit: 'DKK',
+    area: 'Jobcenter',
+    value: '-12.3',
+    unit: 'M DKK',
     trend: 'down',
-    change: '-12%',
+    change: '-8.5%',
     period: 'vs. budget 2024',
-    icon: '💰',
-    color: 'red',
-    description: 'Overskridelse på de mest pressede områder'
+    description: 'Stigende udgifter til kontanthjælp og aktivering',
+    category: 'budget'
   },
-  totalDebt: {
-    label: 'Total gæld',
-    value: '1,2',
+  {
+    id: 'budget-skole',
+    label: 'Budgetbalance',
+    area: 'Folkeskoler',
+    value: '-8.7',
+    unit: 'M DKK',
+    trend: 'down',
+    change: '-5.2%',
+    period: 'vs. budget 2024',
+    description: 'Ekstra udgifter til lærerlønninger og vedligehold',
+    category: 'budget'
+  },
+  {
+    id: 'budget-ældre',
+    label: 'Budgetbalance',
+    area: 'Ældreområdet',
+    value: '-15.2',
+    unit: 'M DKK',
+    trend: 'down',
+    change: '-12.1%',
+    period: 'vs. budget 2024',
+    description: 'Stigende behov for hjemmehjælp og pleje',
+    category: 'budget'
+  },
+  {
+    id: 'budget-teknik',
+    label: 'Budgetbalance',
+    area: 'Teknik & Miljø',
+    value: '-4.3',
+    unit: 'M DKK',
+    trend: 'down',
+    change: '-3.8%',
+    period: 'vs. budget 2024',
+    description: 'Investeringer i klimatilpasning og vejnet',
+    category: 'budget'
+  },
+  {
+    id: 'budget-kultur',
+    label: 'Budgetbalance',
+    area: 'Kultur & Fritid',
+    value: '-2.1',
+    unit: 'M DKK',
+    trend: 'down',
+    change: '-4.2%',
+    period: 'vs. budget 2024',
+    description: 'Drift af biblioteker og fritidsfaciliteter',
+    category: 'budget'
+  },
+  {
+    id: 'budget-sundhed',
+    label: 'Budgetbalance',
+    area: 'Sundhed & Forebyggelse',
+    value: '-6.8',
+    unit: 'M DKK',
+    trend: 'down',
+    change: '-7.3%',
+    period: 'vs. budget 2024',
+    description: 'Stigende udgifter til sundhedsydelser',
+    category: 'budget'
+  },
+  {
+    id: 'budget-børn',
+    label: 'Budgetbalance',
+    area: 'Børn & Unge',
+    value: '-9.4',
+    unit: 'M DKK',
+    trend: 'down',
+    change: '-6.9%',
+    period: 'vs. budget 2024',
+    description: 'Dagtilbud og ungdomsklubber',
+    category: 'budget'
+  },
+  {
+    id: 'budget-administration',
+    label: 'Budgetbalance',
+    area: 'Administration',
+    value: '-3.2',
+    unit: 'M DKK',
+    trend: 'down',
+    change: '-2.1%',
+    period: 'vs. budget 2024',
+    description: 'IT-systemer og personaleomkostninger',
+    category: 'budget'
+  },
+  {
+    id: 'budget-planlægning',
+    label: 'Budgetbalance',
+    area: 'Planlægning & Byudvikling',
+    value: '-5.6',
+    unit: 'M DKK',
+    trend: 'down',
+    change: '-9.4%',
+    period: 'vs. budget 2024',
+    description: 'Byudviklingsprojekter og planlægning',
+    category: 'budget'
+  },
+  {
+    id: 'budget-sikkerhed',
+    label: 'Budgetbalance',
+    area: 'Sikkerhed & Beredskab',
+    value: '-2.8',
+    unit: 'M DKK',
+    trend: 'down',
+    change: '-3.5%',
+    period: 'vs. budget 2024',
+    description: 'Brandvæsen og beredskabsplanlægning',
+    category: 'budget'
+  }
+];
+
+// 10 Befolkningskort
+const populationCards = [
+  {
+    id: 'pop-tilflytter',
+    label: 'Befolkning',
+    area: 'Netto tilflytter',
+    value: '+127',
+    unit: 'personer',
+    trend: 'up',
+    change: '+2.6%',
+    period: 'siden 2023',
+    description: 'Flere tilflyttere end fraflyttere i 2024',
+    category: 'population'
+  },
+  {
+    id: 'pop-andel-ældre',
+    label: 'Befolkning',
+    area: 'Andel 65+',
+    value: '24.1',
+    unit: '%',
+    trend: 'up',
+    change: '+2.1%',
+    period: 'siden 2020',
+    description: 'Stigende andel ældre i befolkningen',
+    category: 'population'
+  },
+  {
+    id: 'pop-ung-under-18',
+    label: 'Befolkning',
+    area: 'Unge under 18',
+    value: '9.400',
+    unit: 'personer',
+    trend: 'down',
+    change: '-1.2%',
+    period: 'årligt',
+    description: 'Faldende antal børn og unge',
+    category: 'population'
+  },
+  {
+    id: 'pop-ung-uddannelse',
+    label: 'Befolkning',
+    area: 'Unge 18-25 i uddannelse',
+    value: '2.850',
+    unit: 'personer',
+    trend: 'up',
+    change: '+3.4%',
+    period: 'siden 2023',
+    description: 'Stigende antal unge i uddannelse',
+    category: 'population'
+  },
+  {
+    id: 'pop-ung-job',
+    label: 'Befolkning',
+    area: 'Unge 18-25 i job',
+    value: '1.920',
+    unit: 'personer',
+    trend: 'up',
+    change: '+1.8%',
+    period: 'siden 2023',
+    description: 'Flere unge i beskæftigelse',
+    category: 'population'
+  },
+  {
+    id: 'pop-aldersfordeling',
+    label: 'Befolkning',
+    area: 'Gennemsnitsalder',
+    value: '44.2',
+    unit: 'år',
+    trend: 'up',
+    change: '+0.8 år',
+    period: 'siden 2020',
+    description: 'Befolkningen bliver ældre',
+    category: 'population'
+  },
+  {
+    id: 'pop-husholdninger',
+    label: 'Befolkning',
+    area: 'Antal husholdninger',
+    value: '22.150',
+    unit: 'husholdninger',
+    trend: 'up',
+    change: '+0.5%',
+    period: 'årligt',
+    description: 'Stigende antal husholdninger',
+    category: 'population'
+  },
+  {
+    id: 'pop-enlige',
+    label: 'Befolkning',
+    area: 'Enlige husholdninger',
+    value: '8.240',
+    unit: 'husholdninger',
+    trend: 'up',
+    change: '+2.3%',
+    period: 'årligt',
+    description: 'Stigende andel enlige husholdninger',
+    category: 'population'
+  },
+  {
+    id: 'pop-børn-per-husholdning',
+    label: 'Befolkning',
+    area: 'Gns. børn per husholdning',
+    value: '1.42',
+    unit: 'børn',
+    trend: 'down',
+    change: '-0.08',
+    period: 'siden 2020',
+    description: 'Faldende antal børn per familie',
+    category: 'population'
+  },
+  {
+    id: 'pop-befolkningsvækst',
+    label: 'Befolkning',
+    area: 'Befolkningsvækst',
+    value: '-0.3',
+    unit: '%',
+    trend: 'down',
+    change: '-0.1%',
+    period: 'årligt',
+    description: 'Lidt faldende befolkningstal',
+    category: 'population'
+  }
+];
+
+// 20 Andre relevante kort (økonomi, gæld, investeringer, etc.)
+const otherCards = [
+  {
+    id: 'econ-total-gæld',
+    label: 'Økonomi',
+    area: 'Total gæld',
+    value: '1.2',
     unit: 'mia. DKK',
     trend: 'down',
     change: '-8%',
     period: 'siden 2021',
-    icon: '📊',
-    color: 'green',
-    description: 'Gæld per indbygger: DKK 24.500'
+    description: 'Gæld per indbygger: DKK 24.500',
+    category: 'economy'
   },
-  population: {
-    label: 'Befolkning',
-    value: '48.920',
-    unit: 'indbyggere',
+  {
+    id: 'econ-gæld-per-indbygger',
+    label: 'Økonomi',
+    area: 'Gæld per indbygger',
+    value: '24.500',
+    unit: 'DKK',
     trend: 'down',
-    change: '-0,3%',
-    period: 'årlig vækst',
-    icon: '👥',
-    color: 'orange',
-    description: 'Faldende befolkningstal'
+    change: '-7.2%',
+    period: 'siden 2021',
+    description: 'Faldende gæld per indbygger',
+    category: 'economy'
   },
-  elderlyShare: {
-    label: 'Andel 65+',
-    value: '24,1%',
-    unit: '',
+  {
+    id: 'econ-skatteindtægter',
+    label: 'Økonomi',
+    area: 'Skatteindtægter',
+    value: '1.85',
+    unit: 'mia. DKK',
     trend: 'up',
-    change: '+2,1%',
+    change: '+2.3%',
+    period: 'årligt',
+    description: 'Stigende skatteindtægter',
+    category: 'economy'
+  },
+  {
+    id: 'econ-bloktilskud',
+    label: 'Økonomi',
+    area: 'Bloktilskud',
+    value: '892',
+    unit: 'M DKK',
+    trend: 'up',
+    change: '+1.8%',
+    period: 'årligt',
+    description: 'Stigende bloktilskud fra staten',
+    category: 'economy'
+  },
+  {
+    id: 'econ-investeringer',
+    label: 'Økonomi',
+    area: 'Investeringer',
+    value: '145',
+    unit: 'M DKK',
+    trend: 'up',
+    change: '+12.5%',
+    period: 'årligt',
+    description: 'Stigende investeringer i infrastruktur',
+    category: 'economy'
+  },
+  {
+    id: 'econ-likviditet',
+    label: 'Økonomi',
+    area: 'Likviditet',
+    value: '287',
+    unit: 'M DKK',
+    trend: 'up',
+    change: '+5.2%',
+    period: 'siden 2023',
+    description: 'God likviditetsposition',
+    category: 'economy'
+  },
+  {
+    id: 'econ-renteudgifter',
+    label: 'Økonomi',
+    area: 'Renteudgifter',
+    value: '42',
+    unit: 'M DKK',
+    trend: 'up',
+    change: '+8.3%',
+    period: 'årligt',
+    description: 'Stigende renter på kommunegæld',
+    category: 'economy'
+  },
+  {
+    id: 'econ-udligning',
+    label: 'Økonomi',
+    area: 'Udligningsbidrag',
+    value: '156',
+    unit: 'M DKK',
+    trend: 'down',
+    change: '-3.1%',
+    period: 'årligt',
+    description: 'Faldende udligningsbidrag',
+    category: 'economy'
+  },
+  {
+    id: 'econ-overskud',
+    label: 'Økonomi',
+    area: 'Årsresultat',
+    value: '-73',
+    unit: 'M DKK',
+    trend: 'down',
+    change: '-12%',
+    period: 'vs. budget 2024',
+    description: 'Underskud på tværs af områder',
+    category: 'economy'
+  },
+  {
+    id: 'econ-reserver',
+    label: 'Økonomi',
+    area: 'Økonomiske reserver',
+    value: '428',
+    unit: 'M DKK',
+    trend: 'down',
+    change: '-15%',
+    period: 'siden 2023',
+    description: 'Faldende reserver pga. overskridelser',
+    category: 'economy'
+  },
+  {
+    id: 'service-digitalisering',
+    label: 'Service',
+    area: 'Digitaliseringsgrad',
+    value: '78',
+    unit: '%',
+    trend: 'up',
+    change: '+5%',
+    period: 'siden 2023',
+    description: 'Stigende digitalisering af services',
+    category: 'service'
+  },
+  {
+    id: 'service-selvbetjening',
+    label: 'Service',
+    area: 'Selvbetjening',
+    value: '62',
+    unit: '%',
+    trend: 'up',
+    change: '+8%',
+    period: 'siden 2023',
+    description: 'Flere borgere bruger selvbetjening',
+    category: 'service'
+  },
+  {
+    id: 'service-svar-tid',
+    label: 'Service',
+    area: 'Gns. svar-tid',
+    value: '2.3',
+    unit: 'dage',
+    trend: 'down',
+    change: '-15%',
+    period: 'siden 2023',
+    description: 'Hurtigere svar på henvendelser',
+    category: 'service'
+  },
+  {
+    id: 'service-tilfredshed',
+    label: 'Service',
+    area: 'Borgertilfredshed',
+    value: '4.2',
+    unit: '/5',
+    trend: 'up',
+    change: '+0.3',
+    period: 'siden 2023',
+    description: 'Stigende tilfredshed med services',
+    category: 'service'
+  },
+  {
+    id: 'miljø-co2-reduktion',
+    label: 'Miljø',
+    area: 'CO₂-reduktion',
+    value: '18',
+    unit: '%',
+    trend: 'up',
+    change: '+3%',
     period: 'siden 2020',
-    icon: '👴',
-    color: 'blue',
-    description: 'Stigende aldring af befolkningen'
+    description: 'Stigende CO₂-reduktion',
+    category: 'environment'
+  },
+  {
+    id: 'miljø-grøn-energi',
+    label: 'Miljø',
+    area: 'Grøn energi',
+    value: '67',
+    unit: '%',
+    trend: 'up',
+    change: '+5%',
+    period: 'siden 2023',
+    description: 'Stigende andel grøn energi',
+    category: 'environment'
+  },
+  {
+    id: 'miljø-affald',
+    label: 'Miljø',
+    area: 'Genbrugsrate',
+    value: '54',
+    unit: '%',
+    trend: 'up',
+    change: '+2%',
+    period: 'siden 2023',
+    description: 'Stigende genbrugsrate',
+    category: 'environment'
+  },
+  {
+    id: 'arbejde-ledighed',
+    label: 'Arbejde',
+    area: 'Ledighedsrate',
+    value: '3.2',
+    unit: '%',
+    trend: 'down',
+    change: '-0.4%',
+    period: 'siden 2023',
+    description: 'Faldende ledighed',
+    category: 'employment'
+  },
+  {
+    id: 'arbejde-kontanthjælp',
+    label: 'Arbejde',
+    area: 'Kontanthjælpsmodtagere',
+    value: '1.240',
+    unit: 'personer',
+    trend: 'down',
+    change: '-5.2%',
+    period: 'siden 2023',
+    description: 'Faldende antal kontanthjælpsmodtagere',
+    category: 'employment'
+  },
+  {
+    id: 'arbejde-aktivering',
+    label: 'Arbejde',
+    area: 'Aktiveringsrate',
+    value: '68',
+    unit: '%',
+    trend: 'up',
+    change: '+4%',
+    period: 'siden 2023',
+    description: 'Stigende aktiveringsrate',
+    category: 'employment'
   }
+];
+
+// Kombiner alle cards
+export const allDashboardCards = [
+  ...budgetBalanceCards,
+  ...populationCards,
+  ...otherCards
+];
+
+// Eksporter også de originale for bagudkompatibilitet
+export const dashboardMetrics = {
+  budgetBalance: budgetBalanceCards[0],
+  totalDebt: otherCards[0],
+  population: populationCards[2],
+  elderlyShare: populationCards[1]
 };
 
 export const dashboardTrends = {
@@ -67,10 +528,10 @@ export const dashboardTrends = {
     config: {
       xKey: 'year',
       lines: [
-        { dataKey: 'total', name: 'Total befolkning', stroke: '#3B82F6' },
+        { dataKey: 'total', name: 'Total befolkning', stroke: '#0056A7' },
         { dataKey: 'age0_17', name: '0-17 år', stroke: '#10B981' },
         { dataKey: 'age18_64', name: '18-64 år', stroke: '#F59E0B' },
-        { dataKey: 'age65plus', name: '65+ år', stroke: '#EF4444' }
+        { dataKey: 'age65plus', name: '65+ år', stroke: '#D40000' }
       ]
     }
   },
@@ -87,45 +548,9 @@ export const dashboardTrends = {
     config: {
       xKey: 'year',
       areas: [
-        { dataKey: 'budget', name: 'Budget', fill: '#3B82F6', stroke: '#3B82F6' },
-        { dataKey: 'actual', name: 'Faktisk', fill: '#EF4444', stroke: '#EF4444' }
-      ]
-    }
-  },
-  departmentSpending: {
-    title: 'Udgiftsfordeling 2024',
-    type: 'bar',
-    data: [
-      { department: 'Social & Sundhed', budget: 1165, actual: 1188, overspend: 23 },
-      { department: 'Børn & Unge', budget: 908, actual: 950, overspend: 42 },
-      { department: 'Beskæftigelse', budget: 341, actual: 349, overspend: 8 },
-      { department: 'Kultur & Miljø', budget: 142, actual: 140, overspend: -2 },
-      { department: 'Administration', budget: 284, actual: 282, overspend: -2 }
-    ],
-    config: {
-      xKey: 'department',
-      bars: [
-        { dataKey: 'budget', name: 'Budget', fill: '#3B82F6' },
-        { dataKey: 'actual', name: 'Faktisk', fill: '#EF4444' }
-      ]
-    }
-  },
-  debtDevelopment: {
-    title: 'Gældsudvikling 2020-2024',
-    type: 'line',
-    data: [
-      { year: '2020', debt: 1.30, perCapita: 26400 },
-      { year: '2021', debt: 1.28, perCapita: 26000 },
-      { year: '2022', debt: 1.25, perCapita: 25500 },
-      { year: '2023', debt: 1.22, perCapita: 24900 },
-      { year: '2024', debt: 1.20, perCapita: 24500 }
-    ],
-    config: {
-      xKey: 'year',
-      lines: [
-        { dataKey: 'debt', name: 'Total gæld (mia. DKK)', stroke: '#8B5CF6' }
+        { dataKey: 'budget', name: 'Budget', fill: '#0056A7', stroke: '#0056A7' },
+        { dataKey: 'actual', name: 'Faktisk', fill: '#D40000', stroke: '#D40000' }
       ]
     }
   }
 };
-
