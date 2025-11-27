@@ -232,6 +232,72 @@ export const categories = [
         category: 'analysis-forecasting'
       }
     ]
+  },
+  {
+    id: 'hr-personnel',
+    title: 'HR, personale og organisering',
+    icon: '👔',
+    description: 'Spørgsmål om personale, HR, fravær, rekruttering og organisering',
+    questions: [
+      {
+        id: 'q41',
+        text: 'Er der årsagssammenhæng mellem medarbejderfravær og karakterer i medarbejderundersøgelser, og hvilke indsatser fra andre kommuner har dokumenteret effekt på at reducere fravær?',
+        category: 'hr-personnel'
+      },
+      {
+        id: 'q42',
+        text: 'Hvilke faktorer korrelerer stærkest med medarbejderomsætning i Kalundborg Kommune, og hvilke fastholdelsesstrategier fra lignende kommuner har reduceret omsætning med over 20%?',
+        category: 'hr-personnel'
+      },
+      {
+        id: 'q43',
+        text: 'Hvad er sammenhængen mellem lønudvikling, produktivitet og kvalitet i ældreplejen, og hvilke lønstrukturer fra andre kommuner har givet bedst ROI?',
+        category: 'hr-personnel'
+      },
+      {
+        id: 'q44',
+        text: 'Hvilke ledelsesfaktorer påvirker mest medarbejdernes trivsel og performance, og hvilke ledelsesudviklingsprogrammer fra andre kommuner har dokumenteret målbar effekt?',
+        category: 'hr-personnel'
+      },
+      {
+        id: 'q45',
+        text: 'Hvordan påvirker kompetenceudvikling og efteruddannelse både medarbejdernes trivsel og kommunens omkostninger, og hvilke kompetenceprogrammer fra andre kommuner har givet bedst værdi?',
+        category: 'hr-personnel'
+      }
+    ]
+  },
+  {
+    id: 'economic-analysis',
+    title: 'Økonomisk analyse og årsagssammenhænge',
+    icon: '📈',
+    description: 'Spørgsmål om økonomiske årsagssammenhænge, ROI og effektivitet',
+    questions: [
+      {
+        id: 'q46',
+        text: 'Hvilke specifikke faktorer driver budgetoverskridelser på specialområdet, og hvilke præventive tiltag fra andre kommuner har reduceret overskridelser med over 30%?',
+        category: 'economic-analysis'
+      },
+      {
+        id: 'q47',
+        text: 'Hvad er årsagssammenhængen mellem investeringer i digitalisering og faktiske besparelser, og hvilke digitale løsninger fra andre kommuner har givet højest ROI inden for 2 år?',
+        category: 'economic-analysis'
+      },
+      {
+        id: 'q48',
+        text: 'Hvordan påvirker tidlig indsats og forebyggelse de samlede omkostninger over 5 år, og hvilke forebyggelsesprogrammer fra andre kommuner har dokumenteret størst cost-benefit ratio?',
+        category: 'economic-analysis'
+      },
+      {
+        id: 'q49',
+        text: 'Hvilke strukturelle faktorer i kommunens organisation påvirker mest budgetforudsigelighed, og hvilke organisatoriske ændringer fra andre kommuner har forbedret budgetnøjagtigheden mest?',
+        category: 'economic-analysis'
+      },
+      {
+        id: 'q50',
+        text: 'Hvad er sammenhængen mellem kvalitetsindikatorer og omkostninger i ældreplejen, og hvilke kvalitetsforbedringsinitiativer fra andre kommuner har reduceret omkostninger samtidig med forbedret kvalitet?',
+        category: 'economic-analysis'
+      }
+    ]
   }
 ];
 
