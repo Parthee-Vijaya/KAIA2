@@ -353,6 +353,719 @@ export const mockCharts = {
         { dataKey: 'it', fill: '#8884d8', name: 'IT', stackId: 'a' }
       ]
     }
+  },
+
+  // Budget spørgsmål grafer (q51-q61)
+  'school-risk-assessment': {
+    type: 'bar',
+    title: 'Skoler i risiko for budgetoverskridelse 2025',
+    data: [
+      { school: 'Røsnæs Skole', risk: 1.8, budget: 24.5, students: 387 },
+      { school: 'Kalundborg Skole', risk: 1.2, budget: 31.2, students: 474 },
+      { school: 'Høng Skole', risk: 0.85, budget: 18.7, students: 298 },
+      { school: 'Svinninge Skole', risk: 0.62, budget: 14.3, students: 234 }
+    ],
+    config: {
+      xKey: 'school',
+      bars: [
+        { dataKey: 'risk', fill: '#EF4444', name: 'Forventet overskridelse (DKK M)' }
+      ]
+    }
+  },
+
+  'budget-trend-by-school': {
+    type: 'line',
+    title: 'Budgettrends pr. skole 2022-2025 (DKK M)',
+    data: [
+      { year: '2022', 'Røsnæs': 22.8, 'Kalundborg': 28.5, 'Høng': 17.2, 'Svinninge': 13.1 },
+      { year: '2023', 'Røsnæs': 23.4, 'Kalundborg': 29.8, 'Høng': 17.9, 'Svinninge': 13.6 },
+      { year: '2024', 'Røsnæs': 24.0, 'Kalundborg': 30.5, 'Høng': 18.3, 'Svinninge': 14.0 },
+      { year: '2025', 'Røsnæs': 24.5, 'Kalundborg': 31.2, 'Høng': 18.7, 'Svinninge': 14.3 }
+    ],
+    config: {
+      xKey: 'year',
+      lines: [
+        { dataKey: 'Røsnæs', stroke: '#EF4444', name: 'Røsnæs Skole' },
+        { dataKey: 'Kalundborg', stroke: '#F59E0B', name: 'Kalundborg Skole' },
+        { dataKey: 'Høng', stroke: '#10B981', name: 'Høng Skole' },
+        { dataKey: 'Svinninge', stroke: '#3B82F6', name: 'Svinninge Skole' }
+      ]
+    }
+  },
+
+  'school-budget-breakdown': {
+    type: 'bar',
+    title: 'Budgetopdeling pr. skole 2025 (DKK M)',
+    data: [
+      { school: 'Røsnæs', løn: 19.1, vedligehold: 1.6, materialer: 1.2, energi: 1.0, ekstern: 0.6 },
+      { school: 'Kalundborg', løn: 24.3, vedligehold: 2.0, materialer: 1.5, energi: 1.2, ekstern: 0.7 },
+      { school: 'Høng', løn: 14.6, vedligehold: 1.3, materialer: 1.0, energi: 0.8, ekstern: 0.5 },
+      { school: 'Svinninge', løn: 11.2, vedligehold: 1.0, materialer: 0.8, energi: 0.6, ekstern: 0.4 }
+    ],
+    config: {
+      xKey: 'school',
+      bars: [
+        { dataKey: 'løn', fill: '#3B82F6', name: 'Løn', stackId: 'a' },
+        { dataKey: 'vedligehold', fill: '#10B981', name: 'Vedligehold', stackId: 'a' },
+        { dataKey: 'materialer', fill: '#F59E0B', name: 'Materialer', stackId: 'a' },
+        { dataKey: 'energi', fill: '#EF4444', name: 'Energi', stackId: 'a' },
+        { dataKey: 'ekstern', fill: '#8B5CF6', name: 'Ekstern', stackId: 'a' }
+      ]
+    }
+  },
+
+  'overspending-trends': {
+    type: 'line',
+    title: 'Overskridelsestrends pr. afdeling 2022-2024 (DKK M)',
+    data: [
+      { year: '2022', 'Børn & Unge': 28, 'Social & Sundhed': 15, 'Beskæftigelse': 5 },
+      { year: '2023', 'Børn & Unge': 35, 'Social & Sundhed': 19, 'Beskæftigelse': 7 },
+      { year: '2024', 'Børn & Unge': 42, 'Social & Sundhed': 23, 'Beskæftigelse': 8 }
+    ],
+    config: {
+      xKey: 'year',
+      lines: [
+        { dataKey: 'Børn & Unge', stroke: '#EF4444', name: 'Børn & Unge' },
+        { dataKey: 'Social & Sundhed', stroke: '#F59E0B', name: 'Social & Sundhed' },
+        { dataKey: 'Beskæftigelse', stroke: '#10B981', name: 'Beskæftigelse' }
+      ]
+    }
+  },
+
+  'department-budget-breakdown': {
+    type: 'bar',
+    title: 'Budgetopdeling pr. afdeling 2024 (DKK M)',
+    data: [
+      { department: 'Børn & Unge', anbringelser: 18, special: 14, ppr: 10 },
+      { department: 'Social & Sundhed', botilbud: 12, psykiatri: 8, aktivitet: 3 },
+      { department: 'Beskæftigelse', kontanthjælp: 4, aktivering: 3, sygedagpenge: 1 }
+    ],
+    config: {
+      xKey: 'department',
+      bars: [
+        { dataKey: 'anbringelser', fill: '#EF4444', name: 'Anbringelser', stackId: 'a' },
+        { dataKey: 'special', fill: '#F59E0B', name: 'Special', stackId: 'a' },
+        { dataKey: 'ppr', fill: '#10B981', name: 'PPR', stackId: 'a' },
+        { dataKey: 'botilbud', fill: '#EF4444', name: 'Botilbud', stackId: 'b' },
+        { dataKey: 'psykiatri', fill: '#F59E0B', name: 'Psykiatri', stackId: 'b' },
+        { dataKey: 'aktivitet', fill: '#10B981', name: 'Aktivitet', stackId: 'b' },
+        { dataKey: 'kontanthjælp', fill: '#EF4444', name: 'Kontanthjælp', stackId: 'c' },
+        { dataKey: 'aktivering', fill: '#F59E0B', name: 'Aktivering', stackId: 'c' },
+        { dataKey: 'sygedagpenge', fill: '#10B981', name: 'Sygedagpenge', stackId: 'c' }
+      ]
+    }
+  },
+
+  'overspending-drivers': {
+    type: 'bar',
+    title: 'Drivere for overskridelser 2024 (DKK M)',
+    data: [
+      { driver: 'Demografiske ændringer', impact: 45 },
+      { driver: 'Eksterne omkostninger', impact: 28 },
+      { driver: 'Manglende forebyggelse', impact: 15 },
+      { driver: 'Inflation', impact: 12 },
+      { driver: 'Lønudvikling', impact: 8 }
+    ],
+    config: {
+      xKey: 'driver',
+      bars: [
+        { dataKey: 'impact', fill: '#EF4444', name: 'Påvirkning (DKK M)' }
+      ]
+    }
+  },
+
+  'overspending-causes': {
+    type: 'pie',
+    title: 'Årsager til budgetoverskridelse 2024',
+    data: [
+      { name: 'Demografiske ændringer', value: 41, amount: 45 },
+      { name: 'Eksterne omkostninger', value: 26, amount: 28 },
+      { name: 'Manglende forebyggelse', value: 14, amount: 15 },
+      { name: 'Inflation', value: 11, amount: 12 },
+      { name: 'Lønudvikling', value: 8, amount: 8 }
+    ],
+    config: {
+      dataKey: 'value',
+      nameKey: 'name',
+      colors: ['#EF4444', '#F59E0B', '#10B981', '#3B82F6', '#8B5CF6']
+    }
+  },
+
+  'structural-factors': {
+    type: 'bar',
+    title: 'Strukturelle faktorer der påvirker budget 2024',
+    data: [
+      { factor: 'Stigende kompleksitet', impact: 38, trend: 'Stigende' },
+      { factor: 'Begrænsede kompensationer', impact: 25, trend: 'Stigende' },
+      { factor: 'Manglende forebyggelse', impact: 15, trend: 'Stigende' },
+      { factor: 'Eksterne priser', impact: 22, trend: 'Faldende' }
+    ],
+    config: {
+      xKey: 'factor',
+      bars: [
+        { dataKey: 'impact', fill: '#EF4444', name: 'Påvirkning (DKK M)' }
+      ]
+    }
+  },
+
+  'monthly-budget-tracking': {
+    type: 'line',
+    title: 'Månedlig budgetopfølgning 2024 (DKK M)',
+    data: [
+      { month: 'Jan', budget: 253, actual: 258, deviation: 5 },
+      { month: 'Feb', budget: 253, actual: 259, deviation: 6 },
+      { month: 'Mar', budget: 253, actual: 261, deviation: 8 },
+      { month: 'Apr', budget: 253, actual: 260, deviation: 7 },
+      { month: 'Maj', budget: 253, actual: 262, deviation: 9 },
+      { month: 'Jun', budget: 253, actual: 264, deviation: 11 },
+      { month: 'Jul', budget: 253, actual: 263, deviation: 10 },
+      { month: 'Aug', budget: 253, actual: 265, deviation: 12 },
+      { month: 'Sep', budget: 253, actual: 268, deviation: 15 }
+    ],
+    config: {
+      xKey: 'month',
+      lines: [
+        { dataKey: 'budget', stroke: '#3B82F6', name: 'Budget' },
+        { dataKey: 'actual', stroke: '#EF4444', name: 'Faktisk' },
+        { dataKey: 'deviation', stroke: '#F59E0B', name: 'Afvigelse' }
+      ]
+    }
+  },
+
+  'deviation-reasons': {
+    type: 'bar',
+    title: 'Årsager til månedlige afvigelser 2024',
+    data: [
+      { reason: 'Specialundervisning', jan: 1.2, feb: 1.4, mar: 1.8, apr: 1.6, maj: 2.0, jun: 2.2 },
+      { reason: 'Anbringelser', jan: 0.8, feb: 1.0, mar: 1.2, apr: 1.1, maj: 1.3, jun: 1.5 },
+      { reason: 'Energi', jan: 0.5, feb: 0.6, mar: 0.4, apr: 0.3, maj: 0.2, jun: 0.1 },
+      { reason: 'Personale', jan: 0.3, feb: 0.4, mar: 0.5, apr: 0.4, maj: 0.5, jun: 0.6 }
+    ],
+    config: {
+      xKey: 'reason',
+      bars: [
+        { dataKey: 'jan', fill: '#3B82F6', name: 'Jan', stackId: 'a' },
+        { dataKey: 'feb', fill: '#10B981', name: 'Feb', stackId: 'a' },
+        { dataKey: 'mar', fill: '#F59E0B', name: 'Mar', stackId: 'a' },
+        { dataKey: 'apr', fill: '#EF4444', name: 'Apr', stackId: 'a' },
+        { dataKey: 'maj', fill: '#8B5CF6', name: 'Maj', stackId: 'a' },
+        { dataKey: 'jun', fill: '#EC4899', name: 'Jun', stackId: 'a' }
+      ]
+    }
+  },
+
+  'expense-distribution': {
+    type: 'pie',
+    title: 'Udgiftsfordeling 2024',
+    data: [
+      { name: 'Løn og personale', value: 75, amount: 2130 },
+      { name: 'Varer og tjenester', value: 15, amount: 426 },
+      { name: 'Investeringer', value: 8, amount: 227 },
+      { name: 'Finansielle omkostninger', value: 2, amount: 57 }
+    ],
+    config: {
+      dataKey: 'value',
+      nameKey: 'name',
+      colors: ['#3B82F6', '#10B981', '#F59E0B', '#EF4444']
+    }
+  },
+
+  'expense-pattern-changes': {
+    type: 'line',
+    title: 'Ændringer i udgiftsfordeling 2019-2024 (%)',
+    data: [
+      { year: '2019', løn: 72, varer: 13, investering: 12, finansiel: 3 },
+      { year: '2020', løn: 73, varer: 13, investering: 11, finansiel: 3 },
+      { year: '2021', løn: 74, varer: 14, investering: 10, finansiel: 2 },
+      { year: '2022', løn: 74, varer: 14, investering: 9, finansiel: 2 },
+      { year: '2023', løn: 75, varer: 15, investering: 8, finansiel: 2 },
+      { year: '2024', løn: 75, varer: 15, investering: 8, finansiel: 2 }
+    ],
+    config: {
+      xKey: 'year',
+      lines: [
+        { dataKey: 'løn', stroke: '#3B82F6', name: 'Løn' },
+        { dataKey: 'varer', stroke: '#10B981', name: 'Varer' },
+        { dataKey: 'investering', stroke: '#F59E0B', name: 'Investering' },
+        { dataKey: 'finansiel', stroke: '#EF4444', name: 'Finansiel' }
+      ]
+    }
+  },
+
+  'expense-breakdown-by-category': {
+    type: 'bar',
+    title: 'Detaljeret udgiftsopdeling pr. kategori 2024 (DKK M)',
+    data: [
+      { category: 'Løn', amount: 1680 },
+      { category: 'Pension', amount: 285 },
+      { category: 'Sociale bidrag', amount: 165 },
+      { category: 'Energi', amount: 142 },
+      { category: 'Vedligehold', amount: 128 },
+      { category: 'Konsulenter', amount: 85 },
+      { category: 'Leverandører', amount: 71 }
+    ],
+    config: {
+      xKey: 'category',
+      bars: [
+        { dataKey: 'amount', fill: '#3B82F6', name: 'Beløb (DKK M)' }
+      ]
+    }
+  },
+
+  'seasonal-expense-patterns': {
+    type: 'area',
+    title: 'Sæsonmønstre i udgifter 2024 (DKK M)',
+    data: [
+      { month: 'Jan', energi: 22, personale: 185, total: 268 },
+      { month: 'Feb', energi: 20, personale: 178, total: 263 },
+      { month: 'Mar', energi: 18, personale: 182, total: 261 },
+      { month: 'Apr', energi: 12, personale: 170, total: 260 },
+      { month: 'Maj', energi: 10, personale: 168, total: 262 },
+      { month: 'Jun', energi: 8, personale: 165, total: 264 },
+      { month: 'Jul', energi: 9, personale: 162, total: 263 },
+      { month: 'Aug', energi: 10, personale: 160, total: 265 },
+      { month: 'Sep', energi: 12, personale: 175, total: 268 }
+    ],
+    config: {
+      xKey: 'month',
+      areas: [
+        { dataKey: 'energi', fill: '#F59E0B', name: 'Energi' },
+        { dataKey: 'personale', fill: '#3B82F6', name: 'Personale' }
+      ]
+    }
+  },
+
+  'budget-volatility': {
+    type: 'line',
+    title: 'Budgetvolatilitet 2019-2024 (DKK M)',
+    data: [
+      { year: '2019', budget: 2650, actual: 2680, volatility: 1.1 },
+      { year: '2020', budget: 2720, actual: 2808, volatility: 3.2 },
+      { year: '2021', budget: 2810, actual: 2885, volatility: 2.7 },
+      { year: '2022', budget: 2920, actual: 3035, volatility: 3.9 },
+      { year: '2023', budget: 3040, actual: 3118, volatility: 2.6 },
+      { year: '2024', budget: 3040, actual: 3113, volatility: 2.4 }
+    ],
+    config: {
+      xKey: 'year',
+      lines: [
+        { dataKey: 'budget', stroke: '#3B82F6', name: 'Budget' },
+        { dataKey: 'actual', stroke: '#EF4444', name: 'Faktisk' },
+        { dataKey: 'volatility', stroke: '#F59E0B', name: 'Volatilitet %' }
+      ]
+    }
+  },
+
+  'historical-budget-swings': {
+    type: 'bar',
+    title: 'Store udsving i budgetter 2020-2024 (DKK M)',
+    data: [
+      { year: '2020', event: 'COVID-19', impact: 28 },
+      { year: '2021', event: 'Folkeskolereform', impact: 18 },
+      { year: '2022', event: 'Energikrise', impact: 24 },
+      { year: '2023', event: 'Specialområdet', impact: 35 },
+      { year: '2024', event: 'Demografisk pres', impact: 42 }
+    ],
+    config: {
+      xKey: 'year',
+      bars: [
+        { dataKey: 'impact', fill: '#EF4444', name: 'Påvirkning (DKK M)' }
+      ]
+    }
+  },
+
+  'savings-potential': {
+    type: 'bar',
+    title: 'Besparelsespotentiale pr. område (DKK 1000)',
+    data: [
+      { area: 'Vedligehold', potential: 300, current: 1600 },
+      { area: 'Materialer', potential: 225, current: 1200 },
+      { area: 'Eksterne services', potential: 175, current: 600 },
+      { area: 'Energi', potential: 100, current: 1000 }
+    ],
+    config: {
+      xKey: 'area',
+      bars: [
+        { dataKey: 'potential', fill: '#10B981', name: 'Besparelsespotentiale' }
+      ]
+    }
+  },
+
+  'cost-reduction-areas': {
+    type: 'pie',
+    title: 'Besparelsespotentiale fordeling',
+    data: [
+      { name: 'Vedligehold', value: 38, amount: 300 },
+      { name: 'Materialer', value: 28, amount: 225 },
+      { name: 'Eksterne services', value: 22, amount: 175 },
+      { name: 'Energi', value: 12, amount: 100 }
+    ],
+    config: {
+      dataKey: 'value',
+      nameKey: 'name',
+      colors: ['#10B981', '#3B82F6', '#F59E0B', '#EF4444']
+    }
+  },
+
+  'savings-by-school-size': {
+    type: 'bar',
+    title: 'Besparelsespotentiale pr. skolestørrelse (DKK 1000)',
+    data: [
+      { size: 'Stor (400+ elever)', potential: 450, students: 474 },
+      { size: 'Mellem (300-400)', potential: 350, students: 387 },
+      { size: 'Lille (200-300)', potential: 250, students: 298 },
+      { size: 'Meget lille (<200)', potential: 180, students: 234 }
+    ],
+    config: {
+      xKey: 'size',
+      bars: [
+        { dataKey: 'potential', fill: '#10B981', name: 'Besparelsespotentiale' }
+      ]
+    }
+  },
+
+  'savings-impact-analysis': {
+    type: 'line',
+    title: 'Besparelsesimpact over tid (DKK 1000)',
+    data: [
+      { period: 'Q1', vedligehold: 50, materialer: 40, ekstern: 30, energi: 20, total: 140 },
+      { period: 'Q2', vedligehold: 100, materialer: 80, ekstern: 60, energi: 40, total: 280 },
+      { period: 'Q3', vedligehold: 150, materialer: 120, ekstern: 90, energi: 60, total: 420 },
+      { period: 'Q4', vedligehold: 200, materialer: 160, ekstern: 120, energi: 80, total: 560 }
+    ],
+    config: {
+      xKey: 'period',
+      lines: [
+        { dataKey: 'vedligehold', stroke: '#10B981', name: 'Vedligehold' },
+        { dataKey: 'materialer', stroke: '#3B82F6', name: 'Materialer' },
+        { dataKey: 'ekstern', stroke: '#F59E0B', name: 'Ekstern' },
+        { dataKey: 'energi', stroke: '#EF4444', name: 'Energi' },
+        { dataKey: 'total', stroke: '#8B5CF6', name: 'Total' }
+      ]
+    }
+  },
+
+  'remaining-budget-by-pool': {
+    type: 'bar',
+    title: 'Resterende budget pr. pulje Q3 2024 (DKK M)',
+    data: [
+      { pool: 'Børn & Unge', remaining: 142, used: 766, total: 908 },
+      { pool: 'Social & Sundhed', remaining: 198, used: 967, total: 1165 },
+      { pool: 'Beskæftigelse', remaining: 68, used: 273, total: 341 },
+      { pool: 'Kultur & Miljø', remaining: 35, used: 107, total: 142 },
+      { pool: 'Administration', remaining: 71, used: 213, total: 284 }
+    ],
+    config: {
+      xKey: 'pool',
+      bars: [
+        { dataKey: 'remaining', fill: '#10B981', name: 'Resterende' },
+        { dataKey: 'used', fill: '#EF4444', name: 'Brugt' }
+      ]
+    }
+  },
+
+  'budget-utilization': {
+    type: 'line',
+    title: 'Budgetudnyttelse pr. pulje 2024 (%)',
+    data: [
+      { month: 'Jan', 'Børn & Unge': 25, 'Social & Sundhed': 22, 'Beskæftigelse': 20, 'Kultur': 18, 'Admin': 20 },
+      { month: 'Mar', 'Børn & Unge': 50, 'Social & Sundhed': 45, 'Beskæftigelse': 42, 'Kultur': 40, 'Admin': 42 },
+      { month: 'Jun', 'Børn & Unge': 70, 'Social & Sundhed': 65, 'Beskæftigelse': 62, 'Kultur': 60, 'Admin': 62 },
+      { month: 'Sep', 'Børn & Unge': 84, 'Social & Sundhed': 83, 'Beskæftigelse': 80, 'Kultur': 75, 'Admin': 75 }
+    ],
+    config: {
+      xKey: 'month',
+      lines: [
+        { dataKey: 'Børn & Unge', stroke: '#EF4444', name: 'Børn & Unge' },
+        { dataKey: 'Social & Sundhed', stroke: '#F59E0B', name: 'Social & Sundhed' },
+        { dataKey: 'Beskæftigelse', stroke: '#10B981', name: 'Beskæftigelse' },
+        { dataKey: 'Kultur', stroke: '#3B82F6', name: 'Kultur' },
+        { dataKey: 'Admin', stroke: '#8B5CF6', name: 'Admin' }
+      ]
+    }
+  },
+
+  'pool-expense-breakdown': {
+    type: 'bar',
+    title: 'Puljebrug opdeling 2024 (DKK M)',
+    data: [
+      { pool: 'Børn & Unge', folkeskoler: 312, dagtilbud: 198, special: 142, ppr: 68, ungdoms: 46 },
+      { pool: 'Social & Sundhed', ældrepleje: 520, handicap: 328, sundhed: 119 },
+      { pool: 'Beskæftigelse', kontanthjælp: 142, aktivering: 85, sygedagpenge: 34, jobcenter: 12 }
+    ],
+    config: {
+      xKey: 'pool',
+      bars: [
+        { dataKey: 'folkeskoler', fill: '#3B82F6', name: 'Folkeskoler', stackId: 'a' },
+        { dataKey: 'dagtilbud', fill: '#10B981', name: 'Dagtilbud', stackId: 'a' },
+        { dataKey: 'special', fill: '#F59E0B', name: 'Special', stackId: 'a' },
+        { dataKey: 'ppr', fill: '#EF4444', name: 'PPR', stackId: 'a' },
+        { dataKey: 'ungdoms', fill: '#8B5CF6', name: 'Ungdoms', stackId: 'a' },
+        { dataKey: 'ældrepleje', fill: '#3B82F6', name: 'Ældrepleje', stackId: 'b' },
+        { dataKey: 'handicap', fill: '#10B981', name: 'Handicap', stackId: 'b' },
+        { dataKey: 'sundhed', fill: '#F59E0B', name: 'Sundhed', stackId: 'b' },
+        { dataKey: 'kontanthjælp', fill: '#3B82F6', name: 'Kontanthjælp', stackId: 'c' },
+        { dataKey: 'aktivering', fill: '#10B981', name: 'Aktivering', stackId: 'c' },
+        { dataKey: 'sygedagpenge', fill: '#F59E0B', name: 'Sygedagpenge', stackId: 'c' },
+        { dataKey: 'jobcenter', fill: '#EF4444', name: 'Jobcenter', stackId: 'c' }
+      ]
+    }
+  },
+
+  'pool-spending-trends': {
+    type: 'area',
+    title: 'Puljebrug trends 2022-2024 (DKK M)',
+    data: [
+      { quarter: 'Q1 2022', 'Børn & Unge': 210, 'Social & Sundhed': 280, 'Beskæftigelse': 82 },
+      { quarter: 'Q2 2022', 'Børn & Unge': 220, 'Social & Sundhed': 295, 'Beskæftigelse': 85 },
+      { quarter: 'Q3 2022', 'Børn & Unge': 230, 'Social & Sundhed': 310, 'Beskæftigelse': 88 },
+      { quarter: 'Q4 2022', 'Børn & Unge': 240, 'Social & Sundhed': 320, 'Beskæftigelse': 90 },
+      { quarter: 'Q1 2024', 'Børn & Unge': 250, 'Social & Sundhed': 330, 'Beskæftigelse': 92 },
+      { quarter: 'Q2 2024', 'Børn & Unge': 260, 'Social & Sundhed': 340, 'Beskæftigelse': 94 },
+      { quarter: 'Q3 2024', 'Børn & Unge': 270, 'Social & Sundhed': 350, 'Beskæftigelse': 96 }
+    ],
+    config: {
+      xKey: 'quarter',
+      areas: [
+        { dataKey: 'Børn & Unge', fill: '#EF4444', name: 'Børn & Unge' },
+        { dataKey: 'Social & Sundhed', fill: '#F59E0B', name: 'Social & Sundhed' },
+        { dataKey: 'Beskæftigelse', fill: '#10B981', name: 'Beskæftigelse' }
+      ]
+    }
+  },
+
+  'overspending-by-subject': {
+    type: 'bar',
+    title: 'Overskridelser pr. fagområde 2024 (DKK M)',
+    data: [
+      { subject: 'Specialundervisning', overspending: 28, budget: 156, percentage: 18 },
+      { subject: 'Anbringelser', overspending: 18, budget: 112, percentage: 16 },
+      { subject: 'Psykiatri', overspending: 12, budget: 92, percentage: 13 },
+      { subject: 'Ældrepleje', overspending: 68, budget: 620, percentage: 11 },
+      { subject: 'Kultur', overspending: -4, budget: 142, percentage: -3 },
+      { subject: 'Administration', overspending: -6, budget: 284, percentage: -2 }
+    ],
+    config: {
+      xKey: 'subject',
+      bars: [
+        { dataKey: 'overspending', fill: '#EF4444', name: 'Overskridelse (DKK M)' }
+      ]
+    }
+  },
+
+  'subject-trends': {
+    type: 'line',
+    title: 'Overskridelsestrends pr. fagområde 2019-2024 (%)',
+    data: [
+      { year: '2019', 'Specialundervisning': 12, 'Anbringelser': 10, 'Psykiatri': 8, 'Ældrepleje': 6 },
+      { year: '2020', 'Specialundervisning': 13, 'Anbringelser': 11, 'Psykiatri': 9, 'Ældrepleje': 7 },
+      { year: '2021', 'Specialundervisning': 15, 'Anbringelser': 12, 'Psykiatri': 10, 'Ældrepleje': 8 },
+      { year: '2022', 'Specialundervisning': 16, 'Anbringelser': 14, 'Psykiatri': 11, 'Ældrepleje': 9 },
+      { year: '2023', 'Specialundervisning': 17, 'Anbringelser': 15, 'Psykiatri': 12, 'Ældrepleje': 10 },
+      { year: '2024', 'Specialundervisning': 18, 'Anbringelser': 16, 'Psykiatri': 13, 'Ældrepleje': 11 }
+    ],
+    config: {
+      xKey: 'year',
+      lines: [
+        { dataKey: 'Specialundervisning', stroke: '#EF4444', name: 'Specialundervisning' },
+        { dataKey: 'Anbringelser', stroke: '#F59E0B', name: 'Anbringelser' },
+        { dataKey: 'Psykiatri', stroke: '#10B981', name: 'Psykiatri' },
+        { dataKey: 'Ældrepleje', stroke: '#3B82F6', name: 'Ældrepleje' }
+      ]
+    }
+  },
+
+  'subject-overspending-drivers': {
+    type: 'bar',
+    title: 'Drivere for overskridelser pr. fagområde 2024 (DKK M)',
+    data: [
+      { subject: 'Specialundervisning', kompleksitet: 12, ekstern: 10, manglende: 6 },
+      { subject: 'Anbringelser', kompleksitet: 12, ekstern: 4, manglende: 2 },
+      { subject: 'Psykiatri', kompleksitet: 7, ekstern: 4, manglende: 1 },
+      { subject: 'Ældrepleje', kompleksitet: 20, ekstern: 10, manglende: 4 }
+    ],
+    config: {
+      xKey: 'subject',
+      bars: [
+        { dataKey: 'kompleksitet', fill: '#EF4444', name: 'Kompleksitet', stackId: 'a' },
+        { dataKey: 'ekstern', fill: '#F59E0B', name: 'Ekstern', stackId: 'a' },
+        { dataKey: 'manglende', fill: '#10B981', name: 'Manglende forebyggelse', stackId: 'a' }
+      ]
+    }
+  },
+
+  'subject-budget-evolution': {
+    type: 'area',
+    title: 'Budgetudvikling pr. fagområde 2019-2024 (DKK M)',
+    data: [
+      { year: '2019', 'Specialundervisning': 140, 'Anbringelser': 102, 'Psykiatri': 85, 'Ældrepleje': 580 },
+      { year: '2020', 'Specialundervisning': 148, 'Anbringelser': 108, 'Psykiatri': 90, 'Ældrepleje': 595 },
+      { year: '2021', 'Specialundervisning': 156, 'Anbringelser': 112, 'Psykiatri': 92, 'Ældrepleje': 610 },
+      { year: '2022', 'Specialundervisning': 164, 'Anbringelser': 116, 'Psykiatri': 94, 'Ældrepleje': 625 },
+      { year: '2023', 'Specialundervisning': 172, 'Anbringelser': 120, 'Psykiatri': 96, 'Ældrepleje': 640 },
+      { year: '2024', 'Specialundervisning': 184, 'Anbringelser': 130, 'Psykiatri': 104, 'Ældrepleje': 688 }
+    ],
+    config: {
+      xKey: 'year',
+      areas: [
+        { dataKey: 'Specialundervisning', fill: '#EF4444', name: 'Specialundervisning' },
+        { dataKey: 'Anbringelser', fill: '#F59E0B', name: 'Anbringelser' },
+        { dataKey: 'Psykiatri', fill: '#10B981', name: 'Psykiatri' },
+        { dataKey: 'Ældrepleje', fill: '#3B82F6', name: 'Ældrepleje' }
+      ]
+    }
+  },
+
+  'budget-forecast-2026': {
+    type: 'line',
+    title: 'Budgetprognose 2024-2026 (DKK M)',
+    data: [
+      { year: '2024', budget: 2840, actual: 2913, forecast: 2913 },
+      { year: '2025', budget: 2960, actual: null, forecast: 3025 },
+      { year: '2026', budget: 3080, actual: null, forecast: 3180 }
+    ],
+    config: {
+      xKey: 'year',
+      lines: [
+        { dataKey: 'budget', stroke: '#3B82F6', name: 'Budget' },
+        { dataKey: 'actual', stroke: '#EF4444', name: 'Faktisk' },
+        { dataKey: 'forecast', stroke: '#F59E0B', name: 'Prognose' }
+      ]
+    }
+  },
+
+  'trend-analysis': {
+    type: 'line',
+    title: 'Trendanalyse budget 2019-2026 (DKK M)',
+    data: [
+      { year: '2019', budget: 2650, actual: 2680 },
+      { year: '2020', budget: 2720, actual: 2808 },
+      { year: '2021', budget: 2810, actual: 2885 },
+      { year: '2022', budget: 2920, actual: 3035 },
+      { year: '2023', budget: 3040, actual: 3118 },
+      { year: '2024', budget: 3040, actual: 3113 },
+      { year: '2025', budget: 3160, actual: null },
+      { year: '2026', budget: 3280, actual: null }
+    ],
+    config: {
+      xKey: 'year',
+      lines: [
+        { dataKey: 'budget', stroke: '#3B82F6', name: 'Budget' },
+        { dataKey: 'actual', stroke: '#EF4444', name: 'Faktisk' }
+      ]
+    }
+  },
+
+  'forecast-by-category': {
+    type: 'bar',
+    title: 'Prognose pr. kategori 2026 (DKK M)',
+    data: [
+      { category: 'Specialundervisning', 2024: 184, 2025: 200, 2026: 218 },
+      { category: 'Anbringelser', 2024: 130, 2025: 142, 2026: 155 },
+      { category: 'Psykiatri', 2024: 104, 2025: 112, 2026: 120 },
+      { category: 'Ældrepleje', 2024: 688, 2025: 725, 2026: 765 }
+    ],
+    config: {
+      xKey: 'category',
+      bars: [
+        { dataKey: '2024', fill: '#3B82F6', name: '2024' },
+        { dataKey: '2025', fill: '#10B981', name: '2025' },
+        { dataKey: '2026', fill: '#F59E0B', name: '2026' }
+      ]
+    }
+  },
+
+  'forecast-scenarios': {
+    type: 'line',
+    title: 'Prognosescenarier 2024-2026 (DKK M)',
+    data: [
+      { year: '2024', optimistic: 0, base: 0, pessimistic: 0 },
+      { year: '2025', optimistic: -5, base: -15, pessimistic: -28 },
+      { year: '2026', optimistic: -8, base: -28, pessimistic: -55 }
+    ],
+    config: {
+      xKey: 'year',
+      lines: [
+        { dataKey: 'optimistic', stroke: '#10B981', name: 'Optimistisk' },
+        { dataKey: 'base', stroke: '#3B82F6', name: 'Basis' },
+        { dataKey: 'pessimistic', stroke: '#EF4444', name: 'Pessimistisk' }
+      ]
+    }
+  },
+
+  'school-expense-breakdown': {
+    type: 'pie',
+    title: 'Udgiftsfordeling pr. skole 2025',
+    data: [
+      { name: 'Løn og personale', value: 78, amount: 15.6 },
+      { name: 'Vedligehold', value: 8, amount: 1.6 },
+      { name: 'Materialer', value: 6, amount: 1.2 },
+      { name: 'Energi', value: 5, amount: 1.0 },
+      { name: 'Eksterne services', value: 3, amount: 0.6 }
+    ],
+    config: {
+      dataKey: 'value',
+      nameKey: 'name',
+      colors: ['#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6']
+    }
+  },
+
+  'reduction-potential': {
+    type: 'bar',
+    title: 'Reduktionspotentiale pr. udgiftspost (DKK 1000)',
+    data: [
+      { expense: 'Vedligehold', potential: 300, current: 1600 },
+      { expense: 'Materialer', potential: 225, current: 1200 },
+      { expense: 'Eksterne services', potential: 175, current: 600 },
+      { expense: 'Energi', potential: 100, current: 1000 }
+    ],
+    config: {
+      xKey: 'expense',
+      bars: [
+        { dataKey: 'potential', fill: '#10B981', name: 'Reduktionspotentiale' }
+      ]
+    }
+  },
+
+  'expense-by-school-type': {
+    type: 'bar',
+    title: 'Udgifter pr. skolestørrelse (DKK per elev)',
+    data: [
+      { size: 'Stor (400+)', løn: 51, vedligehold: 4, materialer: 3, energi: 2.5, ekstern: 1.5 },
+      { size: 'Mellem (300-400)', løn: 49, vedligehold: 4.1, materialer: 3.1, energi: 2.6, ekstern: 1.6 },
+      { size: 'Lille (200-300)', løn: 48, vedligehold: 4.3, materialer: 3.3, energi: 2.7, ekstern: 1.7 },
+      { size: 'Meget lille (<200)', løn: 47, vedligehold: 4.5, materialer: 3.5, energi: 2.8, ekstern: 1.8 }
+    ],
+    config: {
+      xKey: 'size',
+      bars: [
+        { dataKey: 'løn', fill: '#3B82F6', name: 'Løn', stackId: 'a' },
+        { dataKey: 'vedligehold', fill: '#10B981', name: 'Vedligehold', stackId: 'a' },
+        { dataKey: 'materialer', fill: '#F59E0B', name: 'Materialer', stackId: 'a' },
+        { dataKey: 'energi', fill: '#EF4444', name: 'Energi', stackId: 'a' },
+        { dataKey: 'ekstern', fill: '#8B5CF6', name: 'Ekstern', stackId: 'a' }
+      ]
+    }
+  },
+
+  'savings-by-expense-category': {
+    type: 'bar',
+    title: 'Besparelser pr. udgiftskategori (DKK 1000)',
+    data: [
+      { category: 'Vedligehold', q1: 50, q2: 100, q3: 150, q4: 200 },
+      { category: 'Materialer', q1: 40, q2: 80, q3: 120, q4: 160 },
+      { category: 'Eksterne services', q1: 30, q2: 60, q3: 90, q4: 120 },
+      { category: 'Energi', q1: 20, q2: 40, q3: 60, q4: 80 }
+    ],
+    config: {
+      xKey: 'category',
+      bars: [
+        { dataKey: 'q1', fill: '#3B82F6', name: 'Q1', stackId: 'a' },
+        { dataKey: 'q2', fill: '#10B981', name: 'Q2', stackId: 'a' },
+        { dataKey: 'q3', fill: '#F59E0B', name: 'Q3', stackId: 'a' },
+        { dataKey: 'q4', fill: '#EF4444', name: 'Q4', stackId: 'a' }
+      ]
+    }
   }
 };
 
