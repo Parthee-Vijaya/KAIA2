@@ -81,7 +81,7 @@ const AnalysisPanel = ({ analysis }) => {
                       ) : (
                         // Scenario object
                         <motion.div
-                          className="bg-gray-50 border border-gray-200 p-3 space-y-1 rounded-lg hover:shadow-elevation-1 smooth-transition"
+                          className="bg-gray-50 border border-gray-200 p-3 space-y-1 rounded-lg hover:shadow-sm smooth-transition"
                           whileHover={{ scale: 1.02 }}
                         >
                           <div className="font-semibold text-gray-900">
@@ -112,7 +112,7 @@ const AnalysisPanel = ({ analysis }) => {
           </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

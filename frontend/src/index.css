@@ -49,7 +49,7 @@
 
   /* Chat Message Bubbles */
   .chat-bubble-user {
-    @apply bg-gradient-primary text-white px-5 py-3 rounded-2xl max-w-2xl ml-auto shadow-elevation-2;
+    @apply bg-kaia-blue text-white px-5 py-3 rounded-2xl max-w-2xl ml-auto shadow-sm;
     position: relative;
   }
 
@@ -67,22 +67,22 @@
   }
 
   .chat-bubble-ai {
-    @apply glass-card-strong rounded-2xl px-6 py-5 max-w-5xl;
+    @apply bg-white border border-gray-200 rounded-2xl px-6 py-5 max-w-5xl shadow-sm;
     border-left: 4px solid #3B82F6;
   }
 
   /* Category Accordion */
   .category-section {
-    @apply bg-white border border-gray-200 rounded-xl p-6 smooth-transition hover:shadow-elevation-2 hover:-translate-y-0.5 shadow-elevation-1;
+    @apply bg-white border border-gray-200 rounded-xl p-6 smooth-transition hover:shadow-md hover:-translate-y-0.5 shadow-sm;
   }
 
   .category-section-active {
-    @apply border-l-4 shadow-elevation-2;
+    @apply border-l-4 shadow-md;
   }
 
   /* Follow-up Question Chips */
   .chip {
-    @apply px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-sm smooth-transition hover:bg-gradient-primary hover:border-transparent hover:text-white hover:shadow-elevation-2 hover:scale-105 cursor-pointer text-kaia-text;
+    @apply px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-sm smooth-transition hover:bg-kaia-blue hover:border-kaia-blue hover:text-white hover:shadow-sm hover:scale-105 cursor-pointer text-kaia-text;
   }
 
   /* Analysis Panel */
@@ -221,32 +221,32 @@
 
   /* Shadow System - Layered depth */
   .shadow-elevation-1 {
-    @apply shadow-elevation-1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
 
   .shadow-elevation-2 {
-    @apply shadow-elevation-2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .shadow-elevation-3 {
-    @apply shadow-elevation-3;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   }
 
   .shadow-elevation-4 {
-    @apply shadow-elevation-4;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
   }
 
   .shadow-elevation-5 {
-    @apply shadow-elevation-5;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   }
 
   /* Glassmorphism */
   .glass-card {
-    @apply bg-white/80 backdrop-blur-xl border border-white/20 shadow-elevation-2;
+    @apply bg-white border border-gray-200 shadow-sm;
   }
 
   .glass-card-strong {
-    @apply bg-white/90 backdrop-blur-2xl border border-white/30 shadow-elevation-3;
+    @apply bg-white border border-gray-200 shadow-md;
   }
 
   /* Typing Animation */

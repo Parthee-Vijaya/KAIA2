@@ -35,7 +35,7 @@ const CategorySection = ({ category, isExpanded, onToggle, onQuestionClick }) =>
       >
         <div className="flex items-center gap-3">
           <div
-            className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shadow-elevation-1"
+            className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shadow-sm"
             style={{
               background: `linear-gradient(135deg, ${categoryColor} 0%, ${categoryColor}dd 100%)`,
             }}
@@ -85,7 +85,7 @@ const CategorySection = ({ category, isExpanded, onToggle, onQuestionClick }) =>
                 >
                   <motion.button
                     onClick={() => onQuestionClick(question.id, question.text)}
-                    className="w-full text-left px-4 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg smooth-transition text-gray-900 hover:shadow-elevation-1 hover:border-gray-300"
+                    className="w-full text-left px-4 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg smooth-transition text-gray-900 hover:shadow-sm hover:border-gray-300"
                     whileHover={{ x: 4 }}
                     transition={{ duration: 0.2 }}
                   >
@@ -97,7 +97,7 @@ const CategorySection = ({ category, isExpanded, onToggle, onQuestionClick }) =>
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 };
 
