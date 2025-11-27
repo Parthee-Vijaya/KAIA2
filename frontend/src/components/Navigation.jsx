@@ -6,12 +6,12 @@ import PropTypes from 'prop-types';
  */
 const Navigation = ({ role = 'intern', onMenuClick, onSendClick }) => {
   return (
-    <nav className="bg-gradient-subtle border-b border-gray-200 px-4 py-3 mb-4 sticky top-0 z-50 shadow-elevation-1 backdrop-blur-xl">
+    <nav className="bg-white border-b border-gray-200 px-6 py-4 sticky top-0 z-50">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Left: Menu Icon */}
         <button
           onClick={onMenuClick}
-          className="p-2 hover:bg-gray-100 rounded-lg smooth-transition hover:shadow-elevation-1"
+          className="p-2 hover:bg-gray-100 rounded-lg smooth-transition"
           aria-label="Menu"
         >
           <svg
@@ -34,8 +34,8 @@ const Navigation = ({ role = 'intern', onMenuClick, onSendClick }) => {
           <div className="text-2xl font-bold gradient-text">K.A.I.A</div>
 
           {/* Role Indicator */}
-          <div className="flex items-center gap-2 px-3 py-1.5 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full shadow-elevation-1">
-            <div className="w-2 h-2 bg-kaia-blue rounded-full animate-pulse-subtle"></div>
+          <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-full">
+            <div className="w-2 h-2 bg-kaia-blue rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-gray-700">{role}</span>
           </div>
         </div>

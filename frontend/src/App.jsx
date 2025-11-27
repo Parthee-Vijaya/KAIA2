@@ -5,8 +5,11 @@ import {
   CategorySection,
   ChatMessage,
   LoadingIndicator,
+  KeyMetricsCards,
+  TrendCharts,
 } from './components';
 import { categories } from './data/categories';
+import { dashboardMetrics, dashboardTrends } from './data/dashboardMetrics';
 import { getAnswerByQuestionId } from './data/mockAnswers';
 import { getChartById } from './data/mockCharts';
 import { getAnalysisByQuestionId } from './data/mockAnalysis';
@@ -112,26 +115,51 @@ function App() {
       <Navigation />
 
       {/* Sticky Search Bar */}
-      <div className="sticky top-0 z-40 bg-gradient-subtle backdrop-blur-xl border-b border-gray-200 shadow-elevation-1">
-        <div className="max-w-7xl mx-auto px-4 py-4">
+      <div className="sticky top-[73px] z-40 bg-white/95 backdrop-blur-xl border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-6">
           <SearchBar onSubmit={handleSearch} placeholder="spørg mig..." />
         </div>
       </div>
 
       {/* Main Container */}
-      <div className="flex-1 max-w-7xl mx-auto w-full px-4 py-6">
-        {/* Categories Section (show when no messages) */}
+      <div className="flex-1 max-w-7xl mx-auto w-full px-6 py-8">
+        {/* Dashboard (show when no messages) */}
         {messages.length === 0 && (
-          <div className="space-y-4 animate-fade-in">
-            {categories.map((category) => (
-              <CategorySection
-                key={category.id}
-                category={category}
-                isExpanded={expandedCategory === category.id}
-                onToggle={() => toggleCategory(category.id)}
-                onQuestionClick={handleQuestionClick}
-              />
-            ))}
+          <div className="space-y-8 animate-fade-in">
+            {/* Key Metrics Cards */}
+            <KeyMetricsCards metrics={dashboardMetrics} />
+
+            {/* Dashboard Layout: Categories left, Trends right */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {/* Left: Categories */}
+              <div className="lg:col-span-2 space-y-4">
+                <div className="mb-6">
+                  <h2 className="text-3xl font-bold text-gray-900 mb-2">Kategorier</h2>
+                  <p className="text-gray-600">Vælg en kategori for at stille spørgsmål</p>
+                </div>
+                {categories.map((category) => (
+                  <CategorySection
+                    key={category.id}
+                    category={category}
+                    isExpanded={expandedCategory === category.id}
+                    onToggle={() => toggleCategory(category.id)}
+                    onQuestionClick={handleQuestionClick}
+                  />
+                ))}
+              </div>
+
+              {/* Right: Trend Charts */}
+              <div className="lg:col-span-1">
+                <div className="mb-6">
+                  <h2 className="text-3xl font-bold text-gray-900 mb-2">Trends & Analyser</h2>
+                  <p className="text-gray-600">Vigtige økonomiske indikatorer</p>
+                </div>
+                <TrendCharts trends={{
+                  populationDevelopment: dashboardTrends.populationDevelopment,
+                  budgetTrend: dashboardTrends.budgetTrend,
+                }} />
+              </div>
+            </div>
           </div>
         )}
 
@@ -162,7 +190,7 @@ function App() {
           <div className="flex justify-center pt-8 pb-8">
             <button
               onClick={() => setMessages([])}
-              className="btn-secondary flex items-center gap-2 hover:shadow-elevation-2 hover:-translate-y-0.5"
+              className="btn-secondary flex items-center gap-2 hover:shadow-md hover:-translate-y-0.5"
             >
               <span>←</span>
               <span>Tilbage til kategorier</span>

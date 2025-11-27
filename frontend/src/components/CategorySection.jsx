@@ -20,9 +20,9 @@ const CategorySection = ({ category, isExpanded, onToggle, onQuestionClick }) =>
 
   return (
     <motion.div
-      className={`category-section ${isExpanded ? 'category-section-active' : ''}`}
+      className={`bg-white border border-gray-200 rounded-2xl p-6 smooth-transition hover:shadow-lg ${isExpanded ? 'border-l-4' : ''}`}
       style={isExpanded ? {
-        borderLeft: `4px solid ${categoryColor}`,
+        borderLeftColor: categoryColor,
       } : {}}
       whileHover={{ y: -2 }}
       transition={{ duration: 0.2 }}
