@@ -7,11 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'kaia-dark': '#0A0A0A',
-        'kaia-card': 'rgba(255, 255, 255, 0.05)',
-        'kaia-border': 'rgba(255, 255, 255, 0.1)',
+        'kaia-dark': '#FFFFFF',
+        'kaia-card': 'rgba(0, 0, 0, 0.03)',
+        'kaia-border': 'rgba(0, 0, 0, 0.1)',
         'kaia-blue': '#3B82F6',
-        'kaia-text': '#E5E7EB',
+        'kaia-text': '#1F2937',
+        'kaia-text-light': '#6B7280',
+        'kaia-gray': '#F9FAFB',
       },
       backdropBlur: {
         'xl': '30px',

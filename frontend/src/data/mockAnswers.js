@@ -5,21 +5,21 @@ export const mockAnswers = {
     questionId: 'q1',
     answer: `# Største budgetudfordringer i Kalundborg Kommune 2024
 
-Kalundborg Kommune står over for **flere markante økonomiske udfordringer** i 2024, som kræver strategisk opmærksomhed og handlekraft.
+Kalundborg Kommune står over for **flere markante økonomiske udfordringer** i 2024, som kræver strategisk opmærksomhed og handlekraft. Disse udfordringer er strukturelle og vil fortsætte i de kommende år, hvilket gør det nødvendigt at tage proaktive tiltag for at sikre kommunens økonomiske bæredygtighed.
 
 ## Primære udfordringer
 
-**Demografisk pres:** Kommunen oplever en **stigende andel af ældre borgere**, hvilket øger udgifterne til sundhed og pleje med ca. **DKK 45M årligt**. Samtidig falder antallet af borgere i den erhvervsaktive alder, hvilket reducerer skatteindtægterne.
+Den mest markante udfordring er det **demografiske pres**, som kommunen oplever. Andelen af ældre borgere stiger betydeligt, hvilket direkte oversættes til øgede udgifter til sundhed og pleje. Disse udgifter stiger med ca. **DKK 45M årligt**, hvilket er en betydelig belastning på kommunens budget. Samtidig sker der en modsatrettet udvikling, hvor antallet af borgere i den erhvervsaktive alder falder, hvilket reducerer skatteindtægterne og dermed kommunens finansieringsgrundlag.
 
-**Specialområdet:** Udgifterne til specialundervisning og særlige sociale tilbud stiger markant. I 2024 forventes et **merforbrug på DKK 28M** sammenlignet med budgettet. Dette skyldes flere komplekse sager og dyrere eksterne anbringelser.
+Et andet kritiskt område er **specialområdet**, hvor udgifterne til specialundervisning og særlige sociale tilbud stiger markant. I 2024 forventes et **merforbrug på DKK 28M** sammenlignet med budgettet, hvilket skyldes flere komplekse sager, der kræver specialiserede løsninger, samt dyrere eksterne anbringelser. Denne udvikling er bekymrende, da den ikke kun påvirker kommunens økonomi, men også børnenes og familiernes trivsel.
 
-**Inflation og lønpres:** Den generelle inflation på **6,2%** kombineret med overenskomstmæssige lønstigninger presser driftsbudgetterne. Især på områder med mange medarbejdere som skoler og ældreplejen.
+Yderligere presser **inflation og lønpres** driftsbudgetterne betydeligt. Den generelle inflation på **6,2%** kombineret med overenskomstmæssige lønstigninger skaber en dobbelt belastning, især på områder med mange medarbejdere som skoler og ældreplejen. Disse omkostninger er svære at reducere, da de er bundet til overenskomster og lovgivning.
 
 ## Økonomisk overblik
 
-Som vist i [budget-trend-2024](#chart), har kommunen en udfordring med at balancere stigende udgiftsbehov mod begrænsede indtægter. **Budgetoverskridelsen** på de mest pressede områder udgør samlet DKK 73M.
+Som vist i grafen [budget-trend-2024](#chart), har kommunen en strukturel udfordring med at balancere stigende udgiftsbehov mod begrænsede indtægter. **Budgetoverskridelsen** på de mest pressede områder udgør samlet DKK 73M, hvilket er en betydelig sum, der kræver omfattende tiltag for at blive adresseret.
 
-**Handlingsplan:** Byrådet har vedtaget en **treårig genopretningsplan** med fokus på effektivisering, forebyggelse og digitalisering.
+For at håndtere disse udfordringer har byrådet vedtaget en **treårig genopretningsplan** med fokus på effektivisering, forebyggelse og digitalisering. Denne plan er nødvendig for at sikre, at kommunen kan fortsætte med at levere høj kvalitet i sine kerneopgaver, samtidig med at økonomien bringes i balance.
 
 ---
 *Kilder: Budget 2024, Kalundborg Kommune | Budgetopfølgning Q2 2024 | KL's kommunale nøgletal*`,
@@ -35,23 +35,23 @@ Som vist i [budget-trend-2024](#chart), har kommunen en udfordring med at balanc
     questionId: 'q2',
     answer: `# Demografiske ændringers påvirkning af kommuneøkonomien
 
-De **demografiske forskydninger** i Kalundborg Kommune har direkte og væsentlig indflydelse på den kommunale økonomi både på kort og lang sigt.
+De **demografiske forskydninger** i Kalundborg Kommune har direkte og væsentlig indflydelse på den kommunale økonomi både på kort og lang sigt. Disse ændringer er strukturelle og vil forme kommunens økonomi i mange år fremover, hvilket gør det nødvendigt at forstå og planlægge for deres konsekvenser.
 
 ## Aldersforskydning
 
-Kommunen oplever en **markant aldring** af befolkningen. Andelen af borgere over 65 år stiger fra **24,1% i 2024** til forventet **28,7% i 2030**. Dette skaber betydelige økonomiske konsekvenser.
+Kommunen oplever en **markant aldring** af befolkningen, som er en af de mest betydningsfulde udviklinger. Andelen af borgere over 65 år stiger fra **24,1% i 2024** til forventet **28,7% i 2030**, hvilket repræsenterer en betydelig demografisk forskydning på relativt kort tid. Denne aldring skaber betydelige økonomiske konsekvenser, da ældre borgere typisk kræver mere intensiv pleje og støtte end yngre borgere.
 
-**Ældreområdet:** Stigningen betyder **DKK 180M i merudgifter** over de næste 6 år til hjemmepleje, plejehjem og sundhedstilbud. Behovet for plejepladser stiger fra 425 til 520 i perioden.
+På ældreområdet betyder denne stigning, at kommunen skal forberede sig på **DKK 180M i merudgifter** over de næste 6 år til hjemmepleje, plejehjem og sundhedstilbud. Dette er en betydelig økonomisk belastning, der kræver omfattende planlægning og prioritering. Behovet for plejepladser stiger fra 425 til 520 i perioden, hvilket også kræver investeringer i fysisk infrastruktur.
 
-**Sundhed og genoptræning:** Flere ældre borgere fører til øget behov for genoptræning, hjælpemidler og forebyggende indsatser. Budget skal øges med **DKK 15M årligt**.
+Samtidig fører flere ældre borgere til øget behov for genoptræning, hjælpemidler og forebyggende indsatser. Disse behov er vigtige for at opretholde ældres livskvalitet og selvstændighed, men de medfører også øgede omkostninger. Budgettet skal derfor øges med **DKK 15M årligt** for at dække disse behov.
 
 ## Færre skatteydere
 
-Antallet af borgere i den erhvervsaktive alder (18-64 år) falder med **800 personer** frem mod 2030. Dette reducerer skatteindtægterne med anslået **DKK 45M årligt** ved fuld effekt.
+En modsatrettet udvikling sker samtidig, hvor antallet af borgere i den erhvervsaktive alder (18-64 år) falder med **800 personer** frem mod 2030. Denne reduktion er bekymrende, da den direkte påvirker kommunens indtægtsgrundlag. Dette reducerer skatteindtægterne med anslået **DKK 45M årligt** ved fuld effekt, hvilket skaber en dobbelt udfordring: stigende udgifter og faldende indtægter.
 
-Som illustreret i [demographic-distribution](#chart), bliver forsørgerkvoten mere ugunstig. Der var **1,8 arbejdende per ældre** i 2020, men kun **1,4 i 2030**.
+Som illustreret i grafen [demographic-distribution](#chart), bliver forsørgerkvoten mere ugunstig. Der var **1,8 arbejdende per ældre** i 2020, men kun **1,4 i 2030**. Denne udvikling betyder, at færre mennesker skal finansiere støtten til flere ældre, hvilket skaber et strukturelt pres på kommunens økonomi.
 
-**Strategi:** Kommunen fokuserer på at tiltrække og fastholde erhverv samt sikre flere unge gennemfører uddannelse.
+For at håndtere disse udfordringer fokuserer kommunen på at tiltrække og fastholde erhverv samt sikre, at flere unge gennemfører uddannelse. Disse tiltag er nødvendige for at modvirke den faldende andel af erhvervsaktive borgere og sikre en bæredygtig økonomisk udvikling.
 
 ---
 *Kilder: Befolkningsprognose 2024-2035, Kalundborg | Danmarks Statistik | KL Demografi rapport*`,
@@ -67,27 +67,23 @@ Som illustreret i [demographic-distribution](#chart), bliver forsørgerkvoten me
     questionId: 'q3',
     answer: `# Områder med største budgetoverskridelser
 
-Budgetopfølgningen for 2024 viser **systematiske overskridelser** på tre primære områder, som kræver særlig opmærksomhed og korrigerende tiltag.
+Budgetopfølgningen for 2024 viser **systematiske overskridelser** på tre primære områder, som kræver særlig opmærksomhed og korrigerende tiltag. Disse overskridelser udgør tilsammen en betydelig udfordring for kommunens økonomiske balance og kræver målrettede indsatser for at blive adresseret.
 
 ## Børn og unge - specialområdet
 
-**Største udfordring:** Specialundervisning og anbringelser udviser et **merforbrug på DKK 42M** (18% over budget).
+Det største problem ligger på specialområdet, hvor specialundervisning og anbringelser tilsammen udviser et **merforbrug på DKK 42M**, hvilket svarer til 18% over det oprindelige budget. Denne betydelige overskridelse skyldes primært en stigning i antallet af børn med komplekse behov, der kræver specialiserede tilbud. Samtidig er prisen på eksterne anbringelser steget markant, og kommunen oplever en stigende tendens til akutte anbringelser, der ofte er dyrere end planlagte forløb. Antallet af anbringelser er steget fra **87 til 112** på blot 18 måneder, hvilket illustrerer omfanget af udfordringen.
 
-**Årsager:** Stigende antal børn med komplekse behov, dyrere eksterne tilbud, og flere akutte anbringelser. Antallet af anbringelser er steget fra **87 til 112** på 18 måneder.
-
-**Gennemsnitspris:** En ekstern anbringelse koster **DKK 1,2M årligt**, mens intern døgnplads koster DKK 750.000. Kommunen arbejder på at udvide egne tilbud.
+En ekstern anbringelse koster i gennemsnit **DKK 1,2M årligt**, mens en intern døgnplads koster DKK 750.000. Denne prisforskel gør det økonomisk uholdbart at fortsætte med den nuværende tendens, og kommunen arbejder derfor aktivt på at udvide egne tilbud for at reducere afhængigheden af eksterne løsninger.
 
 ## Social og sundhed - voksenområdet
 
-**Merforbrug:** DKK 23M (12% over budget). Især botilbud og aktivitets- og samværstilbud overskrider budgettet.
-
-**Drivere:** Flere borgere med psykiske lidelser og komplekse sociale problemer. Ventetider i psykiatrien betyder, at kommunen må etablere dyrere midlertidige løsninger.
+På voksenområdet udviser social- og sundhedsområdet et **merforbrug på DKK 23M**, hvilket svarer til 12% over budgettet. Især botilbud og aktivitets- og samværstilbud overskrider budgettet betydeligt. Denne udvikling skyldes primært, at kommunen oplever en stigning i antallet af borgere med psykiske lidelser og komplekse sociale problemer, der kræver intensive og specialiserede tilbud. Desuden betyder lange ventetider i psykiatrien, at kommunen må etablere dyrere midlertidige løsninger, mens borgere venter på permanent behandling.
 
 ## Beskæftigelsesområdet
 
-**Overskridelse:** DKK 8M, primært på kontanthjælp og sygedagpenge. Flere langtidsledige kræver intensive aktiveringsforløb.
+Beskæftigelsesområdet viser en mindre, men stadig betydelig overskridelse på **DKK 8M**, primært på kontanthjælp og sygedagpenge. Denne overskridelse skyldes, at kommunen oplever flere langtidsledige, der kræver intensive aktiveringsforløb og længerevarende støtte. Disse forløb er ofte dyrere end de standardforløb, der var budgetteret med.
 
-Graf [departments-overspending](#chart) viser fordelingen af overskridelserne. **Socialområdet står for 65%** af den totale overskridelse på DKK 73M.
+Som illustreret i grafen [departments-overspending](#chart), viser fordelingen af overskridelserne, at **socialområdet står for 65%** af den totale overskridelse på DKK 73M. Dette understreger, at de sociale udfordringer er den primære drivkraft bag budgetoverskridelserne, og at løsninger derfor skal fokusere på at styrke forebyggelse og tidlig indsats på dette område.
 
 ---
 *Kilder: Budgetopfølgning Q3 2024 | Børne- og ungeudvalget, mødereferat sept. 2024 | Social- og sundhedsudvalget*`,
@@ -103,29 +99,27 @@ Graf [departments-overspending](#chart) viser fordelingen af overskridelserne. *
     questionId: 'q4',
     answer: `# Kommunens låneramme og gældspolitik
 
-Kalundborg Kommune har en **veldefineret gældsstrategi** med klare rammer for låntagning og prioritering af investeringer.
+Kalundborg Kommune har en **veldefineret gældsstrategi** med klare rammer for låntagning og prioritering af investeringer. Denne strategi er designet til at sikre en bæredygtig økonomisk udvikling, mens kommunen samtidig kan investere i nødvendig infrastruktur og faciliteter.
 
 ## Låneramme og gældsudvikling
 
-**Aktuel låneramme:** Kommunen har en godkendt låneramme på **DKK 450M** for 2024, hvoraf **DKK 280M er udnyttet** per oktober 2024.
+Kommunen har en godkendt låneramme på **DKK 450M** for 2024, hvoraf **DKK 280M er udnyttet** per oktober 2024. Denne låneramme giver kommunen mulighed for at finansiere nødvendige investeringer, mens der stadig er kapacitet tilbage til fremtidige projekter.
 
-**Total gæld:** Den samlede kommunale gæld udgør **DKK 1,2 mia.** ved udgangen af 2023. Dette svarer til **DKK 24.500 per indbygger**, hvilket er under landsgennemsnittet på DKK 28.300.
+Den samlede kommunale gæld udgør **DKK 1,2 mia.** ved udgangen af 2023, hvilket svarer til **DKK 24.500 per indbygger**. Dette er under landsgennemsnittet på DKK 28.300, hvilket viser, at kommunen har en relativt konservativ gældspolitik sammenlignet med andre kommuner.
 
-**Gældsudvikling:** Som vist i [debt-development](#chart), har kommunen **reduceret gælden med 8%** over de sidste 3 år gennem strategisk nedbringning og fokus på likviditet.
+Som vist i grafen [debt-development](#chart), har kommunen **reduceret gælden med 8%** over de sidste 3 år gennem strategisk nedbringning og fokus på likviditet. Denne nedbringning er resultatet af en bevidst politik om at prioritere gældsnedbringning, når økonomien tillader det.
 
 ## Gældspolitik og principper
 
-Kommunen følger **konservative låneprincipper:**
+Kommunen følger **konservative låneprincipper**, der sikrer, at gælden kun optages til produktive formål. Lån optages udelukkende til anlægsinvesteringer med langsigtet værdi, såsom skoler, plejehjem og infrastruktur. Lån til drift er aldrig tilladt, hvilket sikrer, at gælden kun bruges til investeringer, der skaber værdi over tid.
 
-**Kun produktive investeringer:** Lån optages udelukkende til anlægsinvesteringer med langsigtet værdi (skoler, plejehjem, infrastruktur). Aldrig til drift.
+Afdragsprofilen er fastlagt til 20 år, hvilket sikrer forudsigelighed i kommunens økonomiske planlægning. Gennemsnitlig rente er **2,3%** efter seneste refinansiering, hvilket er en fordelagtig rente, der gør det muligt at finansiere investeringer til en overkommelig pris.
 
-**Afdragsprofil:** Fast 20-årig afdragsprofil sikrer forudsigelighed. Gennemsnitlig rente er **2,3%** efter seneste refinansiering.
+For at håndtere uforudsete udgifter opretholder kommunen et minimum på **DKK 150M i kassebeholdning**. Denne likviditetsbuffer sikrer, at kommunen kan håndtere uventede udgifter uden at skulle optage nye lån eller påvirke driften.
 
-**Likviditetsstyring:** Minimum **DKK 150M i kassebeholdning** opretholdes til at håndtere uforudsete udgifter.
+Alle investeringer skal dokumentere fremtidig besparelse eller være lovpålagt. For alle lån over DKK 5M kræves en business case, der dokumenterer investeringens værdi og økonomiske fordele. Dette sikrer, at kun velovervejede investeringer finansieres gennem lån.
 
-**Lånekriterier:** Investering skal dokumentere fremtidig besparelse eller være lovpålagt. Business case kræves for alle lån over DKK 5M.
-
-Graf [loan-capacity](#chart) viser udnyttelsesgrad og fremtidig kapacitet.
+Grafen [loan-capacity](#chart) viser udnyttelsesgrad og fremtidig kapacitet, hvilket giver et overblik over kommunens muligheder for fremtidige investeringer.
 
 ---
 *Kilder: Gældsstrategi 2024-2028 | Økonomiudvalget december 2023 | Kasserapport Q3 2024*`,
@@ -141,29 +135,23 @@ Graf [loan-capacity](#chart) viser udnyttelsesgrad og fremtidig kapacitet.
     questionId: 'q5',
     answer: `# Optimering af indkøbsaftaler
 
-Kalundborg Kommune har et **betydeligt besparelsespotentiale** gennem strategisk optimering af indkøbsaftaler og samarbejde med andre kommuner.
+Kalundborg Kommune har et **betydeligt besparelsespotentiale** gennem strategisk optimering af indkøbsaftaler og samarbejde med andre kommuner. Dette potentiale er endnu ikke fuldt udnyttet, hvilket giver mulighed for betydelige besparelser uden at påvirke kvaliteten af de leverede varer og tjenester.
 
 ## Nuværende indkøbsstruktur
 
-**Årligt indkøb:** Kommunen bruger **DKK 890M årligt** på varer og tjenesteydelser. Heraf er **kun 58%** dækket af rammaftaler - under KL's anbefaling på 75%.
+Kommunen bruger **DKK 890M årligt** på varer og tjenesteydelser, hvilket er en betydelig udgiftspost. Heraf er **kun 58%** dækket af rammaftaler, hvilket er under KL's anbefaling på 75%. Denne lave dækningsgrad betyder, at kommunen ikke får fuldt udbytte af de stordriftsfordele, der kan opnås gennem rammaftaler.
 
-**Fragmenteret indkøb:** Analyse viser **127 forskellige leverandører** på kontorartikler, hvor 5-7 ville være optimalt. Dette giver **DKK 4M i unødige omkostninger**.
+En analyse af kommunens indkøbsstruktur viser, at der er **127 forskellige leverandører** på kontorartikler alene, hvor 5-7 ville være optimalt. Denne fragmentering giver **DKK 4M i unødige omkostninger** årligt, da kommunen ikke kan udnytte stordriftsfordele og får dårligere priser end ved konsolidering.
 
 ## Besparelsespotentiale
 
-**Fælles udbud med andre kommuner:** Ved at tilslutte sig **SKI-rammeaftaler** og samarbejde med Holbæk og Sorø kan kommunen spare **DKK 15-22M årligt**.
+Ved at tilslutte sig **SKI-rammeaftaler** og etablere samarbejde med nærliggende kommuner som Holbæk og Sorø kan kommunen opnå betydelige besparelser. Det samlede besparelsespotentiale ligger på **DKK 15-22M årligt**, hvilket er en betydelig sum, der kan frigøres til andre formål.
 
-**Konkrete områder:**
-- **IT og software:** DKK 8M ved fælles Microsoft-aftale
-- **Energi:** DKK 4M gennem bedre strømaftale
-- **Rengøring:** DKK 2,5M via større samlet udbud
-- **Fødevarer:** DKK 3M gennem SKI-aftale
+På IT- og softwareområdet kan en fælles Microsoft-aftale med andre kommuner give besparelser på **DKK 8M**. Ligeledes kan en bedre strømaftale gennem fælles indkøb give besparelser på **DKK 4M**. På rengøringsområdet kan et større samlet udbud give besparelser på **DKK 2,5M**, og på fødevarerområdet kan en SKI-aftale give besparelser på **DKK 3M**.
 
-**Digitalisering af indkøb:** Implementering af e-handel og automatisk fakturahåndtering kan spare **DKK 6M i procesomkostninger**.
+Yderligere kan digitalisering af indkøbsprocessen give betydelige besparelser. Implementering af e-handel og automatisk fakturahåndtering kan spare **DKK 6M i procesomkostninger** årligt, da manuelle processer kan automatiseres og effektiviseres.
 
-Graf [procurement-savings](#chart) viser det samlede besparelsespotentiale fordelt på kategorier.
-
-**Anbefaling:** Etabler central indkøbsfunktion med mandat til at forhandle og koordinere på tværs af forvaltninger.
+Som vist i grafen [procurement-savings](#chart), viser det samlede besparelsespotentiale fordelt på kategorier, at der er betydelige muligheder for optimering. For at realisere disse besparelser anbefales det at etablere en central indkøbsfunktion med mandat til at forhandle og koordinere på tværs af forvaltninger, hvilket vil sikre en mere strategisk tilgang til indkøb.
 
 ---
 *Kilder: Indkøbsanalyse 2024, KPMG | SKI benchmarking | Økonomiudvalg juni 2024*`,
@@ -183,23 +171,19 @@ Der findes **væsentlige effektiviseringsmuligheder** i kommunens administrative
 
 ## Digitalisering og automatisering
 
-**Robotics Process Automation (RPA):** Ved at automatisere **gentagne manuelle processer** kan kommunen frigøre **ca. 8 årsværk** svarende til DKK 5,2M årligt.
+Ved at implementere **Robotics Process Automation (RPA)** kan kommunen automatisere gentagne manuelle processer og derved frigøre **ca. 8 årsværk**, hvilket svarer til DKK 5,2M årligt. Konkrete processer som fakturahåndtering, sagsbehandling af standardansøgninger, HR-processer og dataindtastning kan automatiseres med **87% effektivisering**, hvilket frigiver betydelige ressourcer til mere komplekse opgaver.
 
-**Konkrete processer:** Fakturahåndtering, sagsbehandling af standardansøgninger, HR-processer og dataindtastning kan automatiseres med **87% effektivisering**.
-
-**Selvbetjeningsløsninger:** Forbedrede digitale selvbetjeningsløsninger kan reducere telefonhenvendelser med **40%** og frigøre DKK 3,5M til opgavevaretagelse.
+Forbedrede digitale selvbetjeningsløsninger kan reducere telefonhenvendelser med **40%** og frigøre DKK 3,5M til opgavevaretagelse. Dette giver borgerne bedre mulighed for at håndtere deres egne sager, mens medarbejderne kan fokusere på mere komplekse opgaver, der kræver faglig ekspertise.
 
 ## Organisatorisk effektivisering
 
-**Centralisering af support-funktioner:** Ved at samle HR, økonomi og IT i **fælles servicecentre** kan kommunen spare **DKK 8-12M** gennem stordriftsfordele.
+Ved at samle HR, økonomi og IT i **fælles servicecentre** kan kommunen opnå betydelige stordriftsfordele og spare **DKK 8-12M** årligt. Denne centralisering giver også mulighed for bedre koordination og standardisering af processer på tværs af forvaltninger.
 
-**Reduktion af ledelsesniveauer:** Benchmarking viser, at Kalundborg har **1,2 ledere per 10 medarbejdere** mod landsgennemsnit på 0,9. Tilpasning kan spare **DKK 6M**.
+Benchmarking viser, at Kalundborg har **1,2 ledere per 10 medarbejdere** mod landsgennemsnittet på 0,9. Ved at tilpasse ledelsesstrukturen til landsgennemsnittet kan kommunen spare **DKK 6M** årligt, mens effektiviteten forbedres gennem en mere flad organisationsstruktur.
 
-**Fælles administrative systemer:** Harmonisering fra **12 forskellige journalsystemer til 3** giver besparelse på **DKK 4M årligt** i licenser og support.
+Harmonisering fra **12 forskellige journalsystemer til 3** giver en besparelse på **DKK 4M årligt** i licenser og support. Denne reduktion gør det også lettere at sikre datakvalitet og samarbejde på tværs af forvaltninger.
 
-Graf [admin-efficiency](#chart) viser potentialet fordelt på indsatsområder. **Samlet besparelse: DKK 27-35M** over 3 år.
-
-**Implementeringsplan:** Prioriter quick-wins som RPA, derefter organisatoriske ændringer.
+Som vist i grafen [admin-efficiency](#chart), viser potentialet fordelt på indsatsområder, at der er mulighed for en **samlet besparelse på DKK 27-35M** over 3 år. For at realisere disse besparelser anbefales det at prioritere quick-wins som RPA, hvorefter organisatoriske ændringer kan implementeres.
 
 ---
 *Kilder: Effektiviseringsanalyse 2024, Deloitte | KL's digitaliseringsstrategi | Benchmark med 8 sammenlignelige kommuner*`,
@@ -223,21 +207,19 @@ Kalundborg Kommune modtager **DKK 2,84 mia. i bloktilskud** i 2024. Dette er en 
 
 ## Fordelingsmodel
 
-**Primære områder:**
+Bloktilskuddet fordeles på flere primære områder. **Børn og unge** modtager 32% af tilskuddet, hvilket svarer til DKK 908M til folkeskoler, dagtilbud, PPR og ungdomsuddannelser. Dette inkluderer **DKK 142M til specialundervisning**, som er en vigtig del af områdets budget.
 
-**Børn og unge (32%):** DKK 908M til folkeskoler, dagtilbud, PPR og ungdomsuddannelser. Dette inkluderer **DKK 142M til specialundervisning**.
+**Social og sundhed** er det største område med 41% af bloktilskuddet, hvilket svarer til DKK 1.165M. Denne sum fordeles på ældrepleje (DKK 620M), handicap og psykiatri (DKK 385M), samt sundhedstilbud (DKK 160M). Dette område er afgørende for kommunens velfærdsopgaver og kræver betydelige ressourcer.
 
-**Social og sundhed (41%):** DKK 1.165M fordelt på ældrepleje (DKK 620M), handicap og psykiatri (DKK 385M), samt sundhedstilbud (DKK 160M).
+**Beskæftigelsesområdet** modtager 12% af bloktilskuddet, hvilket svarer til DKK 341M til aktivering, kontanthjælp, revalidering og jobcenterfunktioner. Dette område er vigtigt for at støtte borgere i at komme i arbejde og opretholde deres økonomiske selvstændighed.
 
-**Beskæftigelse (12%):** DKK 341M til aktivering, kontanthjælp, revalidering og jobcenterfunktioner.
+**Kultur og miljø** modtager 5% af bloktilskuddet, hvilket svarer til DKK 142M til biblioteker, kultur, natur og miljø. Dette område bidrager til borgernes livskvalitet og trivsel.
 
-**Kultur og miljø (5%):** DKK 142M til biblioteker, kultur, natur og miljø.
+**Administration og tværgående** funktioner modtager 10% af bloktilskuddet, hvilket svarer til DKK 284M til IT, HR, økonomi, ejendomme og politisk organisation. Disse funktioner er nødvendige for at sikre, at kommunen kan levere sine kerneopgaver effektivt.
 
-**Administration og tværgående (10%):** DKK 284M til IT, HR, økonomi, ejendomme og politisk organisation.
+Som vist i grafen [block-grant-distribution](#chart), viser den procentvise fordeling, at **73% af bloktilskuddet** bruges på de to store velfærdsområder, børn og unge samt social og sundhed. Dette understreger, hvor vigtige disse områder er for kommunens opgaver.
 
-Graf [block-grant-distribution](#chart) viser den procentvise fordeling visuelt. Som vist bruges **73% af bloktilskuddet** på de to store velfærdsområder.
-
-**Udfordring:** Tilskuddet stiger **langsommere end udgifterne**, hvilket skaber strukturelt pres. Tilskudsvækst 2,1% vs. udgiftsvækst 4,3%.
+En væsentlig udfordring er, at tilskuddet stiger **langsommere end udgifterne**, hvilket skaber strukturelt pres på kommunens økonomi. Mens tilskudsvæksten er 2,1%, er udgiftsvæksten 4,3%, hvilket skaber en voksende finansieringskløft, der kræver effektiviseringer og prioriteringer.
 
 ---
 *Kilder: Bloktilskudsberegning 2024 | Budget 2024 | Økonomiforvaltningen*`,
@@ -257,25 +239,25 @@ Den **økonomiske fremskrivning** for de kommende 5 år viser både udfordringer
 
 ## Hovedtendenser
 
-**Indtægter:** Bloktilskuddet forventes at stige med **gennemsnitligt 1,8% årligt**, mens lokale skatteindtægter stagnerer grundet **faldende befolkningstal** (-0,3% årligt). Samlet indtægtsvækst på **1,6% p.a.**
+På indtægtssiden forventes bloktilskuddet at stige med **gennemsnitligt 1,8% årligt**, mens lokale skatteindtægter stagnerer grundet **faldende befolkningstal** på -0,3% årligt. Dette giver en samlet indtægtsvækst på **1,6% p.a.**, hvilket er relativt beskedent sammenlignet med udgiftsudviklingen.
 
-**Udgifter:** Demografisk betinget udgiftsvækst på **3,2% årligt** kombineret med inflation på gennemsnitligt **2,5%** giver en strukturel udfordring.
+På udgiftssiden skaber den demografisk betingede udgiftsvækst på **3,2% årligt** kombineret med inflation på gennemsnitligt **2,5%** en strukturel udfordring, der kræver omfattende tiltag for at blive håndteret. Denne kombination af stigende udgifter og begrænsede indtægter skaber et pres på kommunens økonomi.
 
-**Økonomisk balance:** Uden korrigerende tiltag vil kommunen have et **akkumuleret underskud på DKK 285M** i 2029.
+Uden korrigerende tiltag vil kommunen have et **akkumuleret underskud på DKK 285M** i 2029, hvilket er uholdbart og kræver proaktive tiltag for at undgå.
 
 ## Scenarieanalyse
 
-**Basissscenarie:** Med vedtagne effektiviseringer og moderat udgiftsstyring: **Underskud DKK 42M i 2029**.
+I **basissscenariet**, hvor de vedtagne effektiviseringer og moderat udgiftsstyring gennemføres, vil kommunen have et **underskud på DKK 42M i 2029**. Dette scenarie forudsætter, at de planlagte tiltag gennemføres som forventet, og at der ikke opstår uforudsete udfordringer.
 
-**Optimistisk scenario:** Vellykket effektivisering + befolkningstilvækst gennem erhvervsudvikling: **Balance i 2028**.
+I det **optimistiske scenario**, hvor effektiviseringerne lykkes og befolkningstilvækst opnås gennem erhvervsudvikling, kan kommunen opnå **balance i 2028**. Dette scenarie kræver, at flere faktorer spiller sammen, herunder vellykket erhvervsudvikling, der tiltrækker nye borgere og skaber flere skatteindtægter.
 
-**Pessimistisk scenario:** Fortsatte budgetoverskridelser + recession: **Underskud DKK 180M i 2029**.
+I det **pessimistiske scenario**, hvor der fortsætter budgetoverskridelser og en recession opstår, vil kommunen have et **underskud på DKK 180M i 2029**. Dette scenarie illustrerer vigtigheden af at gennemføre de planlagte tiltag og undgå yderligere budgetoverskridelser.
 
-Graf [economic-forecast](#chart) viser de tre scenarier. Kommunen arbejder målrettet mod det optimistiske scenarie gennem **investeringer i erhverv, digitalisering og forebyggelse**.
+Som vist i grafen [economic-forecast](#chart), viser de tre scenarier forskellige udfald afhængigt af, hvordan udviklingen forløber. Kommunen arbejder målrettet mod det optimistiske scenarie gennem **investeringer i erhverv, digitalisering og forebyggelse**, hvilket er nødvendigt for at opnå en bæredygtig økonomisk udvikling.
 
-**Kritiske succesfaktorer:** Kontrol med specialområdet, erhvervsudvikling, og gennemførelse af effektiviseringer på DKK 65M.
+De kritiske succesfaktorer for at opnå balance er kontrol med specialområdet, vellykket erhvervsudvikling, og gennemførelse af effektiviseringer på DKK 65M. Disse faktorer er afgørende for, hvilket scenarie der realiseres.
 
-**Konklusion:** Med **proaktiv styring er balance mulig**, men kræver konsekvent fokus.
+Konklusionen er, at med **proaktiv styring er balance mulig**, men det kræver konsekvent fokus og gennemførelse af de planlagte tiltag over hele perioden.
 
 ---
 *Kilder: Økonomisk mellemfristprognose 2024-2029 | Budgetkonference maj 2024 | KL konjunkturvurdering*`,
@@ -295,27 +277,29 @@ Graf [economic-forecast](#chart) viser de tre scenarier. Kommunen arbejder målr
 
 ## Inflationens påvirkning
 
-**Generel inflation:** Med en inflation på **6,2% i 2023** og forventet **3,8% i 2024** stiger udgifterne til varer, tjenesteydelser og materialer kraftigt.
+Med en generel inflation på **6,2% i 2023** og forventet **3,8% i 2024** stiger udgifterne til varer, tjenesteydelser og materialer kraftigt. Dette har konkrete konsekvenser for kommunens budget på flere områder.
 
-**Konkrete konsekvenser:**
-- **Energi:** Stigning på DKK 12M (52% forøgelse)
-- **Fødevarer:** DKK 8M ekstra til institutionskøkkener (18%)
-- **Byggematerialer:** DKK 15M på vedligehold og renoveringer (24%)
-- **Transport:** DKK 4M på kørsel og befordring (28%)
+På energiområdet betyder inflationen en stigning på DKK 12M, hvilket svarer til en forøgelse på 52% sammenlignet med tidligere år. Dette er en betydelig belastning, der påvirker alle kommunens bygninger og faciliteter.
 
-**Samlet virkning:** Inflationen medfører **merudgifter på DKK 87M** uden kompensation i bloktilskuddet.
+Fødevarer til institutionskøkkener er steget med DKK 8M ekstra, hvilket svarer til en stigning på 18%. Dette påvirker både dagtilbud, skoler og plejehjem, hvor der serveres måltider til børn og ældre.
+
+Byggematerialer til vedligehold og renoveringer er steget med DKK 15M, hvilket svarer til en stigning på 24%. Dette påvirker kommunens muligheder for at vedligeholde og renovere bygninger og infrastruktur.
+
+Transportomkostninger til kørsel og befordring er steget med DKK 4M, hvilket svarer til en stigning på 28%. Dette påvirker både borgertransport og medarbejderkørsel.
+
+Samlet set medfører inflationen **merudgifter på DKK 87M** uden kompensation i bloktilskuddet, hvilket skaber et betydeligt pres på kommunens budget.
 
 ## Lønudvikling
 
-**Overenskomster:** De kommunale overenskomster for 2024-2027 giver **årlige lønstigninger på 3,7%** gennemsnitligt. Med **4.200 ansatte** betyder dette DKK 68M i øgede lønudgifter årligt.
+De kommunale overenskomster for 2024-2027 giver **årlige lønstigninger på 3,7%** gennemsnitligt. Med **4.200 ansatte** betyder dette DKK 68M i øgede lønudgifter årligt, hvilket er en betydelig udgiftspost.
 
-**Lønandel:** Da **75% af kommunens udgifter er lønrelaterede**, har selv små lønstigninger stor effekt. Graf [wage-impact](#chart) illustrerer dette.
+Da **75% af kommunens udgifter er lønrelaterede**, har selv små lønstigninger stor effekt på det samlede budget. Som illustreret i grafen [wage-impact](#chart), viser dette, hvor vigtigt det er at have kontrol med lønudviklingen.
 
-**Pension og sociale bidrag:** Stigende pensionsindbetalinger tilføjer **DKK 8M** ekstra per år.
+Stigende pensionsindbetalinger tilføjer yderligere **DKK 8M** ekstra per år, hvilket yderligere forøger presset på budgettet.
 
-**Håndtering:** Kommunen kompenserer gennem effektiviseringer, men presset er **DKK 155M årligt** fra inflation + løn kombineret.
+Kommunen kompenserer gennem effektiviseringer, men presset er **DKK 155M årligt** fra inflation og løn kombineret. Dette er en betydelig udfordring, der kræver omfattende tiltag for at blive håndteret.
 
-**Strategi:** Prioritering af kernevelfærd, digitalisering til produktivitet, og streng udgiftsstyring.
+Strategien for at håndtere dette pres er prioritering af kernevelfærd, digitalisering til produktivitet, og streng udgiftsstyring. Disse tiltag er nødvendige for at sikre, at kommunen kan fortsætte med at levere høj kvalitet i sine kerneopgaver, samtidig med at økonomien holdes i balance.
 
 ---
 *Kilder: KL lønstatistik 2024 | Danmarks Statistik prisindeks | Personalerapport 2024*`,
@@ -335,28 +319,17 @@ Kalundborg Kommune har et **ambitiøst investeringsprogram** på DKK 487M i peri
 
 ## Hovedinvesteringer
 
-**Skoleområdet (DKK 185M):**
-- **Ny fællesskole i Kalundborg by:** DKK 125M til at samle tre mindre skoler (færdig 2026)
-- **Renovering af Røsnæs Skole:** DKK 42M til energioptimering og modernisering
-- **Digitale læremidler:** DKK 18M til digitalisering af undervisningen
+På skoleområdet investeres DKK 185M i alt. Den største enkeltinvestering er en **ny fællesskole i Kalundborg by** til DKK 125M, som skal samle tre mindre skoler og forventes færdig i 2026. Denne investering vil forbedre skolemiljøet og give bedre muligheder for tværfagligt samarbejde. Derudover investeres DKK 42M i renovering af Røsnæs Skole med fokus på energioptimering og modernisering, samt DKK 18M i digitale læremidler til digitalisering af undervisningen.
 
-**Ældrepleje (DKK 142M):**
-- **Udvidelse af Plejecenter Kildegården:** DKK 85M til 32 nye plejepladser
-- **Modernisering af hjemmeplejen:** DKK 35M til velfærdsteknologi og digitale systemer
-- **Genoptræningscenter:** DKK 22M til nyt udstyr og faciliteter
+På ældreplejeområdet investeres DKK 142M i alt. Den største investering er en **udvidelse af Plejecenter Kildegården** til DKK 85M, som vil give 32 nye plejepladser og dermed øge kapaciteten til at håndtere det stigende antal ældre borgere. Derudover investeres DKK 35M i modernisering af hjemmeplejen med velfærdsteknologi og digitale systemer, samt DKK 22M i et nyt genoptræningscenter med moderne udstyr og faciliteter.
 
-**Infrastruktur (DKK 95M):**
-- **Cykelsti-netværk:** DKK 28M til forbedret cykelinfrastruktur
-- **Renovering af kommunale veje:** DKK 52M
-- **Klimatilpasning:** DKK 15M til afvanding og LAR-løsninger
+På infrastrukturområdet investeres DKK 95M i alt. Dette inkluderer DKK 28M til forbedret cykelinfrastruktur gennem udvidelse af cykelsti-netværket, DKK 52M til renovering af kommunale veje, og DKK 15M til klimatilpasning med afvanding og LAR-løsninger, der skal beskytte mod fremtidige klimaforandringer.
 
-**Digitalisering (DKK 38M):**
-- **IT-infrastruktur:** DKK 22M til servere, netværk og sikkerhed
-- **Digitale borgerserviceløsninger:** DKK 16M
+På digitaliseringsområdet investeres DKK 38M i alt. Dette inkluderer DKK 22M til IT-infrastruktur med servere, netværk og sikkerhed, samt DKK 16M til digitale borgerserviceløsninger, der skal gøre det lettere for borgere at håndtere deres sager digitalt.
 
-Graf [investment-timeline](#chart) viser tidsplan og fordeling. **Peak investering i 2025** med DKK 165M.
+Som vist i grafen [investment-timeline](#chart), viser tidsplanen og fordelingen, at der er **peak investering i 2025** med DKK 165M, hvilket er det år, hvor de største projekter er i gang.
 
-**Finansiering:** **55% lånefinansiering**, 30% likviditet, 15% tilskud.
+Finansieringen af investeringsprogrammet sker gennem **55% lånefinansiering**, 30% likviditet, og 15% tilskud. Denne finansieringsmodel sikrer, at kommunen kan gennemføre de nødvendige investeringer, mens økonomien holdes i balance.
 
 ---
 *Kilder: Anlægsbudget 2024-2027 | Investeringsstrategi | Byrådsbeslutning dec. 2023*`,
@@ -376,23 +349,23 @@ Graf [investment-timeline](#chart) viser tidsplan og fordeling. **Peak investeri
 
 ## Historisk udvikling
 
-**2019-2024:** Udgifterne er steget fra **DKK 218M til DKK 342M** - en stigning på **57%** på blot 5 år. Dette er **væsentligt over** den demografiske vækst og inflation.
+I perioden 2019-2024 er udgifterne steget fra **DKK 218M til DKK 342M**, hvilket er en stigning på **57%** på blot 5 år. Dette er **væsentligt over** den demografiske vækst og inflation, hvilket viser, at der er strukturelle faktorer, der driver udgiftsstigningen.
 
-**Årlig vækst:** Gennemsnitlig udgiftsstigning på **9,4% årligt**, mens budgettet kun er øget med 4,2% årligt, hvilket skaber **akkumuleret underskud på DKK 98M**.
+Den gennemsnitlige udgiftsstigning er på **9,4% årligt**, mens budgettet kun er øget med 4,2% årligt, hvilket skaber et **akkumuleret underskud på DKK 98M**. Denne udvikling er bekymrende, da den skaber et strukturelt pres på kommunens økonomi, der kræver omfattende tiltag for at blive adresseret.
 
 ## Drivende faktorer
 
-**Flere komplekse sager:** Antallet af børn i specialtilbud er steget fra **187 til 276** (+48%). Især børn med **multiple diagnoser** og adfærdsvanskeligheder.
+En af de primære drivende faktorer er, at antallet af børn i specialtilbud er steget fra **187 til 276**, hvilket er en stigning på 48%. Især børn med **multiple diagnoser** og adfærdsvanskeligheder kræver specialiserede og dyre tilbud, hvilket driver udgiftsstigningen.
 
-**Dyrere eksterne anbringelser:** Andelen af eksterne anbringelser er vokset fra **28% til 45%**. Gennemsnitspris **DKK 1,4M årligt** pr. barn mod DKK 680.000 for kommunale tilbud.
+Andelen af eksterne anbringelser er vokset fra **28% til 45%**, hvilket er en betydelig stigning. Dette er problematisk, da gennemsnitsprisen for en ekstern anbringelse er **DKK 1,4M årligt** pr. barn, mod DKK 680.000 for kommunale tilbud. Denne forskel gør det økonomisk uholdbart at fortsætte med den nuværende tendens.
 
-**Specialundervisning:** Inklusionsprocenten er faldet fra **94,1% til 91,3%**, hvilket betyder flere børn i segregerede tilbud til **højere omkostninger**.
+På specialundervisningsområdet er inklusionsprocenten faldet fra **94,1% til 91,3%**, hvilket betyder, at flere børn er i segregerede tilbud til **højere omkostninger**. Dette er en bekymrende udvikling, da inklusion både er bedre for børnene og ofte billigere end segregerede tilbud.
 
-**Voksenområdet:** Borgere med psykiske lidelser og komplekse sociale problemer kræver intensive, dyre botilbud. Stigning på **DKK 32M** på 3 år.
+På voksenområdet kræver borgere med psykiske lidelser og komplekse sociale problemer intensive, dyre botilbud. Dette har medført en stigning på **DKK 32M** på 3 år, hvilket yderligere forøger presset på specialområdets budget.
 
-Graf [special-area-growth](#chart) viser udviklingen fordelt på børn/voksen. **Prognose:** Fortsatt vækst på 6-8% årligt uden intervention.
+Som vist i grafen [special-area-growth](#chart), viser udviklingen fordelt på børn og voksne, at der er en **prognose for fortsat vækst på 6-8% årligt** uden intervention. Dette understreger nødvendigheden af at tage proaktive tiltag for at bremse udviklingen.
 
-**Strategi:** Tidligere indsats, flere kommunale tilbud, og bedre tværfagligt samarbejde.
+Strategien for at håndtere denne udvikling er tidligere indsats, flere kommunale tilbud, og bedre tværfagligt samarbejde. Disse tiltag er nødvendige for at reducere afhængigheden af dyre eksterne tilbud og sikre, at borgere får den støtte, de har brug for, til en overkommelig pris.
 
 ---
 *Kilder: Specialområdet, årsrapport 2023 | Budgetanalyse børn & unge | Social- og sundhedsudvalg*`,
@@ -412,21 +385,21 @@ Graf [special-area-growth](#chart) viser udviklingen fordelt på børn/voksen. *
 
 ## Evidensbaserede forebyggelsesmodeller
 
-**Familiebehandling i hjemmet:** Ved at styrke **intensive familiebehandlingsforløb** kan 40% af potentielle anbringelser undgås. Besparelse: **DKK 24M årligt** (baseret på 35 færre anbringelser).
+Ved at styrke **intensive familiebehandlingsforløb** i hjemmet kan 40% af potentielle anbringelser undgås, hvilket giver en besparelse på **DKK 24M årligt** baseret på 35 færre anbringelser. Denne metode er dokumenteret effektiv og giver både økonomiske fordele og bedre resultater for familierne.
 
-**Tidlig indsats i dagtilbud:** Systematisk trivselsmåling og tidlig støtte i børnehaver identificerer risikobørn **2-3 år tidligere**. Investering DKK 4M kan spare DKK 18M i senere specialtilbud.
+Systematisk trivselsmåling og tidlig støtte i børnehaver kan identificere risikobørn **2-3 år tidligere** end tidligere, hvilket giver mulighed for at indsætte støtte før problemerne eskalerer. En investering på DKK 4M kan spare DKK 18M i senere specialtilbud, hvilket viser den betydelige værdi af tidlig indsats.
 
-**MST (Multisystemisk Terapi):** Dokumenteret effektiv metode til unge med adfærdsproblemer. **65% undgår anbringelse**. Etablering koster DKK 3,2M, sparer DKK 15M årligt.
+**MST (Multisystemisk Terapi)** er en dokumenteret effektiv metode til unge med adfærdsproblemer, hvor **65% undgår anbringelse**. Selvom etableringen koster DKK 3,2M, sparer det DKK 15M årligt, hvilket giver en betydelig økonomisk gevinst over tid.
 
 ## Tværfagligt samarbejde
 
-**Familiecentre:** Samling af sundhedspleje, socialrådgivning, PPR og dagtilbud i **fælles centre** giver hurtigere koordineret indsats. Reducerer eskalering med **30%**.
+Ved at samle sundhedspleje, socialrådgivning, PPR og dagtilbud i **fælles familiecentre** gives der hurtigere koordineret indsats, der reducerer eskalering med **30%**. Denne samling af tjenester gør det lettere for familier at få den støtte, de har brug for, uden at skulle navigere i et komplekst system.
 
-**Skolesocialrådgivere:** Flere ressourcer i folkeskoler til at håndtere sociale problemstillinger tidligt. **DKK 5M investering** kan undgå specialundervisning for DKK 22M.
+Flere ressourcer til skolesocialrådgivere i folkeskoler kan hjælpe med at håndtere sociale problemstillinger tidligt, før de eskalerer. En **investering på DKK 5M** kan undgå specialundervisning for DKK 22M, hvilket viser den betydelige værdi af at investere i forebyggelse i skolen.
 
-Graf [prevention-savings](#chart) viser ROI (Return on Investment) for forskellige forebyggelsestiltag. **Bedste ROI:** Familiebehandling med **1:6 ratio** (1 krone investeret = 6 kr. sparet).
+Som vist i grafen [prevention-savings](#chart), viser ROI (Return on Investment) for forskellige forebyggelsestiltag, at **familiebehandling har den bedste ROI med en 1:6 ratio**, hvilket betyder, at hver krone investeret giver 6 kroner tilbage i besparelser. Dette understreger værdien af at investere i forebyggelse.
 
-**Anbefaling:** Prioriter familiebehandling og familiecentre som **quick wins** med stor effekt.
+Anbefalingen er derfor at prioritere familiebehandling og familiecentre som **quick wins** med stor effekt. Disse tiltag kan implementeres relativt hurtigt og giver betydelige resultater både for børnenes trivsel og kommunens økonomi.
 
 ---
 *Kilder: SFI forebyggelsesanalyse | VIVE effektevaluering | Børne- og ungeudvalget strategi 2024-2027*`,
@@ -446,25 +419,25 @@ Samarbejdet mellem Kalundborg Kommune og **Region Sjælland** omkring psykiatrio
 
 ## Nuværende samarbejdsstruktur
 
-**Sundhedsaftale 2023-2026:** Kommunen og regionen har indgået en **juridisk bindende aftale** om koordination af indsatser, patientforløb og forebyggelse på psykiatriområdet.
+Kommunen og regionen har indgået en **juridisk bindende sundhedsaftale for 2023-2026**, som fastlægger koordination af indsatser, patientforløb og forebyggelse på psykiatriområdet. Denne aftale giver et formelt rammeværk for samarbejdet og sikrer, at begge parter har klare forpligtelser.
 
-**Samarbejdsforum:** Månedlige møder mellem psykiatrisk ledelse (Region) og social- og sundhedsledelse (Kommune) sikrer koordination af **komplekse borgersager**.
+Et samarbejdsforum med månedlige møder mellem psykiatrisk ledelse fra regionen og social- og sundhedsledelse fra kommunen sikrer koordination af **komplekse borgersager**. Dette forum giver mulighed for at diskutere udfordringer og finde løsninger på tværs af de to organisationer.
 
-**Fælles indsatsteam:** Oprettet team med psykiatere, sygeplejersker og socialrådgivere håndterer **overgange mellem behandlingsniveauer**. Reducerer genindlæggelser med 18%.
+Et fælles indsatsteam med psykiatere, sygeplejersker og socialrådgivere håndterer **overgange mellem behandlingsniveauer**, hvilket har reduceret genindlæggelser med 18%. Dette team sikrer, at borgere får kontinuerlig støtte, når de bevæger sig mellem forskellige behandlingsniveauer.
 
 ## Udfordringer
 
-**Lange ventetider:** Ventetid til psykiatrisk vurdering er **12-16 uger**, hvilket presser kommunen til at etablere dyre midlertidige løsninger. **Ekstraomkostning: DKK 8M årligt**.
+En væsentlig udfordring er de lange ventetider til psykiatrisk vurdering, som er **12-16 uger**. Dette presser kommunen til at etablere dyre midlertidige løsninger, mens borgere venter på permanent behandling, hvilket skaber **ekstraomkostninger på DKK 8M årligt**.
 
-**Udskrivningskoordination:** Borgere udskrives før kommunale tilbud er klar. Dette skaber **akutte situationer** og suboptimale forløb.
+En anden udfordring er udskrivningskoordination, hvor borgere ofte udskrives fra regionens behandling, før kommunale tilbud er klar. Dette skaber **akutte situationer** og suboptimale forløb, der kan medføre genindlæggelser eller forværring af borgernes tilstand.
 
-**Datadeling:** IT-systemer taler ikke sammen. Manuel sagskoordination er tidskrævende og fejlbehæftet.
+Datadeling er også en udfordring, da IT-systemerne ikke taler sammen. Dette betyder, at sagskoordination skal ske manuelt, hvilket er tidskrævende og fejlbehæftet. Dette gør det svært at sikre kontinuitet i borgernes forløb.
 
-Graf [psych-collaboration](#chart) viser samarbejdets effekt på genindlæggelser og forløbstider.
+Som vist i grafen [psych-collaboration](#chart), viser samarbejdets effekt på genindlæggelser og forløbstider, at der er positive resultater, men der er stadig plads til forbedring.
 
-**Fremtidige tiltag:** Fælles akutfunktion, digital platform for sagsudveksling, og **co-location** af teams.
+Fremtidige tiltag inkluderer en fælles akutfunktion, en digital platform for sagsudveksling, og **co-location** af teams, hvilket vil gøre det lettere at samarbejde og koordinere indsatser.
 
-**Konklusion:** Samarbejdet forbedres, men **strukturelle barrierer** kræver regional/national handling.
+Konklusionen er, at samarbejdet forbedres, men **strukturelle barrierer** kræver regional eller national handling for at blive fuldt løst. Disse barrierer inkluderer både tekniske udfordringer med IT-systemer og strukturelle udfordringer med forskellige organisatoriske kulturer og prioriteringer.
 
 ---
 *Kilder: Sundhedsaftale 2023-2026 | Psykiatrisamarbejde, evalueringsrapport 2024 | Region Sjælland*`,
@@ -484,27 +457,23 @@ At **balancere kvalitet og økonomi** i ældreplejen er en kontinuerlig udfordri
 
 ## Kvalitetsindikatorer
 
-**Nuværende niveau:** Kalundborg ligger på **landsgennemsnittet** på de fleste kvalitetsindikatorer:
-- Tilfredshed: **3,8/5** (landsgennemsnit 3,9)
-- Ventetid til hjemmepleje: **3,2 dage** (landsgennemsnit 2,8)
-- Medicineringsfejl: **0,8%** (landsgennemsnit 0,7%)
-- Fald pr. borger: **0,22** (landsgennemsnit 0,19)
+Kalundborg ligger på **landsgennemsnittet** på de fleste kvalitetsindikatorer. Borgertilfredsheden er **3,8 ud af 5**, hvilket er tæt på landsgennemsnittet på 3,9. Ventetiden til hjemmepleje er **3,2 dage**, hvilket er lidt længere end landsgennemsnittet på 2,8 dage, men stadig inden for acceptable rammer. Medicineringsfejl er **0,8%**, hvilket er tæt på landsgennemsnittet på 0,7%, og fald pr. borger er **0,22**, hvilket er lidt højere end landsgennemsnittet på 0,19.
 
-**Udfordring:** Stigende antal ældre borgere med **flere og mere komplekse behov** presser både kvalitet og økonomi.
+En væsentlig udfordring er, at stigende antal ældre borgere med **flere og mere komplekse behov** presser både kvalitet og økonomi. Dette gør det nødvendigt at finde innovative løsninger, der kan opretholde eller forbedre kvaliteten, mens omkostningerne holdes under kontrol.
 
 ## Strategier for kvalitet indenfor budget
 
-**Velfærdsteknologi:** Investering i GPS-ure, sensorteknologi og digitalt nattilsyn frigiver **personaletid til kernepleje**. DKK 12M investering giver DKK 18M i årlige besparelser + forbedret kvalitet.
+Investering i velfærdsteknologi som GPS-ure, sensorteknologi og digitalt nattilsyn kan frigive **personaletid til kernepleje**, hvilket både forbedrer kvaliteten og reducerer omkostningerne. En investering på DKK 12M giver DKK 18M i årlige besparelser samt forbedret kvalitet, hvilket viser den betydelige værdi af denne investering.
 
-**Rehabiliterende tilgang:** Fokus på **at gøre borgere selvhjulpne** reducerer hjælpebehov med 30% og forbedrer livskvalitet. Kræver efteruddannelse (DKK 2,5M) men sparer DKK 15M årligt.
+En rehabiliterende tilgang med fokus på **at gøre borgere selvhjulpne** kan reducere hjælpebehovet med 30% og samtidig forbedre livskvaliteten. Selvom dette kræver efteruddannelse til en værdi af DKK 2,5M, sparer det DKK 15M årligt, hvilket giver en betydelig økonomisk gevinst.
 
-**Koncentreret omsorg:** Ved at samle besøg i **længere, færre besøg** får borgere mere kvalitetstid og medarbejdere mindre spildtid til kørsel. Besparelse DKK 8M + bedre relationer.
+Ved at samle besøg i **længere, færre besøg** får borgere mere kvalitetstid med medarbejderne, mens medarbejderne får mindre spildtid til kørsel. Dette giver en besparelse på DKK 8M samt bedre relationer mellem borgere og medarbejdere, hvilket også forbedrer kvaliteten.
 
-**Frivillige:** Styrket samarbejde med frivillige omkring sociale aktiviteter frigør personale til **faglige opgaver**.
+Et styrket samarbejde med frivillige omkring sociale aktiviteter kan frigøre personale til **faglige opgaver**, hvilket sikrer, at de faglige ressourcer bruges der, hvor de er mest nødvendige.
 
-Graf [elderly-quality-efficiency](#chart) viser sammenhængen mellem investeringer og effekt.
+Som vist i grafen [elderly-quality-efficiency](#chart), viser sammenhængen mellem investeringer og effekt, at det er muligt at forbedre både kvalitet og økonomi gennem velvalgte investeringer.
 
-**Konklusion:** Kvalitet og økonomi kan **forenes gennem smart teknologi og nye arbejdsgange**.
+Konklusionen er, at kvalitet og økonomi kan **forenes gennem smart teknologi og nye arbejdsgange**. Dette kræver en bevidst tilgang til innovation og en vilje til at investere i løsninger, der kan give både bedre resultater og lavere omkostninger.
 
 ---
 *Kilder: Ældreanalyse 2024 | Velfærdsteknologi-strategi | Ældrerådet, anbefalinger*`,
@@ -524,30 +493,25 @@ Kalundborg Kommune tilbyder et **bredt spektrum af støtte og tilbud** til borge
 
 ## Botilbud
 
-**Egne kommunale botilbud:** 3 botilbudssteder med i alt **68 pladser** til borgere med varierende grader af fysisk og udviklingshæmning.
-- Birkebo (24 pladser): Udviklingshæmmede voksne
-- Toftegården (28 pladser): Borgere med fysisk handicap
-- Højvang (16 pladser): Unge med særlige behov
+Kommunen har 3 egne kommunale botilbudssteder med i alt **68 pladser** til borgere med varierende grader af fysisk og udviklingshæmning. Birkebo har 24 pladser til udviklingshæmmede voksne, Toftegården har 28 pladser til borgere med fysisk handicap, og Højvang har 16 pladser til unge med særlige behov. Disse tilbud giver borgere mulighed for at bo i et støttende miljø, der er tilpasset deres specifikke behov.
 
-**Eksterne pladser:** **42 borgere** i specialiserede regionale eller private tilbud ved særligt komplekse behov.
-
-**Gennemsnitspris:** Kommunale pladser DKK 580.000/år, eksterne DKK 920.000/år.
+Ved særligt komplekse behov er **42 borgere** placeret i specialiserede regionale eller private tilbud, der kan tilbyde den specialiserede støtte, der er nødvendig. Gennemsnitsprisen for kommunale pladser er DKK 580.000 årligt, mens eksterne pladser koster DKK 920.000 årligt, hvilket viser den betydelige økonomiske fordel ved at have egne kommunale tilbud.
 
 ## Aktivitets- og samværstilbud
 
-**Beskyttede værksteder:** 3 værksteder med **95 pladser** fokuseret på meningsfuld beskæftigelse og social samvær.
+Kommunen har 3 beskyttede værksteder med **95 pladser** fokuseret på meningsfuld beskæftigelse og social samvær. Disse værksteder giver borgere mulighed for at deltage i meningsfuld beskæftigelse og udvikle sociale relationer.
 
-**Klubtilbud:** Aften- og weekendaktiviteter for **140 borgere** med fokus på socialt fællesskab og fritidsaktiviteter.
+Klubtilbud omfatter aften- og weekendaktiviteter for **140 borgere** med fokus på socialt fællesskab og fritidsaktiviteter. Disse tilbud er vigtige for at sikre, at borgere med handicap har mulighed for at deltage i sociale aktiviteter og opbygge netværk.
 
 ## Støtte i eget hjem
 
-**BPA (Borgerstyret Personlig Assistance):** **38 borgere** modtager støtte til at leve selvstændigt med personlige hjælpere.
+**BPA (Borgerstyret Personlig Assistance)** giver **38 borgere** støtte til at leve selvstændigt med personlige hjælpere. Dette giver borgere mulighed for at bo i eget hjem, mens de får den støtte, de har brug for.
 
-**Hjælpemidler:** Omfattende hjælpemiddelcentral med alt fra kørestole til avanceret kommunikationsteknologi.
+Kommunen har en omfattende hjælpemiddelcentral med alt fra kørestole til avanceret kommunikationsteknologi. Dette sikrer, at borgere får adgang til de hjælpemidler, de har brug for for at leve så selvstændigt som muligt.
 
-Graf [disability-services](#chart) viser fordelingen af borgere på forskellige tilbudstyper.
+Som vist i grafen [disability-services](#chart), viser fordelingen af borgere på forskellige tilbudstyper, at der er en bred vifte af tilbud tilgængelige.
 
-**Udvikling:** Trend mod **mere inklusion** og støtte i eget hjem frem for institutionstilbud.
+Der er en trend mod **mere inklusion** og støtte i eget hjem frem for institutionstilbud. Dette er både bedre for borgernes livskvalitet og ofte billigere end institutionstilbud, hvilket gør det til en win-win situation.
 
 ---
 *Kilder: Handicappolitik 2023-2027 | Social- og sundhedsudvalg | Tilbudsvifte handicap 2024*`,
@@ -567,27 +531,27 @@ Antallet af **familier i udsatte positioner** i Kalundborg Kommune har været **
 
 ## Kvantitativ udvikling
 
-**2019-2024:** Antallet af familier med åbne sager i familierådgivningen er steget fra **312 til 487** - en stigning på **56%** på 5 år.
+I perioden 2019-2024 er antallet af familier med åbne sager i familierådgivningen steget fra **312 til 487**, hvilket er en stigning på **56%** på 5 år. Denne betydelige stigning viser, at der er en strukturel udvikling, der kræver omfattende tiltag for at blive adresseret.
 
-**Anbringelser:** Børn anbragt uden for hjemmet er steget fra **87 til 126** (+45%). Heraf er **68 børn** i døgnanbringelser, resten i plejefamilier.
+Antallet af børn anbragt uden for hjemmet er steget fra **87 til 126**, hvilket er en stigning på 45%. Heraf er **68 børn** i døgnanbringelser, mens resten er i plejefamilier. Denne stigning er bekymrende, da anbringelser både er dyre og ofte har negative konsekvenser for børnenes trivsel.
 
-**Økonomisk støtte:** Antallet af familier, der modtager kontanthjælp eller boligstøtte er vokset med **28%** til 892 familier.
+Antallet af familier, der modtager kontanthjælp eller boligstøtte er vokset med **28%** til 892 familier. Dette viser, at der er en stigende andel af familier, der har behov for økonomisk støtte, hvilket også skaber økonomiske udfordringer for kommunen.
 
 ## Karakteristika og årsager
 
-**Kompleksitet:** Familierne har **flere samtidige problemstillinger**: Misbrug, psykisk sygdom, økonomi og boligproblemer. Gennemsnitligt **3,4 udfordringer per familie** (mod 2,1 i 2019).
+Familierne har **flere samtidige problemstillinger** som misbrug, psykisk sygdom, økonomi og boligproblemer. Gennemsnitligt har familierne **3,4 udfordringer per familie**, hvilket er en stigning fra 2,1 i 2019. Denne stigning i kompleksitet gør det sværere at hjælpe familierne og kræver mere intensive indsatser.
 
-**Socioøkonomisk baggrund:** **72% har grundskole** som højeste uddannelse. 58% har været uden arbejde i +3 år.
+**72% har grundskole** som højeste uddannelse, hvilket viser, at der er en betydelig andel af familierne med begrænset uddannelse. 58% har været uden arbejde i over 3 år, hvilket gør det svært at opnå økonomisk selvstændighed.
 
-**Geografisk fordeling:** Koncentration i **Kalundborg by** (68% af sagerne) og Høng (18%).
+Geografisk er der en koncentration i **Kalundborg by**, hvor 68% af sagerne findes, og i Høng, hvor 18% af sagerne findes. Denne koncentration gør det muligt at målrette indsatser til specifikke områder.
 
-Graf [vulnerable-families](#chart) viser udviklingen over tid og fordeling af problemtyper.
+Som vist i grafen [vulnerable-families](#chart), viser udviklingen over tid og fordeling af problemtyper, at der er en strukturel udvikling, der kræver omfattende tiltag.
 
-**Drivere:** Stigende fattigdom, boligmangel, flere borgere med psykisk sårbarhed, og komplekse diagnoser hos børn.
+De primære drivere for denne udvikling er stigende fattigdom, boligmangel, flere borgere med psykisk sårbarhed, og komplekse diagnoser hos børn. Disse faktorer er strukturelle og kræver både lokale og nationale tiltag for at blive adresseret.
 
-**Fremadrettet:** Forventet **fortsat stigning på 4-6% årligt** uden nye forebyggende tiltag.
+Fremadrettet forventes der en **fortsat stigning på 4-6% årligt** uden nye forebyggende tiltag. Dette understreger nødvendigheden af at investere i forebyggelse og tidlig indsats.
 
-**Strategi:** Styrket tidlig indsats gennem familiecentre og tværfaglige teams.
+Strategien for at håndtere denne udvikling er styrket tidlig indsats gennem familiecentre og tværfaglige teams. Disse tiltag kan hjælpe med at identificere og håndtere problemer tidligt, før de eskalerer til mere komplekse og dyre løsninger.
 
 ---
 *Kilder: Familierådgivningen, årsrapport 2024 | Udsatteanalyse, VIVE 2024 | Børne- og ungeudvalget*`,
@@ -607,37 +571,25 @@ Graf [vulnerable-families](#chart) viser udviklingen over tid og fordeling af pr
 
 ## Gennemsnitspriser 2024
 
-**Plejefamilier:**
-- **Almindelig plejefamilie:** DKK 290.000-380.000 årligt
-- **Forstærket plejefamilie:** DKK 520.000-680.000 årligt
-- **Specialiseret plejefamilie:** DKK 850.000-1.200.000 årligt
+På plejefamilieområdet varierer priserne betydeligt. En almindelig plejefamilie koster DKK 290.000-380.000 årligt, mens en forstærket plejefamilie koster DKK 520.000-680.000 årligt. En specialiseret plejefamilie koster DKK 850.000-1.200.000 årligt, hvilket viser den betydelige prisstigning ved mere komplekse behov.
 
-**Døgninstitutioner:**
-- **Kommunale opholdssteder:** DKK 680.000-820.000 årligt
-- **Private døgninstitutioner:** DKK 1.100.000-1.850.000 årligt
-- **Sikrede institutioner:** DKK 2.200.000-3.400.000 årligt
+På døgninstitutionsområdet koster kommunale opholdssteder DKK 680.000-820.000 årligt, mens private døgninstitutioner koster DKK 1.100.000-1.850.000 årligt. Sikrede institutioner koster DKK 2.200.000-3.400.000 årligt, hvilket er den dyreste løsning, men også den mest specialiserede.
 
-**Gennemsnit alle anbringelser:** DKK 742.000 årligt per barn.
+Gennemsnittet for alle anbringelser er DKK 742.000 årligt per barn, hvilket viser den betydelige økonomiske belastning, som anbringelser udgør.
 
 ## Omkostningsfordeling
 
-**Direkte anbringelsesudgift:** 65% af total omkostning (selve pladsen)
+Den direkte anbringelsesudgift udgør 65% af den totale omkostning, hvilket er selve pladsen. Støtteydelser som terapi, transport, tøj og lommepenge udgør 20% af den totale omkostning. Sagsbehandling og opfølgning med socialrådgivere, psykologer og koordination udgør 12% af den totale omkostning. Uddannelse i form af specialundervisning eller STU udgør 3% af den totale omkostning.
 
-**Støtteydelser:** 20% - terapi, transport, tøj, lommepenge
-
-**Sagsbehandling og opfølgning:** 12% - socialrådgivere, psykologer, koordination
-
-**Uddannelse:** 3% - specialundervisning eller STU
-
-Graf [placement-cost-breakdown](#chart) viser fordelingen mellem anbringelsestyper og omkostningskomponenter.
+Som vist i grafen [placement-cost-breakdown](#chart), viser fordelingen mellem anbringelsestyper og omkostningskomponenter, at der er betydelige forskelle i omkostninger afhængigt af type og kompleksitet.
 
 ## Faktorer der påvirker pris
 
-**Kompleksitet:** Børn med **multiple diagnoser** eller udadreagerende adfærd kræver højt specialiserede tilbud til **3-4 gange højere pris**.
+Kompleksitet er en vigtig faktor, da børn med **multiple diagnoser** eller udadreagerende adfærd kræver højt specialiserede tilbud til **3-4 gange højere pris** end børn med mindre komplekse behov. Dette viser, hvor vigtigt det er at investere i forebyggelse og tidlig indsats for at undgå, at problemerne eskalerer.
 
-**Varighed:** Gennemsnitlig anbringelse varer **4,2 år**. Total livstidsomkostning: **DKK 3,1M per barn**.
+Varigheden af anbringelsen er også en vigtig faktor, da den gennemsnitlige anbringelse varer **4,2 år**. Den totale livstidsomkostning er **DKK 3,1M per barn**, hvilket viser den betydelige økonomiske belastning over tid.
 
-**Strategi:** Udvikle **flere kommunale tilbud** til at reducere eksterne anbringelser og investere i **tidlig forebyggelse**.
+Strategien for at reducere omkostningerne er at udvikle **flere kommunale tilbud** til at reducere afhængigheden af eksterne anbringelser og investere i **tidlig forebyggelse** for at undgå, at problemerne eskalerer til det punkt, hvor anbringelse er nødvendig.
 
 ---
 *Kilder: Anbringelsesanalyse 2024 | Børne- og ungeudvalget, økonomioversigt | KL's takstblad*`,
@@ -657,33 +609,29 @@ Graf [placement-cost-breakdown](#chart) viser fordelingen mellem anbringelsestyp
 
 ## Etablerede samarbejdsstrukturer
 
-**Familiehuset:** Samler socialrådgivning, sundhedspleje, PPR, misbrug og psykiatri under **ét tag**. Håndterer **240 familier årligt** med koordineret indsats.
+Familiehuset samler socialrådgivning, sundhedspleje, PPR, misbrug og psykiatri under **ét tag**, hvilket gør det lettere for familier at få den støtte, de har brug for. Dette samarbejde håndterer **240 familier årligt** med koordineret indsats, hvilket sikrer, at familierne får den støtte, de har brug for, uden at skulle navigere i et komplekst system.
 
-**Åben rådgivning:** Drop-in tilbud hvor borgere kan møde **alle relevante faggrupper** samme dag uden forudgående booking. Reducerer sagsbehandlingstid med **45%**.
+Åben rådgivning er et drop-in tilbud, hvor borgere kan møde **alle relevante faggrupper** samme dag uden forudgående booking. Dette reducerer sagsbehandlingstiden med **45%**, hvilket både er bedre for borgerne og mere effektivt for kommunen.
 
-**Tværfaglige teams:** 4 faste teams med socialrådgivere, sygeplejersker, psykologer og beskæftigelseskonsulenter mødes ugentligt om **komplekse sager**. Koordinerer 180 forløb.
+4 faste tværfaglige teams med socialrådgivere, sygeplejersker, psykologer og beskæftigelseskonsulenter mødes ugentligt om **komplekse sager** og koordinerer 180 forløb. Dette sikrer, at komplekse sager får den opmærksomhed og koordination, de kræver.
 
 ## Samarbejdspartnere
 
-**Interne:** Social, sundhed, beskæftigelse, børn & unge, skole, dagtilbud
+Interne samarbejdspartnere inkluderer social, sundhed, beskæftigelse, børn & unge, skole og dagtilbud. Dette sikrer, at alle relevante faggrupper er involveret i samarbejdet.
 
-**Eksterne:**
-- Region Sjælland (psykiatri, misbrugsbehandling)
-- Politi (kriminalitetsforebyggelse)
-- Frivillige organisationer (Røde Kors, Kirkens Korshær)
-- Private leverandører (behandlingsinstitutioner)
+Eksterne samarbejdspartnere inkluderer Region Sjælland (psykiatri, misbrugsbehandling), politi (kriminalitetsforebyggelse), frivillige organisationer som Røde Kors og Kirkens Korshær, samt private leverandører som behandlingsinstitutioner. Dette bredt netværk sikrer, at borgere får adgang til den støtte, de har brug for, uanset hvor den kommer fra.
 
-**Vidensdeling:** Fælles **digitale journaler** (DUBU/Revas) sikrer alle faggrupper har samme information. Reducerer dobbeltarbejde med DKK 4,5M årligt.
+Fælles **digitale journaler** (DUBU/Revas) sikrer, at alle faggrupper har samme information, hvilket reducerer dobbeltarbejde med DKK 4,5M årligt. Dette gør det også lettere at koordinere indsatser og sikre kontinuitet i borgernes forløb.
 
-Graf [cross-sector-collaboration](#chart) viser samarbejdsmønstre og effekt på sagsforløb.
+Som vist i grafen [cross-sector-collaboration](#chart), viser samarbejdsmønstre og effekt på sagsforløb, at tværfagligt samarbejde har betydelige positive effekter.
 
 ## Dokumenteret effekt
 
-**Hurtigere forløb:** Gennemsnitlig sagsbehandlingstid reduceret fra **8,4 til 5,2 måneder** (-38%)
+Gennemsnitlig sagsbehandlingstid er reduceret fra **8,4 til 5,2 måneder**, hvilket er en reduktion på 38%. Dette betyder, at borgere får hurtigere hjælp, hvilket både er bedre for dem og mere effektivt for kommunen.
 
-**Bedre resultater:** **67% positive sagsafslutninger** mod 52% ved single-faglighed
+**67% positive sagsafslutninger** opnås ved tværfagligt samarbejde mod 52% ved single-faglighed, hvilket viser den betydelige værdi af at samarbejde på tværs af faggrupper.
 
-**Økonomi:** Koordineret indsats sparer **DKK 12M årligt** ved at undgå overlappende indsatser og dyrere specialløsninger.
+Koordineret indsats sparer **DKK 12M årligt** ved at undgå overlappende indsatser og dyrere specialløsninger. Dette viser, at tværfagligt samarbejde ikke kun er bedre for borgerne, men også mere økonomisk effektivt.
 
 ---
 *Kilder: Tværfaglighedsevaluering 2024 | Familiehuset årsrapport | SFI samarbejdsmodel*`,
@@ -703,25 +651,25 @@ Graf [cross-sector-collaboration](#chart) viser samarbejdsmønstre og effekt på
 
 ## Nuværende udfordringer
 
-**Systemskifte:** Når unge fylder **18 år**, overgår de fra børneområdet til voksensocialområdet. Dette indebærer **nye sagsbehandlere, andre tilbud og ændrede rammer**.
+Når unge fylder **18 år**, overgår de fra børneområdet til voksensocialområdet, hvilket indebærer **nye sagsbehandlere, andre tilbud og ændrede rammer**. Dette systemskifte kan være vanskeligt for unge, der allerede har udfordringer, og manglende koordination kan medføre, at de falder mellem to stole.
 
-**Faldgruber:** **42% af udsatte unge** oplever et **forværret forløb** de første 2 år efter overgang grundet manglende kontinuitet. Dette fører til øgede udgifter på DKK 15M årligt.
+**42% af udsatte unge** oplever et **forværret forløb** de første 2 år efter overgang grundet manglende kontinuitet. Dette fører til øgede udgifter på DKK 15M årligt, hvilket viser den betydelige økonomiske konsekvens af manglende koordination.
 
-**Manglende bolig:** **68% af tidligere anbragte** mangler stabil bolig ved 18 år. Dette øger risiko for hjemløshed, kriminalitet og misbrug.
+**68% af tidligere anbragte** mangler stabil bolig ved 18 år, hvilket øger risikoen for hjemløshed, kriminalitet og misbrug. Dette viser, hvor vigtigt det er at sikre, at unge har en stabil bolig, når de bliver voksne.
 
 ## Understøttende tiltag
 
-**Ungekoordinatorer:** Dedikerede medarbejdere følger **35 unge årligt** fra 17-25 år på tværs af systemer. Sikrer kontinuitet og koordination.
+Dedikerede ungekoordinatorer følger **35 unge årligt** fra 17-25 år på tværs af systemer, hvilket sikrer kontinuitet og koordination. Dette giver unge en fast kontaktperson, der kan hjælpe dem med at navigere i systemet og sikre, at de får den støtte, de har brug for.
 
-**Ungdomsboliger:** Kommunen etablerer **24 ungdomsboliger** med støtte på stedet til tidligere anbragte og udsatte unge. Månedlig husleje DKK 3.500 inkl. støtte.
+Kommunen etablerer **24 ungdomsboliger** med støtte på stedet til tidligere anbragte og udsatte unge. Månedlig husleje er DKK 3.500 inkl. støtte, hvilket gør det muligt for unge at have en stabil bolig, mens de får den støtte, de har brug for.
 
-**Efterværn efter 18 år:** Forlænget støtte til tidligere anbragte frem til **23 år** med fokus på uddannelse, økonomi og netværk. **52 unge** modtager efterværn.
+Forlænget støtte til tidligere anbragte frem til **23 år** med fokus på uddannelse, økonomi og netværk sikrer, at unge får den støtte, de har brug for, når de bliver voksne. **52 unge** modtager efterværn, hvilket giver dem mulighed for at opbygge en stabil tilværelse.
 
-**Uddannelsespakke:** Økonomisk og praktisk støtte til unge i uddannelse. SU-supplement, bøger, transport. **DKK 8.000/måned** per ung.
+En uddannelsespakke giver økonomisk og praktisk støtte til unge i uddannelse, herunder SU-supplement, bøger og transport. Dette støtte beløber sig til **DKK 8.000 månedligt** per ung, hvilket gør det muligt for dem at gennemføre deres uddannelse.
 
-Graf [youth-transition](#chart) viser forskellen mellem understøttet og ikke-understøttet overgang.
+Som vist i grafen [youth-transition](#chart), viser forskellen mellem understøttet og ikke-understøttet overgang, at der er betydelige fordele ved at give unge støtte gennem overgangen.
 
-**Effekt:** Unge med koordineret overgang har **3,2x højere sandsynlighed** for stabil bolig og uddannelse efter 3 år.
+Unge med koordineret overgang har **3,2 gange højere sandsynlighed** for stabil bolig og uddannelse efter 3 år, hvilket viser den betydelige værdi af at investere i støtte til unge gennem overgangen.
 
 ---
 *Kilder: Overgangsstrategi 2024 | Ungeanalyse, SFI | Børne- og ungeudvalget*`,
@@ -741,26 +689,23 @@ Graf [youth-transition](#chart) viser forskellen mellem understøttet og ikke-un
 
 ## Dokumenteret effekt
 
-**Forebyggelse af anbringelser:** Familier der modtager **tidlig familiebehandling** (inden barnet er 7 år) har **65% lavere risiko** for senere anbringelse sammenlignet med sen intervention.
+Familier der modtager **tidlig familiebehandling** inden barnet er 7 år har **65% lavere risiko** for senere anbringelse sammenlignet med sen intervention. Dette viser den betydelige værdi af at investere i tidlig indsats, før problemerne eskalerer.
 
-**Økonomisk gevinst:** Hver investeret krone i tidlig indsats giver **DKK 4-7 tilbage** i reducerede udgifter til specialtilbud, anbringelser og voksenpsykiatri.
+Hver investeret krone i tidlig indsats giver **DKK 4-7 tilbage** i reducerede udgifter til specialtilbud, anbringelser og voksenpsykiatri. Dette viser, at investering i forebyggelse ikke kun er bedre for borgerne, men også økonomisk fordelagtigt.
 
-**Konkrete tal fra Kalundborg:** Satsning på familiecentre og tidlig indsats 2020-2024 har:
-- Reduceret nye anbringelser med **18%** (28 færre børn)
-- Sparet **DKK 24M i anbringelsesudgifter**
-- Forbedret skoleresultater for målgruppen med gennemsnitligt **0,7 karakterpoint**
+Konkrete tal fra Kalundborg viser, at satsning på familiecentre og tidlig indsats i perioden 2020-2024 har reduceret nye anbringelser med **18%**, hvilket svarer til 28 færre børn. Dette har sparet **DKK 24M i anbringelsesudgifter** og forbedret skoleresultater for målgruppen med gennemsnitligt **0,7 karakterpoint**. Dette viser, at tidlig indsats ikke kun reducerer omkostninger, men også forbedrer resultaterne for børnene.
 
 ## Effektive indsatser
 
-**Hjemmebehandling:** **MST, FFT og PMTO** har **65-75% succesrate** i at undgå anbringelse. Koster DKK 95.000 per familie vs. DKK 850.000 for anbringelse.
+Hjemmebehandling med metoder som **MST, FFT og PMTO** har **65-75% succesrate** i at undgå anbringelse. Selvom disse metoder koster DKK 95.000 per familie, er dette betydeligt billigere end anbringelse, der koster DKK 850.000 per familie. Dette viser den betydelige økonomiske fordel ved at investere i hjemmebehandling.
 
-**Forældretræning:** Strukturerede programmer i dagtilbud reducerer **adfærdsproblemer med 52%** og forbedrer forældrerelationers kvalitet.
+Strukturerede forældretræningsprogrammer i dagtilbud reducerer **adfærdsproblemer med 52%** og forbedrer forældrerelationers kvalitet. Dette viser, at investering i forældrestøtte kan have betydelige positive effekter.
 
-**Sundhedsplejens opgaver:** Systematisk **tidlig opsporing** i 0-6 års alderen identificerer **82% af risikobørn** 2-4 år før problemerne eskalerer.
+Systematisk **tidlig opsporing** i 0-6 års alderen identificerer **82% af risikobørn** 2-4 år før problemerne eskalerer. Dette giver mulighed for at indsætte støtte tidligt, før problemerne bliver mere komplekse og dyre at løse.
 
-Graf [early-intervention-effect](#chart) sammenligner omkostninger og resultater ved tidlig vs. sen indsats.
+Som vist i grafen [early-intervention-effect](#chart), sammenligner omkostninger og resultater ved tidlig vs. sen indsats, at tidlig indsats både er billigere og giver bedre resultater.
 
-**Anbefaling:** Øg investering i 0-7 års området med **DKK 12M** for at spare DKK 48-84M over 5 år.
+Anbefalingen er at øge investeringen i 0-7 års området med **DKK 12M** for at spare DKK 48-84M over 5 år. Dette viser den betydelige økonomiske gevinst ved at investere i forebyggelse, og at det er en god forretning at investere i tidlig indsats.
 
 ---
 *Kilder: SFI effektevaluering tidlig indsats | VIVE cost-benefit analyse | Tidlig indsats strategi 2023-2027*`,
@@ -783,25 +728,25 @@ Den **nye folkeskolereform** fra 2024 medfører både **muligheder og udfordring
 
 ## Reformens hovedpunkter
 
-**Mere læsning og matematik:** Ekstra **2 ugentlige timer** til basisfag fra 1.-9. klasse. Kræver **18 ekstra lærerstillinger** svarende til DKK 12M årligt.
+Reformen kræver ekstra **2 ugentlige timer** til basisfag fra 1.-9. klasse, hvilket kræver **18 ekstra lærerstillinger** svarende til DKK 12M årligt. Dette giver eleverne mere tid til læsning og matematik, hvilket kan forbedre deres læringsresultater.
 
-**Tidligere skolestart:** Børn starter nu i børnehaveklasse fra **5 år**. Øger elevtallet med ca. **110 børn** og kræver udvidelse af faciliteter.
+Børn starter nu i børnehaveklasse fra **5 år**, hvilket er tidligere end tidligere. Dette øger elevtallet med ca. **110 børn** og kræver udvidelse af faciliteter for at rumme de ekstra børn. Dette er en betydelig organisatorisk udfordring, der også kræver investeringer i fysisk infrastruktur.
 
-**Styrket læsning:** Alle elever skal screenes for læsevanskeligheder i **1. og 3. klasse**. Ressourcekrav: DKK 2,5M til materialer og efteruddannelse.
+Alle elever skal screenes for læsevanskeligheder i **1. og 3. klasse**, hvilket kræver ressourcer til materialer og efteruddannelse til en værdi af DKK 2,5M. Dette giver mulighed for at identificere og håndtere læsevanskeligheder tidligt, hvilket kan forbedre elevernes læringsresultater.
 
-**Mindre klasser:** Maksimalt **24 elever** i 0.-3. klasse. Kalundborg skal ansætte **12 ekstra lærere** for at opfylde kravet (DKK 8,4M).
+Maksimalt **24 elever** i 0.-3. klasse kræver, at Kalundborg ansætter **12 ekstra lærere** for at opfylde kravet, hvilket koster DKK 8,4M. Dette giver mindre klasser, hvilket kan forbedre undervisningskvaliteten og give lærerne mere tid til hver elev.
 
 ## Økonomisk påvirkning
 
-**Merudgifter:** Samlet **DKK 34M årligt** når reformen er fuldt implementeret (2026). Staten kompenserer med DKK 22M, hvilket giver et **kommunalt merforbrug på DKK 12M**.
+Samlet set medfører reformen **merudgifter på DKK 34M årligt** når den er fuldt implementeret i 2026. Staten kompenserer med DKK 22M, hvilket giver et **kommunalt merforbrug på DKK 12M**. Dette er en betydelig udgift, der kræver prioriteringer i budgettet.
 
-**Investeringer:** Behov for **DKK 45M** til udbygning af skoler, især til at rumme de ekstra børn i børnehaveklasserne.
+Der er behov for **DKK 45M** i investeringer til udbygning af skoler, især til at rumme de ekstra børn i børnehaveklasserne. Dette er en betydelig investering, der skal finansieres gennem lån eller andre finansieringskilder.
 
-Graf [school-reform-impact](#chart) viser økonomiske konsekvenser fordelt på områder.
+Som vist i grafen [school-reform-impact](#chart), viser økonomiske konsekvenser fordelt på områder, at reformen har betydelige økonomiske konsekvenser, men også muligheder for forbedringer.
 
-**Muligheder:** Tidligere indsats kan **reducere specialundervisningsbehov** og give bedre læringsresultater. Potentiel besparelse: DKK 8M årligt fra 2028.
+Tidligere indsats kan **reducere specialundervisningsbehov** og give bedre læringsresultater, hvilket kan give en potentiel besparelse på DKK 8M årligt fra 2028. Dette viser, at reformen ikke kun medfører udgifter, men også kan give besparelser over tid.
 
-**Implementeringsstatus:** 60% gennemført. Fuld implementering forventet primo 2026.
+Implementeringsstatusen er 60% gennemført, og fuld implementering forventes primo 2026. Dette viser, at kommunen er godt i gang med at implementere reformen, men der er stadig arbejde tilbage.
 
 ---
 *Kilder: Folkeskolereform 2024 | Implementeringsplan Kalundborg | Børne- og ungeudvalget*`,
@@ -821,25 +766,21 @@ Graf [school-reform-impact](#chart) viser økonomiske konsekvenser fordelt på o
 
 ## Anvendelse af midler
 
-**Flere hænder (65%):** DKK 9,6M går til **28 ekstra medarbejdere** i hjemmeplejen og på plejehjem for at forbedre normering og give mere tid til den enkelte borger.
+65% af midlerne, hvilket svarer til DKK 9,6M, går til **28 ekstra medarbejdere** i hjemmeplejen og på plejehjem for at forbedre normering og give mere tid til den enkelte borger. Dette giver mulighed for at forbedre kvaliteten af plejen og give borgere mere opmærksomhed og støtte.
 
-**Velfærdsteknologi (20%):** DKK 3,0M investeres i GPS-løsninger, digital medicinhåndtering og sensorteknologi til nattetilsyn.
+20% af midlerne, hvilket svarer til DKK 3,0M, investeres i velfærdsteknologi som GPS-løsninger, digital medicinhåndtering og sensorteknologi til nattetilsyn. Dette giver mulighed for at forbedre sikkerheden og trivslen for borgere, mens det også kan reducere arbejdsbyrden for medarbejderne.
 
-**Kompetenceudvikling (15%):** DKK 2,2M til efteruddannelse i demenspleje, rehabilitering og palliativ pleje.
+15% af midlerne, hvilket svarer til DKK 2,2M, går til kompetenceudvikling med efteruddannelse i demenspleje, rehabilitering og palliativ pleje. Dette sikrer, at medarbejderne har de nødvendige kompetencer til at levere høj kvalitet i plejen.
 
 ## Effekter
 
-**Dokumenterede forbedringer:**
-- Borgertilfredhed steget fra **3,6 til 4,1/5**
-- Gennemsnitlig besøgstid øget med **4,2 minutter** per besøg
-- Personaleomsætning reduceret med **12%**
-- Medicineringsfejl faldet med **22%**
+Dokumenterede forbedringer viser, at borgertilfredsheden er steget fra **3,6 til 4,1 ud af 5**, hvilket er en betydelig forbedring. Gennemsnitlig besøgstid er øget med **4,2 minutter** per besøg, hvilket giver borgere mere tid med medarbejderne. Personaleomsætningen er reduceret med **12%**, hvilket viser, at medarbejderne er mere tilfredse med deres arbejde. Medicineringsfejl er faldet med **22%**, hvilket viser, at kvaliteten er forbedret.
 
-**Udfordringer:** Midlerne er **tidsbegrænsede** (til 2026) og kræver efterfølgende kommunal finansiering. Risiko for **kvalitetsfald hvis ikke vedvarende**.
+En væsentlig udfordring er, at midlerne er **tidsbegrænsede** til 2026 og kræver efterfølgende kommunal finansiering. Der er risiko for **kvalitetsfald hvis indsatserne ikke vedvares**, hvilket gør det nødvendigt at finde måder at finansiere indsatserne permanent.
 
-Graf [elderly-billion-allocation](#chart) viser fordeling og effekt.
+Som vist i grafen [elderly-billion-allocation](#chart), viser fordeling og effekt, at midlerne har haft betydelige positive effekter på kvaliteten af ældreplejen.
 
-**Fremtid:** Kommunen budgetterer med at videreføre **DKK 8M** af indsatserne permanent fra 2027 gennem effektiviseringer andre steder.
+Kommunen budgetterer med at videreføre **DKK 8M** af indsatserne permanent fra 2027 gennem effektiviseringer andre steder. Dette sikrer, at de positive effekter kan vedvares, selvom statsstøtten ophører.
 
 ---
 *Kilder: Ældremilliarden handlingsplan | Social- og sundhedsudvalget | Ældrerådet evaluering*`,
@@ -859,23 +800,23 @@ Den **nye lovgivning om specialundervisning** fra 2023 har betydelige økonomisk
 
 ## Lovændringer
 
-**Øget dokumentationskrav:** Nye regler kræver **grundigere udredning** før visitering til specialundervisning. Dette øger administrationsomkostninger med **DKK 2,8M årligt** til ekstra PPR-psykologer og konsulenter.
+Nye regler kræver **grundigere udredning** før visitering til specialundervisning, hvilket øger administrationsomkostninger med **DKK 2,8M årligt** til ekstra PPR-psykologer og konsulenter. Dette sikrer, at kun børn med reelle behov får specialundervisning, men det kræver også flere ressourcer til udredning.
 
-**Styrket inklusion:** Lovkrav om at 96% af elever skal undervises i almindelig folkeskole. Kalundborg ligger på **91,3%** og skal investere **DKK 8M** i inklusionsressourcer for at nå målet.
+Lovkravet om at 96% af elever skal undervises i almindelig folkeskole betyder, at Kalundborg, som ligger på **91,3%**, skal investere **DKK 8M** i inklusionsressourcer for at nå målet. Dette kræver både fysiske tilpasninger og ekstra ressourcer til at støtte eleverne i almindelig folkeskole.
 
-**AKT-ressource (Adfærd, Kontakt, Trivsel):** Obligatorisk tildeling af ekstra ressourcer til inklusion koster kommunen **DKK 12M årligt** uden fuld statskompensation.
+**AKT-ressource (Adfærd, Kontakt, Trivsel)** er en obligatorisk tildeling af ekstra ressourcer til inklusion, som koster kommunen **DKK 12M årligt** uden fuld statskompensation. Dette er en betydelig udgift, der kræver prioriteringer i budgettet.
 
 ## Økonomisk påvirkning
 
-**Kort sigt (2024-2026):** Merudgifter på **DKK 18M årligt** til implementering, efteruddannelse og øgede inklusionsressourcer.
+På kort sigt (2024-2026) medfører lovgivningen merudgifter på **DKK 18M årligt** til implementering, efteruddannelse og øgede inklusionsressourcer. Dette er en betydelig udgift, der skal finansieres, mens kommunen også skal håndtere andre udfordringer.
 
-**Lang sigt (2027+):** Hvis inklusion lykkes, kan specialundervisningsudgifter **reduceres med DKK 15M årligt** gennem færre segregerede tilbud.
+På lang sigt (2027+) kan specialundervisningsudgifter **reduceres med DKK 15M årligt** gennem færre segregerede tilbud, hvis inklusion lykkes. Dette viser, at investeringen kan give besparelser over tid, hvis implementeringen lykkes.
 
-Graf [special-ed-legislation-impact](#chart) viser cost-benefit analyse over tid.
+Som vist i grafen [special-ed-legislation-impact](#chart), viser cost-benefit analysen over tid, at der er en investering på kort sigt, men potentielle besparelser på lang sigt.
 
-**Udfordring:** Staten kompenserer kun **60% af merudgifterne**, hvilket skaber et **årligt underskud på DKK 7M** på området.
+En væsentlig udfordring er, at staten kun kompenserer **60% af merudgifterne**, hvilket skaber et **årligt underskud på DKK 7M** på området. Dette gør det nødvendigt at finde andre måder at finansiere de resterende udgifter.
 
-**Strategi:** Investere massivt i kompetenceudvikling af lærere og AKT-ressourcepersoner for at lykkes med inklusion.
+Strategien for at håndtere dette er at investere massivt i kompetenceudvikling af lærere og AKT-ressourcepersoner for at lykkes med inklusion. Dette er nødvendigt for at sikre, at investeringen giver de forventede resultater og besparelser over tid.
 
 ---
 *Kilder: Specialundervisningslov 2023 | Implementeringsplan Kalundborg | PPR årsrapport*`,
@@ -895,25 +836,25 @@ Kalundborg Kommune arbejder målrettet med at **implementere den nationale klima
 
 ## Klimamål og forpligtelser
 
-**70% CO2-reduktion til 2030:** Kommunen skal reducere egne udledninger fra **15.200 tons CO2** (2020) til **4.560 tons** i 2030.
+Kommunen skal reducere egne CO2-udledninger med 70% til 2030, hvilket betyder en reduktion fra **15.200 tons CO2** i 2020 til **4.560 tons** i 2030. Dette er en betydelig reduktion, der kræver omfattende tiltag og investeringer.
 
-**Nuværende status:** Per 2024 er udledningen **11.800 tons** - en reduktion på **22%**. Der mangler altid **48% reduktion** på 6 år.
+Per 2024 er udledningen **11.800 tons**, hvilket er en reduktion på **22%** sammenlignet med 2020. Der mangler stadig **48% reduktion** på 6 år, hvilket viser, at der er betydeligt arbejde tilbage for at nå målet.
 
 ## Implementeringsindsatser
 
-**Energirenovering af bygninger (DKK 85M):** Alle kommunale bygninger skal energirenoveres. 18 skoler, 8 plejehjem og 12 administrationsbygninger prioriteres 2024-2028.
+Energirenovering af bygninger koster DKK 85M og omfatter alle kommunale bygninger. 18 skoler, 8 plejehjem og 12 administrationsbygninger prioriteres i perioden 2024-2028. Dette vil reducere energiforbruget betydeligt og dermed også CO2-udledningen.
 
-**Grøn transport (DKK 28M):** Udskiftning af kommunens **142 køretøjer** til elbiler og plugin-hybrider. 85% skal være grønne i 2027.
+Grøn transport koster DKK 28M og omfatter udskiftning af kommunens **142 køretøjer** til elbiler og plugin-hybrider. 85% skal være grønne i 2027, hvilket kræver en betydelig investering, men også reducerer CO2-udledningen fra transport.
 
-**Vedvarende energi (DKK 42M):** Solceller på **25 kommunale tage** og deltagelse i vindmølleprojekt kan dække 65% af kommunens elforbrug.
+Vedvarende energi koster DKK 42M og omfatter solceller på **25 kommunale tage** og deltagelse i vindmølleprojekt, som kan dække 65% af kommunens elforbrug. Dette vil reducere CO2-udledningen betydeligt og også reducere energiforbruget over tid.
 
-**Klimatilpasning (DKK 35M):** LAR-løsninger, klimasikring af kloakker og beskyttelse mod oversvømmelse.
+Klimatilpasning koster DKK 35M og omfatter LAR-løsninger, klimasikring af kloakker og beskyttelse mod oversvømmelse. Dette er nødvendigt for at håndtere konsekvenserne af klimaforandringer og beskytte kommunens infrastruktur.
 
-Graf [climate-investment-plan](#chart) viser investeringsplan og forventet CO2-reduktion.
+Som vist i grafen [climate-investment-plan](#chart), viser investeringsplanen og forventet CO2-reduktion, at der er en betydelig investering, men også betydelige reduktioner i CO2-udledningen.
 
-**Økonomi:** Samlet investering på **DKK 190M** over 6 år giver **DKK 18M i årlige besparelser** fra 2031 gennem lavere energiudgifter.
+Samlet investering på **DKK 190M** over 6 år giver **DKK 18M i årlige besparelser** fra 2031 gennem lavere energiudgifter. Dette viser, at investeringen kan betale sig over tid, selvom den kræver betydelige midler op front.
 
-**Udfordring:** Begrænsede statslige tilskud betyder kommunen må **lånefinansiere 75%** af investeringerne.
+En væsentlig udfordring er, at begrænsede statslige tilskud betyder, at kommunen må **lånefinansiere 75%** af investeringerne. Dette skaber en gældsbelastning, der skal håndteres, men det er nødvendigt for at nå klimamålene.
 
 ---
 *Kilder: Klimaplan 2024-2030 | Klimaaftale for Danmark | Teknisk forvaltning klimarapport*`,
@@ -933,29 +874,29 @@ Den **fællesoffentlige digitaliseringsstrategi 2024-2027** stiller omfattende k
 
 ## Strategiske krav
 
-**Digital sammenhæng:** Kommunens systemer skal kunne **udveksle data** med regionens og statens systemer. Kræver standardisering og nye API'er.
+Kommunens systemer skal kunne **udveksle data** med regionens og statens systemer, hvilket kræver standardisering og nye API'er. Dette sikrer, at data kan deles effektivt på tværs af organisationer og gør det lettere for borgere at håndtere deres sager.
 
-**Digital selvbetjening:** **90% af borgerkontakt** skal kunne håndteres digitalt i 2027. Nuværende niveau er 64%.
+**90% af borgerkontakt** skal kunne håndteres digitalt i 2027, mens nuværende niveau er 64%. Dette kræver betydelige investeringer i digitale løsninger og træning af medarbejdere og borgere.
 
-**Datafundament:** Kommunen skal etablere **fælles dataplatform** med high-quality, opdaterede data tilgængelige på tværs af forvaltninger.
+Kommunen skal etablere en **fælles dataplatform** med høj kvalitet og opdaterede data tilgængelige på tværs af forvaltninger. Dette sikrer, at alle har adgang til de samme opdaterede data og reducerer risikoen for fejl og ineffektivitet.
 
-**Cybersikkerhed:** Opfyldelse af **NIS2-direktivet** kræver betydelig opgradering af sikkerhedsinfrastruktur.
+Opfyldelse af **NIS2-direktivet** kræver betydelig opgradering af sikkerhedsinfrastruktur. Dette er nødvendigt for at beskytte borgernes data og sikre, at kommunen overholder lovgivningen.
 
 ## Investeringsbehov
 
-**IT-infrastruktur (DKK 28M):** Opgradering af netværk, servere og sikkerhedssystemer for at håndtere øget datatrafik og sikkerhedskrav.
+IT-infrastruktur koster DKK 28M og omfatter opgradering af netværk, servere og sikkerhedssystemer for at håndtere øget datatrafik og sikkerhedskrav. Dette er nødvendigt for at understøtte de øgede krav til digitalisering og sikkerhed.
 
-**Systemudvikling (DKK 22M):** Udvikling af 15 nye selvbetjeningsløsninger og integration af eksisterende systemer.
+Systemudvikling koster DKK 22M og omfatter udvikling af 15 nye selvbetjeningsløsninger og integration af eksisterende systemer. Dette gør det muligt for borgere at håndtere flere sager digitalt og reducerer behovet for personlig kontakt.
 
-**Dataplatform (DKK 12M):** Etablering af cloud-baseret datawarehouse med analytics og BI-værktøjer.
+Dataplatform koster DKK 12M og omfatter etablering af cloud-baseret datawarehouse med analytics og BI-værktøjer. Dette giver mulighed for bedre datadrevet beslutningstagning og analyser.
 
-**Kompetenceudvikling (DKK 8M):** Uddannelse af 250 medarbejdere i digitale værktøjer og dataanvendelse.
+Kompetenceudvikling koster DKK 8M og omfatter uddannelse af 250 medarbejdere i digitale værktøjer og dataanvendelse. Dette sikrer, at medarbejderne har de nødvendige kompetencer til at bruge de nye systemer effektivt.
 
-Graf [digital-strategy-investment](#chart) viser investeringsplan og forventet effekt.
+Som vist i grafen [digital-strategy-investment](#chart), viser investeringsplanen og forventet effekt, at der er betydelige investeringer, men også betydelige gevinster.
 
-**Gevinster:** Digitaliseringen forventes at frigøre **32 årsværk** (DKK 22M årligt) gennem automatisering og selvbetjening fra 2027.
+Digitaliseringen forventes at frigøre **32 årsværk** (DKK 22M årligt) gennem automatisering og selvbetjening fra 2027. Dette viser, at investeringen kan betale sig over tid gennem besparelser i personaleomkostninger.
 
-**Kritisk:** Uden investering risikerer kommunen **manglende compliance** og ineffektive arbejdsgange.
+Uden investering risikerer kommunen **manglende compliance** og ineffektive arbejdsgange. Dette kan medføre bøder, tab af borgerens tillid og ineffektivitet, der koster mere end investeringen.
 
 ---
 *Kilder: Digitaliseringsstrategi 2024-2027 | IT-plan Kalundborg | Digitaliseringsstyrelsen*`,
@@ -975,27 +916,27 @@ Graf [digital-strategy-investment](#chart) viser investeringsplan og forventet e
 
 ## Reformens kerneelementer
 
-**Tidligere indsats:** Ledige skal i aktivering efter **3 måneder** (tidligere 6 måneder). Kræver **12 ekstra jobkonsulenter** til DKK 8,4M årligt.
+Ledige skal nu i aktivering efter **3 måneder** i stedet for tidligere 6 måneder, hvilket kræver **12 ekstra jobkonsulenter** til DKK 8,4M årligt. Dette giver ledige hurtigere hjælp og reducerer risikoen for langtidsledighed.
 
-**Virksomhedsrettet:** **60% af aktivering** skal foregå i private virksomheder frem for kurser. Kalundborg ligger på 42% og skal øge indsatsen.
+**60% af aktivering** skal foregå i private virksomheder frem for kurser, mens Kalundborg ligger på 42% og skal øge indsatsen. Dette giver ledige mere praktisk erfaring og bedre muligheder for at finde job.
 
-**Bedre vejledning:** Obligatoriske samtaler hver 14. dag for unge under 30 år. Øger samtalebelastning med **35%**.
+Obligatoriske samtaler hver 14. dag for unge under 30 år øger samtalebelastningen med **35%**, hvilket kræver flere ressourcer, men også giver unge bedre støtte og vejledning.
 
-**Kompetenceløft:** Ledige uden uddannelse skal tilbydes **opkvalificering**. Budget til AMU-kurser øget med DKK 4,5M.
+Ledige uden uddannelse skal tilbydes **opkvalificering**, hvilket kræver et budget til AMU-kurser øget med DKK 4,5M. Dette giver ledige bedre muligheder for at finde job og opbygge deres kompetencer.
 
 ## Økonomisk påvirkning
 
-**Merudgifter:** DKK 18M årligt til ekstra personale, virksomhedsforløb og kompetenceløft.
+Reformen medfører merudgifter på DKK 18M årligt til ekstra personale, virksomhedsforløb og kompetenceløft. Dette er en betydelig udgift, der skal finansieres.
 
-**Besparelser:** Hurtigere aktivering og bedre match reducerer forsørgelsesudgifter med forventet **DKK 12M årligt** fra 2026.
+Hurtigere aktivering og bedre match reducerer forsørgelsesudgifter med forventet **DKK 12M årligt** fra 2026. Dette viser, at reformen kan give besparelser over tid gennem færre personer på forsørgelse.
 
-**Netto omkostning:** DKK 6M årligt, men med **positiv samfundsøkonomisk effekt** gennem flere i job.
+Netto omkostningen er DKK 6M årligt, men med **positiv samfundsøkonomisk effekt** gennem flere i job. Dette viser, at reformen ikke kun er en udgift, men også en investering i samfundet.
 
-Graf [employment-reform-status](#chart) viser implementeringsfremdrift og økonomisk effekt.
+Som vist i grafen [employment-reform-status](#chart), viser implementeringsfremdrift og økonomisk effekt, at reformen er godt i gang, men der er stadig arbejde tilbage.
 
-**Status:** **68% implementeret**. Udfordringer med at finde nok praktikpladser i virksomheder og rekruttere kvalificerede jobkonsulenter.
+Statusen er **68% implementeret**, hvilket viser, at kommunen er godt i gang med at implementere reformen. Der er dog udfordringer med at finde nok praktikpladser i virksomheder og rekruttere kvalificerede jobkonsulenter.
 
-**Kritisk succesfaktor:** Tæt samarbejde med lokale erhverv om praktikpladser og job.
+En kritisk succesfaktor er tæt samarbejde med lokale erhverv om praktikpladser og job. Dette er nødvendigt for at sikre, at reformen kan gennemføres succesfuldt og give de forventede resultater.
 
 ---
 *Kilder: Beskæftigelsesreform 2024 | Jobcenter Kalundborg status | Beskæftigelsesudvalget*`,
@@ -1015,27 +956,27 @@ Graf [employment-reform-status](#chart) viser implementeringsfremdrift og økono
 
 ## Compliance krav
 
-**NIS2-direktivet:** Fra oktober 2024 skal kommunen opfylde **skærpede cybersikkerhedskrav** som kritisk infrastruktur. Omfatter netværkssikkerhed, incident response og kontinuitetsplanlægning.
+Fra oktober 2024 skal kommunen opfylde **skærpede cybersikkerhedskrav** som kritisk infrastruktur gennem NIS2-direktivet. Dette omfatter netværkssikkerhed, incident response og kontinuitetsplanlægning, hvilket kræver betydelige investeringer i sikkerhedsinfrastruktur.
 
-**GDPR audit:** Årlig compliance-vurdering identificerer **18 systemer** der ikke lever op til krav om dataminimering, kryptering eller privacy-by-design.
+Årlig GDPR-compliance-vurdering identificerer **18 systemer** der ikke lever op til krav om dataminimering, kryptering eller privacy-by-design. Dette viser, at der er betydeligt arbejde tilbage for at sikre, at alle systemer overholder GDPR-kravene.
 
-**Databeskyttelse:** Alle systemer med persondata skal have **end-to-end kryptering** og dokumenteret databehandleraftale.
+Alle systemer med persondata skal have **end-to-end kryptering** og dokumenteret databehandleraftale. Dette sikrer, at borgernes data er beskyttet og at kommunen overholder lovgivningen.
 
 ## Økonomiske konsekvenser
 
-**Systemopgraderinger (DKK 15M):** 18 ældre systemer skal opgraderes eller udskiftes for GDPR-compliance. Prioritet: HR-system (DKK 4,2M), journalsystemer (DKK 6,8M).
+Systemopgraderinger koster DKK 15M og omfatter 18 ældre systemer, der skal opgraderes eller udskiftes for GDPR-compliance. Prioriteringen er HR-system (DKK 4,2M) og journalsystemer (DKK 6,8M), da disse håndterer meget persondata.
 
-**Cybersikkerhed (DKK 8M):** Implementering af Security Operations Center (SOC), 24/7 overvågning, penetrationstest og sikkerhedsaudits.
+Cybersikkerhed koster DKK 8M og omfatter implementering af Security Operations Center (SOC), 24/7 overvågning, penetrationstest og sikkerhedsaudits. Dette er nødvendigt for at beskytte borgernes data og sikre, at kommunen overholder NIS2-direktivet.
 
-**DPO funktion (DKK 2,5M):** Udvidelse af databeskyttelsesrådgiverfunktion fra 1 til 3 medarbejdere for at håndtere kompleksiteten.
+DPO-funktionen koster DKK 2,5M og omfatter udvidelse af databeskyttelsesrådgiverfunktionen fra 1 til 3 medarbejdere for at håndtere kompleksiteten. Dette sikrer, at kommunen har de nødvendige kompetencer til at håndtere GDPR-kravene.
 
-**Uddannelse (DKK 1,8M):** Obligatorisk GDPR-træning for alle **4.200 medarbejdere** årligt.
+Uddannelse koster DKK 1,8M og omfatter obligatorisk GDPR-træning for alle **4.200 medarbejdere** årligt. Dette sikrer, at alle medarbejdere kender GDPR-kravene og kan håndtere persondata korrekt.
 
-Graf [gdpr-compliance-cost](#chart) viser omkostninger fordelt på områder.
+Som vist i grafen [gdpr-compliance-cost](#chart), viser omkostninger fordelt på områder, at der er betydelige investeringer, men også betydelige risici ved ikke at investere.
 
-**Risiko:** Manglende compliance kan medføre **bøder op til DKK 20M** og tab af borgerens tillid.
+Manglende compliance kan medføre **bøder op til DKK 20M** og tab af borgerens tillid. Dette viser, at investeringen er nødvendig for at undgå betydelige konsekvenser.
 
-**Løbende omkostninger:** DKK 6M årligt til audit, vedligehold og opdateringer.
+Løbende omkostninger er DKK 6M årligt til audit, vedligehold og opdateringer. Dette viser, at GDPR-compliance ikke kun er en engangsudgift, men også kræver løbende investeringer.
 
 ---
 *Kilder: GDPR compliance audit 2024 | NIS2 implementeringsplan | IT-sikkerhedsstrategi*`,
@@ -1055,29 +996,29 @@ Flere **nationale politiske aftaler** har markant indflydelse på Kalundborg Kom
 
 ## Primære aftaler
 
-**Folkeskolereform:** Merudgift **DKK 12M årligt** (se separat analyse). Påvirker børne- og ungeområdet betydeligt.
+Folkeskolereformen medfører en merudgift på **DKK 12M årligt** og påvirker børne- og ungeområdet betydeligt. Dette kræver både ekstra ressourcer til lærere og investeringer i fysisk infrastruktur.
 
-**Ældremilliarden:** Tidsbegrænset tilskud **DKK 14,8M årligt** til 2026. Risiko for kvalitetsfald når midler ophører.
+Ældremilliarden er et tidsbegrænset tilskud på **DKK 14,8M årligt** til 2026, hvilket giver mulighed for at forbedre kvaliteten af ældreplejen. Der er dog risiko for kvalitetsfald, når midlerne ophører, hvilket gør det nødvendigt at finde måder at videreføre indsatserne.
 
-**Klima- og energiaftale:** Forpligtelse til 70% CO2-reduktion kræver **DKK 190M i investeringer** over 6 år.
+Klima- og energiaftalen kræver en forpligtelse til 70% CO2-reduktion, hvilket kræver **DKK 190M i investeringer** over 6 år. Dette er en betydelig investering, der skal finansieres gennem lån, men også giver besparelser over tid gennem lavere energiudgifter.
 
-**Beskæftigelsesreform:** Netto merudgift **DKK 6M årligt** til intensiveret indsats.
+Beskæftigelsesreformen medfører en netto merudgift på **DKK 6M årligt** til intensiveret indsats. Dette giver dog også positive samfundsøkonomiske effekter gennem flere i job.
 
-**Plejehjemsnormering:** Skærpede krav til bemanding øger udgifter med **DKK 18M årligt** fra 2025.
+Plejehjemsnormering med skærpede krav til bemanding øger udgifter med **DKK 18M årligt** fra 2025. Dette er nødvendigt for at sikre høj kvalitet i plejen, men også en betydelig udgift.
 
 ## Samlet økonomisk påvirkning
 
-**Årlige driftskonsekvenser:** Samlet **DKK 52M i permanente merudgifter** fra politiske aftaler uden fuld statskompensation.
+Samlet set medfører de politiske aftaler **DKK 52M i permanente merudgifter** årligt uden fuld statskompensation. Dette er en betydelig belastning på kommunens budget, der kræver omfattende tiltag for at blive håndteret.
 
-**Investeringer:** **DKK 235M** skal investeres over 3 år for at opfylde krav fra reformer og aftaler.
+**DKK 235M** skal investeres over 3 år for at opfylde krav fra reformer og aftaler. Dette er en betydelig investering, der skal finansieres gennem lån eller andre finansieringskilder.
 
-Graf [political-agreements-impact](#chart) viser tidsplan og økonomisk effekt af aftalerne.
+Som vist i grafen [political-agreements-impact](#chart), viser tidsplanen og økonomisk effekt af aftalerne, at der er betydelige konsekvenser både på kort og lang sigt.
 
-**Kompensation:** Staten kompenserer gennemsnitligt **65%** af merudgifterne, hvilket efterlader kommunen med **DKK 18M årligt** i netto merudgift.
+Staten kompenserer gennemsnitligt **65%** af merudgifterne, hvilket efterlader kommunen med **DKK 18M årligt** i netto merudgift. Dette viser, at kommunen skal finde måder at finansiere de resterende udgifter.
 
-**Strategi:** Aktiv deltagelse i KL's lobbyarbejde for bedre kompensation og større kommunal fleksibilitet i implementering.
+Strategien for at håndtere dette er aktiv deltagelse i KL's lobbyarbejde for bedre kompensation og større kommunal fleksibilitet i implementering. Dette er nødvendigt for at sikre, at kommunen har de nødvendige ressourcer til at gennemføre reformerne.
 
-**Fremtidige aftaler:** Sundhedsaftale 2025 og socialreform 2026 kan tilføje yderligere **DKK 15-25M** i merudgifter.
+Fremtidige aftaler som sundhedsaftale 2025 og socialreform 2026 kan tilføje yderligere **DKK 15-25M** i merudgifter. Dette viser, at udfordringerne sandsynligvis vil fortsætte, og at kommunen skal være forberedt på yderligere udgifter.
 
 ---
 *Kilder: Oversigt politiske aftaler | Økonomiudvalget analyse | KL økonomiske konsekvenser*`,

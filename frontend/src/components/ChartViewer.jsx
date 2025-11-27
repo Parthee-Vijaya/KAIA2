@@ -44,10 +44,10 @@ const ChartViewer = ({ chartData }) => {
   const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
       return (
-        <div className="glass-card p-3 border border-kaia-border">
-          <p className="text-sm font-semibold text-kaia-text mb-1">{label}</p>
+        <div className="bg-white border border-gray-200 rounded-lg p-3 shadow-lg">
+          <p className="text-sm font-semibold text-gray-900 mb-1">{label}</p>
           {payload.map((entry, index) => (
-            <p key={index} className="text-sm" style={{ color: entry.color }}>
+            <p key={index} className="text-sm text-gray-700" style={{ color: entry.color }}>
               {entry.name}: {entry.value}
             </p>
           ))}
@@ -63,9 +63,9 @@ const ChartViewer = ({ chartData }) => {
         return (
           <ResponsiveContainer width="100%" height={300}>
             <LineChart data={data}>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
-              <XAxis dataKey={config.xKey} stroke="#E5E7EB" />
-              <YAxis stroke="#E5E7EB" />
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(0,0,0,0.1)" />
+              <XAxis dataKey={config.xKey} stroke="#6B7280" />
+              <YAxis stroke="#6B7280" />
               <Tooltip content={<CustomTooltip />} />
               <Legend />
               {config.lines.map((line, index) => (
@@ -87,9 +87,9 @@ const ChartViewer = ({ chartData }) => {
         return (
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={data}>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
-              <XAxis dataKey={config.xKey} stroke="#E5E7EB" />
-              <YAxis stroke="#E5E7EB" />
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(0,0,0,0.1)" />
+              <XAxis dataKey={config.xKey} stroke="#6B7280" />
+              <YAxis stroke="#6B7280" />
               <Tooltip content={<CustomTooltip />} />
               <Legend />
               {config.bars.map((bar, index) => (
@@ -132,9 +132,9 @@ const ChartViewer = ({ chartData }) => {
         return (
           <ResponsiveContainer width="100%" height={300}>
             <AreaChart data={data}>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
-              <XAxis dataKey={config.xKey} stroke="#E5E7EB" />
-              <YAxis stroke="#E5E7EB" />
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(0,0,0,0.1)" />
+              <XAxis dataKey={config.xKey} stroke="#6B7280" />
+              <YAxis stroke="#6B7280" />
               <Tooltip content={<CustomTooltip />} />
               <Legend />
               {config.areas.map((area, index) => (
@@ -153,16 +153,18 @@ const ChartViewer = ({ chartData }) => {
         );
 
       default:
-        return <p className="text-kaia-text">Unsupported chart type: {type}</p>;
+        return <p className="text-gray-700">Unsupported chart type: {type}</p>;
     }
   };
 
   return (
-    <div className="chart-container">
+    <div className="chart-container my-6">
       {title && (
-        <h4 className="text-lg font-semibold text-kaia-text mb-4">{title}</h4>
+        <h4 className="text-lg font-semibold text-gray-900 mb-4">{title}</h4>
       )}
-      {renderChart()}
+      <div className="bg-white border border-gray-200 p-4 rounded-xl shadow-sm">
+        {renderChart()}
+      </div>
     </div>
   );
 };

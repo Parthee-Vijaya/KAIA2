@@ -24,7 +24,7 @@ const SearchBar = ({ onSubmit, placeholder = 'spørg mig...' }) => {
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-4xl mx-auto mb-6">
-      <div className="glass-card p-4">
+      <div className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
         <div className="flex items-center gap-3">
           <input
             type="text"
@@ -32,7 +32,7 @@ const SearchBar = ({ onSubmit, placeholder = 'spørg mig...' }) => {
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={handleKeyPress}
             placeholder={placeholder}
-            className="flex-1 bg-transparent border-none outline-none text-kaia-text placeholder-gray-500 text-lg"
+            className="flex-1 bg-transparent border-none outline-none text-gray-900 placeholder-gray-400 text-lg"
             aria-label="Search input"
           />
           <button
@@ -41,7 +41,7 @@ const SearchBar = ({ onSubmit, placeholder = 'spørg mig...' }) => {
             className={`p-2 rounded-lg smooth-transition ${
               input.trim()
                 ? 'bg-kaia-blue hover:bg-blue-600 text-white'
-                : 'bg-kaia-card text-gray-500 cursor-not-allowed'
+                : 'bg-gray-100 text-gray-400 cursor-not-allowed'
             }`}
             aria-label="Submit question"
           >

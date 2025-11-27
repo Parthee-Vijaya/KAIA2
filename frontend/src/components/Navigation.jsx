@@ -6,16 +6,16 @@ import PropTypes from 'prop-types';
  */
 const Navigation = ({ role = 'intern', onMenuClick, onSendClick }) => {
   return (
-    <nav className="glass-card px-4 py-3 mb-4 sticky top-0 z-50">
+    <nav className="bg-white border-b border-gray-200 px-4 py-3 mb-4 sticky top-0 z-50 shadow-sm">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Left: Menu Icon */}
         <button
           onClick={onMenuClick}
-          className="p-2 hover:bg-white/10 rounded-lg smooth-transition"
+          className="p-2 hover:bg-gray-100 rounded-lg smooth-transition"
           aria-label="Menu"
         >
           <svg
-            className="w-6 h-6 text-kaia-text"
+            className="w-6 h-6 text-gray-700"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -34,20 +34,20 @@ const Navigation = ({ role = 'intern', onMenuClick, onSendClick }) => {
           <div className="text-2xl font-bold gradient-text">K.A.I.A</div>
 
           {/* Role Indicator */}
-          <div className="flex items-center gap-2 px-3 py-1 bg-kaia-card border border-kaia-border rounded-full">
+          <div className="flex items-center gap-2 px-3 py-1 bg-gray-50 border border-gray-200 rounded-full">
             <div className="w-2 h-2 bg-kaia-blue rounded-full animate-pulse"></div>
-            <span className="text-sm text-kaia-text">{role}</span>
+            <span className="text-sm text-gray-700">{role}</span>
           </div>
         </div>
 
         {/* Right: Send Icon */}
         <button
           onClick={onSendClick}
-          className="p-2 hover:bg-white/10 rounded-lg smooth-transition"
+          className="p-2 hover:bg-gray-100 rounded-lg smooth-transition"
           aria-label="Send"
         >
           <svg
-            className="w-6 h-6 text-kaia-text"
+            className="w-6 h-6 text-gray-700"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

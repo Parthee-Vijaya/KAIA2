@@ -19,12 +19,12 @@ const CategorySection = ({ category, isExpanded, onToggle, onQuestionClick }) =>
           <span className="text-2xl" role="img" aria-label={category.title}>
             {category.icon}
           </span>
-          <h3 className="text-xl font-semibold text-kaia-text">
+          <h3 className="text-xl font-semibold text-gray-900">
             {category.title}
           </h3>
         </div>
         <motion.svg
-          className="w-6 h-6 text-kaia-text"
+          className="w-6 h-6 text-gray-700"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -60,7 +60,7 @@ const CategorySection = ({ category, isExpanded, onToggle, onQuestionClick }) =>
                 >
                   <button
                     onClick={() => onQuestionClick(question.id, question.text)}
-                    className="w-full text-left px-4 py-3 bg-kaia-card hover:bg-white/10 border border-kaia-border rounded-lg smooth-transition text-kaia-text"
+                    className="w-full text-left px-4 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg smooth-transition text-gray-900"
                   >
                     {question.text}
                   </button>

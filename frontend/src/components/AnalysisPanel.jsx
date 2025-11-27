@@ -14,21 +14,21 @@ const AnalysisPanel = ({ analysis }) => {
       key: 'statusNow',
       title: 'Status nu',
       icon: '🔵',
-      color: 'text-blue-400',
+      color: 'text-blue-600',
       data: analysis.statusNow,
     },
     {
       key: 'scenarios',
       title: 'Scenarier',
       icon: '🟡',
-      color: 'text-yellow-400',
+      color: 'text-yellow-600',
       data: analysis.scenarios,
     },
     {
       key: 'actions',
       title: 'Handlingsmuligheder',
       icon: '🟢',
-      color: 'text-green-400',
+      color: 'text-green-600',
       data: analysis.actions,
     },
   ];
@@ -59,26 +59,26 @@ const AnalysisPanel = ({ analysis }) => {
                   section.data.map((item, idx) => (
                     <li
                       key={idx}
-                      className="text-sm text-kaia-text leading-relaxed"
+                      className="text-sm text-gray-700 leading-relaxed"
                     >
                       {typeof item === 'string' ? (
-                        <div className="pl-4 border-l-2 border-kaia-border">
+                        <div className="pl-4 border-l-2 border-gray-300">
                           {item}
                         </div>
                       ) : (
                         // Scenario object
-                        <div className="glass-card p-3 space-y-1">
-                          <div className="font-semibold text-kaia-text">
+                        <div className="bg-gray-50 border border-gray-200 p-3 space-y-1 rounded-lg">
+                          <div className="font-semibold text-gray-900">
                             {item.title}
                           </div>
-                          <div className="text-xs text-gray-400">
+                          <div className="text-xs text-gray-600">
                             {item.description}
                           </div>
                           <div className="flex gap-4 text-xs mt-2">
-                            <span className="text-blue-400">
+                            <span className="text-blue-600">
                               Sandsynlighed: {item.probability}
                             </span>
-                            <span className="text-yellow-400">
+                            <span className="text-yellow-600">
                               Impact: {item.impact}
                             </span>
                           </div>
@@ -87,7 +87,7 @@ const AnalysisPanel = ({ analysis }) => {
                     </li>
                   ))
                 ) : (
-                  <li className="text-sm text-kaia-text leading-relaxed pl-4 border-l-2 border-kaia-border">
+                  <li className="text-sm text-gray-700 leading-relaxed pl-4 border-l-2 border-gray-300">
                     {section.data}
                   </li>
                 )}

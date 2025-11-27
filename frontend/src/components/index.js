@@ -7,3 +7,4 @@ export { default as ChartViewer } from './ChartViewer';
 export { default as AnalysisPanel } from './AnalysisPanel';
 export { default as FollowUpQuestions } from './FollowUpQuestions';
 export { default as LoadingIndicator } from './LoadingIndicator';
+export { default as MarkdownRenderer } from './MarkdownRenderer';

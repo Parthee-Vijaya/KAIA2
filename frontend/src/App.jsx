@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import {
   Navigation,
   SearchBar,
@@ -16,6 +16,19 @@ function App() {
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [expandedCategory, setExpandedCategory] = useState('budget-economy');
+  const messagesEndRef = useRef(null);
+  const chatContainerRef = useRef(null);
+
+  // Auto-scroll to bottom when new message arrives
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    if (messages.length > 0 || isLoading) {
+      scrollToBottom();
+    }
+  }, [messages, isLoading]);
 
   // Handle question click (from category or follow-up)
   const handleQuestionClick = async (questionIdOrText, questionText) => {
@@ -94,15 +107,19 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-kaia-dark">
+    <div className="min-h-screen bg-white flex flex-col">
       {/* Navigation */}
       <Navigation />
 
-      {/* Main Container */}
-      <div className="max-w-7xl mx-auto px-4 py-6 space-y-6">
-        {/* Search Bar */}
-        <SearchBar onSubmit={handleSearch} placeholder="spørg mig..." />
+      {/* Sticky Search Bar */}
+      <div className="sticky top-0 z-40 bg-white/95 backdrop-blur-xl border-b border-gray-200 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <SearchBar onSubmit={handleSearch} placeholder="spørg mig..." />
+        </div>
+      </div>
 
+      {/* Main Container */}
+      <div className="flex-1 max-w-7xl mx-auto w-full px-4 py-6">
         {/* Categories Section (show when no messages) */}
         {messages.length === 0 && (
           <div className="space-y-4 animate-fade-in">
@@ -118,9 +135,12 @@ function App() {
           </div>
         )}
 
-        {/* Chat Messages */}
+        {/* Chat Messages Container */}
         {messages.length > 0 && (
-          <div className="space-y-6 animate-fade-in">
+          <div
+            ref={chatContainerRef}
+            className="space-y-8 animate-fade-in pb-8"
+          >
             {messages.map((message) => (
               <ChatMessage
                 key={message.id}
@@ -128,15 +148,18 @@ function App() {
                 onFollowUpClick={handleQuestionClick}
               />
             ))}
+
+            {/* Loading Indicator */}
+            {isLoading && <LoadingIndicator />}
+
+            {/* Scroll anchor */}
+            <div ref={messagesEndRef} />
           </div>
         )}
 
-        {/* Loading Indicator */}
-        {isLoading && <LoadingIndicator />}
-
         {/* Back to Categories Button (when in chat mode) */}
         {messages.length > 0 && !isLoading && (
-          <div className="flex justify-center pt-8">
+          <div className="flex justify-center pt-8 pb-8">
             <button
               onClick={() => setMessages([])}
               className="btn-secondary flex items-center gap-2"
@@ -149,7 +172,7 @@ function App() {
       </div>
 
       {/* Footer */}
-      <footer className="max-w-7xl mx-auto px-4 py-8 text-center text-gray-500 text-sm">
+      <footer className="max-w-7xl mx-auto px-4 py-8 text-center text-gray-400 text-sm border-t border-gray-200 mt-8">
         <p>K.A.I.A - Kalundborg AI Assistent Demo</p>
         <p className="mt-2">Udviklet med React, Tailwind CSS og Recharts</p>
       </footer>

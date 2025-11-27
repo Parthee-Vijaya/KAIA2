@@ -14,7 +14,7 @@ const FollowUpQuestions = ({ questions, onQuestionClick }) => {
 
   return (
     <div className="mt-4">
-      <h4 className="text-sm font-semibold text-kaia-text mb-3">
+      <h4 className="text-sm font-semibold text-gray-700 mb-3">
         Opfølgende spørgsmål:
       </h4>
       <div
