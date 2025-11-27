@@ -2,13 +2,12 @@ import { useState, useEffect, useRef } from 'react';
 import {
   Navigation,
   SearchBar,
-  CategorySection,
   ChatMessage,
   LoadingIndicator,
   KeyMetricsCards,
   TrendCharts,
+  QuestionsDropdown,
 } from './components';
-import { categories } from './data/categories';
 import { dashboardTrends } from './data/dashboardMetrics';
 import { getAnswerByQuestionId } from './data/mockAnswers';
 import { getChartById } from './data/mockCharts';
@@ -18,7 +17,6 @@ import { getFollowUpByQuestionId } from './data/mockFollowUp';
 function App() {
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [expandedCategory, setExpandedCategory] = useState('budget-economy');
   const messagesEndRef = useRef(null);
   const chatContainerRef = useRef(null);
 
@@ -104,10 +102,6 @@ function App() {
     setMessages([userMessage, aiMessage]);
   };
 
-  // Toggle category expansion
-  const toggleCategory = (categoryId) => {
-    setExpandedCategory((prev) => (prev === categoryId ? null : categoryId));
-  };
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
@@ -116,7 +110,7 @@ function App() {
 
       {/* Hero Section with Search (show when no messages) */}
       {messages.length === 0 && (
-        <div className="relative bg-gradient-to-br from-red-50 via-white to-blue-50 border-b border-gray-200 overflow-hidden">
+        <div className="relative bg-gradient-to-br from-red-50 via-white to-blue-50 border-b border-gray-200 overflow-visible">
           {/* Decorative elements - Kalundborg farver */}
           <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-15 -translate-y-1/2 translate-x-1/2" style={{ backgroundColor: '#D40000' }}></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full blur-3xl opacity-15 translate-y-1/2 -translate-x-1/2" style={{ backgroundColor: '#0056A7' }}></div>
@@ -143,6 +137,11 @@ function App() {
             <div className="max-w-4xl mx-auto">
               <SearchBar onSubmit={handleSearch} placeholder="Skriv dit spørgsmål her..." hero={true} />
             </div>
+
+            {/* Questions Dropdown */}
+            <div className="max-w-4xl mx-auto mt-4 relative z-50">
+              <QuestionsDropdown onQuestionClick={handleQuestionClick} />
+            </div>
           </div>
         </div>
       )}
@@ -160,40 +159,28 @@ function App() {
       <div className="flex-1 max-w-7xl mx-auto w-full px-6 py-8">
         {/* Dashboard (show when no messages) */}
         {messages.length === 0 && (
-          <div className="space-y-10 animate-fade-in -mt-4">
+          <div className="space-y-10 animate-fade-in -mt-4 relative z-0">
             {/* Key Metrics Cards - Roterer automatisk hvert 20. sekund */}
-            <div>
+            <div className="relative z-0">
               <KeyMetricsCards />
             </div>
 
-            {/* Dashboard Layout: Categories left, Trends right */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
-              {/* Left: Categories */}
-              <div className="lg:col-span-2 space-y-4">
-                <div className="mb-6">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-2">Kategorier</h2>
-                  <p className="text-gray-600">Vælg en kategori for at stille spørgsmål</p>
-                </div>
-                {categories.map((category) => (
-                  <CategorySection
-                    key={category.id}
-                    category={category}
-                    isExpanded={expandedCategory === category.id}
-                    onToggle={() => toggleCategory(category.id)}
-                    onQuestionClick={handleQuestionClick}
-                  />
-                ))}
+            {/* Trends & Analyser - Fuldt bredde */}
+            <div className="mt-8">
+              <div className="mb-6">
+                <h2 className="text-3xl font-bold text-gray-900 mb-2">Trends & Analyser</h2>
+                <p className="text-gray-600">Vigtige økonomiske indikatorer og udviklinger</p>
               </div>
-
-              {/* Right: Trend Charts */}
-              <div className="lg:col-span-1">
-                <div className="mb-6">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-2">Trends & Analyser</h2>
-                  <p className="text-gray-600">Vigtige økonomiske indikatorer</p>
-                </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <TrendCharts trends={{
                   populationDevelopment: dashboardTrends.populationDevelopment,
                   budgetTrend: dashboardTrends.budgetTrend,
+                  departmentSpending: dashboardTrends.departmentSpending,
+                }} />
+                <TrendCharts trends={{
+                  debtDevelopment: dashboardTrends.debtDevelopment,
+                  revenueVsExpense: dashboardTrends.revenueVsExpense,
+                  unemploymentTrend: dashboardTrends.unemploymentTrend,
                 }} />
               </div>
             </div>

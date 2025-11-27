@@ -15,7 +15,18 @@ const KeyMetricsCards = () => {
   useEffect(() => {
     const selectRandomCards = () => {
       const shuffled = [...allDashboardCards].sort(() => 0.5 - Math.random());
-      return shuffled.slice(0, 4);
+      const selected = shuffled.slice(0, 4);
+      // Debug: sikre at vi altid har 4 cards
+      if (selected.length < 4 && allDashboardCards.length >= 4) {
+        // Hvis vi ikke har 4, tilføj flere
+        while (selected.length < 4) {
+          const additional = allDashboardCards[Math.floor(Math.random() * allDashboardCards.length)];
+          if (!selected.find(c => c.id === additional.id)) {
+            selected.push(additional);
+          }
+        }
+      }
+      return selected;
     };
     setDisplayedCards(selectRandomCards());
   }, [currentIndex]);
@@ -33,7 +44,18 @@ const KeyMetricsCards = () => {
   useEffect(() => {
     const selectRandomCards = () => {
       const shuffled = [...allDashboardCards].sort(() => 0.5 - Math.random());
-      return shuffled.slice(0, 4);
+      const selected = shuffled.slice(0, 4);
+      // Debug: sikre at vi altid har 4 cards
+      if (selected.length < 4 && allDashboardCards.length >= 4) {
+        // Hvis vi ikke har 4, tilføj flere
+        while (selected.length < 4) {
+          const additional = allDashboardCards[Math.floor(Math.random() * allDashboardCards.length)];
+          if (!selected.find(c => c.id === additional.id)) {
+            selected.push(additional);
+          }
+        }
+      }
+      return selected;
     };
     setDisplayedCards(selectRandomCards());
   }, [currentIndex]);
@@ -137,18 +159,22 @@ const KeyMetricsCards = () => {
     );
   };
 
+  // Sikre at vi altid har præcis 4 cards
+  const cardsToDisplay = displayedCards.length >= 4 
+    ? displayedCards.slice(0, 4)
+    : [...displayedCards, ...allDashboardCards.slice(0, 4 - displayedCards.length)];
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-      <AnimatePresence mode="wait">
-        {displayedCards.map((card, index) => (
-          <motion.div
-            key={`${card.id}-${currentIndex}`}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3, delay: index * 0.05 }}
-            className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
-          >
+      {cardsToDisplay.map((card, index) => (
+        <motion.div
+          key={`${card.id}-${currentIndex}-${index}`}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.3, delay: index * 0.05 }}
+          className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
+        >
             {/* Label */}
             <div className="mb-4">
               <span className="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full">
@@ -186,7 +212,6 @@ const KeyMetricsCards = () => {
             <p className="text-sm text-gray-600 leading-relaxed">{card.description}</p>
           </motion.div>
         ))}
-      </AnimatePresence>
     </div>
   );
 };

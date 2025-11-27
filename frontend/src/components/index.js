@@ -10,3 +10,4 @@ export { default as LoadingIndicator } from './LoadingIndicator';
 export { default as MarkdownRenderer } from './MarkdownRenderer';
 export { default as KeyMetricsCards } from './KeyMetricsCards';
 export { default as TrendCharts } from './TrendCharts';
+export { default as QuestionsDropdown } from './QuestionsDropdown';

@@ -512,6 +512,9 @@ export const dashboardTrends = {
   populationDevelopment: {
     title: 'Befolkningsudvikling 2020-2030',
     type: 'line',
+    category: 'population',
+    description: 'Visuel oversigt over befolkningsudvikling med aldersfordeling over tid',
+    importance: 'Kritisk for planlægning af fremtidige servicebehov og budgetter',
     data: [
       { year: '2020', total: 49200, age0_17: 9800, age18_64: 31000, age65plus: 8400 },
       { year: '2021', total: 49100, age0_17: 9700, age18_64: 30800, age65plus: 8600 },
@@ -525,6 +528,18 @@ export const dashboardTrends = {
       { year: '2029', total: 48540, age0_17: 8900, age18_64: 29200, age65plus: 10440 },
       { year: '2030', total: 48460, age0_17: 8800, age18_64: 29000, age65plus: 10660 }
     ],
+    insights: {
+      current: '48.920 indbyggere i 2024',
+      change: '-0.3% siden 2023',
+      forecast: 'Forventet fald til 47.800 i 2030',
+      takeaway: 'Stigende andel 65+ (fra 17% til 22%) påvirker fremtidige udgifter'
+    },
+    stats: {
+      average: 48800,
+      peak: 49200,
+      trough: 48460,
+      changePercent: -1.5
+    },
     config: {
       xKey: 'year',
       lines: [
@@ -538,6 +553,9 @@ export const dashboardTrends = {
   budgetTrend: {
     title: 'Budgetudvikling 2020-2024',
     type: 'area',
+    category: 'budget',
+    description: 'Sammenligning af budgetteret vs. faktisk udgift over tid',
+    importance: 'Viser strukturelle udfordringer i budgetdisciplin',
     data: [
       { year: '2020', budget: 2.65, actual: 2.68, overspend: 0.03 },
       { year: '2021', budget: 2.72, actual: 2.78, overspend: 0.06 },
@@ -545,11 +563,156 @@ export const dashboardTrends = {
       { year: '2023', budget: 2.84, actual: 2.92, overspend: 0.08 },
       { year: '2024', budget: 2.90, actual: 2.97, overspend: 0.07 }
     ],
+    insights: {
+      current: '2.97 mia. DKK faktisk udgift i 2024',
+      change: '+2.4% vs. budget',
+      forecast: 'Forventet stigning til 3.05 mia. i 2025',
+      takeaway: 'Konsistent overskridelse på 2-3% kræver strukturelle tiltag'
+    },
+    stats: {
+      averageOverspend: 0.062,
+      peakOverspend: 0.08,
+      trend: 'stabil'
+    },
+    alert: 'warning',
     config: {
       xKey: 'year',
       areas: [
-        { dataKey: 'budget', name: 'Budget', fill: '#0056A7', stroke: '#0056A7' },
-        { dataKey: 'actual', name: 'Faktisk', fill: '#D40000', stroke: '#D40000' }
+        { dataKey: 'budget', name: 'Budget', fill: 'rgba(0, 86, 167, 0.2)', stroke: '#0056A7' },
+        { dataKey: 'actual', name: 'Faktisk', fill: 'rgba(212, 0, 0, 0.2)', stroke: '#D40000' }
+      ]
+    }
+  },
+  departmentSpending: {
+    title: 'Udgiftsfordeling per område 2024',
+    type: 'bar',
+    category: 'budget',
+    description: 'Oversigt over hvor budgettet bruges på tværs af kommunens områder',
+    importance: 'Hjælper med at identificere områder med højeste udgiftspres',
+    data: [
+      { department: 'Social & Sundhed', budget: 1165, actual: 1188, overspend: 23 },
+      { department: 'Børn & Unge', budget: 908, actual: 950, overspend: 42 },
+      { department: 'Beskæftigelse', budget: 341, actual: 349, overspend: 8 },
+      { department: 'Kultur & Miljø', budget: 142, actual: 140, overspend: -2 },
+      { department: 'Administration', budget: 284, actual: 282, overspend: -2 }
+    ],
+    insights: {
+      current: 'Social & Sundhed er største udgiftspost (1.188 M DKK)',
+      change: 'Samlet overskridelse på 73 M DKK',
+      forecast: 'Forventet stigning i Social & Sundhed på 5% i 2025',
+      takeaway: 'Børn & Unge har højeste overskridelse i procent (4.6%)'
+    },
+    stats: {
+      totalBudget: 2840,
+      totalActual: 2909,
+      largestDepartment: 'Social & Sundhed',
+      highestOverspend: 'Børn & Unge'
+    },
+    alert: 'warning',
+    config: {
+      xKey: 'department',
+      bars: [
+        { dataKey: 'budget', name: 'Budget', fill: '#0056A7' },
+        { dataKey: 'actual', name: 'Faktisk', fill: '#D40000' }
+      ]
+    }
+  },
+  debtDevelopment: {
+    title: 'Gældsudvikling 2020-2024',
+    type: 'line',
+    category: 'economy',
+    description: 'Kommunens gældsudvikling og gæld per indbygger over tid',
+    importance: 'Viser kommunens økonomiske sundhed og fremtidige renteudgifter',
+    data: [
+      { year: '2020', debt: 1.30, perCapita: 26400 },
+      { year: '2021', debt: 1.28, perCapita: 26000 },
+      { year: '2022', debt: 1.25, perCapita: 25500 },
+      { year: '2023', debt: 1.22, perCapita: 24900 },
+      { year: '2024', debt: 1.20, perCapita: 24500 }
+    ],
+    insights: {
+      current: '1.20 mia. DKK total gæld i 2024',
+      change: '-7.7% siden 2020',
+      forecast: 'Forventet fald til 1.15 mia. i 2025',
+      takeaway: 'Positiv trend: Gæld per indbygger faldet med 7.2%'
+    },
+    stats: {
+      average: 1.25,
+      peak: 1.30,
+      trough: 1.20,
+      changePercent: -7.7
+    },
+    alert: 'success',
+    config: {
+      xKey: 'year',
+      lines: [
+        { dataKey: 'debt', name: 'Total gæld (mia. DKK)', stroke: '#0056A7' }
+      ]
+    }
+  },
+  revenueVsExpense: {
+    title: 'Indtægter vs. Udgifter 2020-2024',
+    type: 'area',
+    category: 'economy',
+    description: 'Sammenligning af kommunens indtægter og udgifter over tid',
+    importance: 'Kritisk for at forstå kommunens økonomiske balance',
+    data: [
+      { year: '2020', revenue: 2.45, expense: 2.68, balance: -0.23 },
+      { year: '2021', revenue: 2.52, expense: 2.78, balance: -0.26 },
+      { year: '2022', revenue: 2.58, expense: 2.85, balance: -0.27 },
+      { year: '2023', revenue: 2.64, expense: 2.92, balance: -0.28 },
+      { year: '2024', revenue: 2.70, expense: 2.97, balance: -0.27 }
+    ],
+    insights: {
+      current: 'Underskud på 270 M DKK i 2024',
+      change: 'Underskud stabiliseret siden 2023',
+      forecast: 'Forventet underskud på 280 M DKK i 2025',
+      takeaway: 'Indtægter stiger, men udgifter stiger hurtigere'
+    },
+    stats: {
+      averageBalance: -0.262,
+      worstYear: 2023,
+      bestYear: 2020
+    },
+    alert: 'error',
+    config: {
+      xKey: 'year',
+      areas: [
+        { dataKey: 'revenue', name: 'Indtægter', fill: 'rgba(16, 185, 129, 0.2)', stroke: '#10B981' },
+        { dataKey: 'expense', name: 'Udgifter', fill: 'rgba(212, 0, 0, 0.2)', stroke: '#D40000' }
+      ]
+    }
+  },
+  unemploymentTrend: {
+    title: 'Ledighedsrate 2020-2024',
+    type: 'line',
+    category: 'employment',
+    description: 'Udvikling i ledighedsrate over tid',
+    importance: 'Viser effektiviteten af beskæftigelsesindsatsen',
+    data: [
+      { year: '2020', rate: 4.2, unemployed: 1290, employed: 29400 },
+      { year: '2021', rate: 3.8, unemployed: 1170, employed: 29600 },
+      { year: '2022', rate: 3.5, unemployed: 1070, employed: 29500 },
+      { year: '2023', rate: 3.3, unemployed: 1000, employed: 29400 },
+      { year: '2024', rate: 3.2, unemployed: 970, employed: 29230 }
+    ],
+    insights: {
+      current: '3.2% ledighedsrate i 2024',
+      change: '-1.0% siden 2020',
+      forecast: 'Forventet stabilisering omkring 3.0% i 2025',
+      takeaway: 'Positiv trend: Faldende ledighed over hele perioden'
+    },
+    stats: {
+      average: 3.6,
+      peak: 4.2,
+      trough: 3.2,
+      changePercent: -23.8
+    },
+    alert: 'success',
+    config: {
+      xKey: 'year',
+      lines: [
+        { dataKey: 'rate', name: 'Ledighedsrate (%)', stroke: '#0056A7' }
       ]
     }
   }
