@@ -56,6 +56,61 @@ export const categories = [
         id: 'q10',
         text: 'Hvilke investeringer er planlagt i budgetperioden?',
         category: 'budget-economy'
+      },
+      {
+        id: 'q51',
+        text: 'Hvilke skoler er i risiko for at overskride deres budget i 2025?',
+        category: 'budget-economy'
+      },
+      {
+        id: 'q52',
+        text: 'Hvilke afdelinger har overskredet deres budget i år?',
+        category: 'budget-economy'
+      },
+      {
+        id: 'q53',
+        text: 'Hvad er det, der har gjort, at vi er overskredet budgettet?',
+        category: 'budget-economy'
+      },
+      {
+        id: 'q54',
+        text: 'Vi laver budgetopfølgninger månedligt – her beskriver vi, hvorfor noget er overskredet eller ej.',
+        category: 'budget-economy'
+      },
+      {
+        id: 'q55',
+        text: 'Hvordan fordeler mine udgifter sig? Er der ændring i mønstre?',
+        category: 'budget-economy'
+      },
+      {
+        id: 'q56',
+        text: 'Hvor og hvornår har der været store udsving i tidligere budgetter?',
+        category: 'budget-economy'
+      },
+      {
+        id: 'q57',
+        text: 'En skole vil gerne vide, hvor det giver bedst mening at spare, hvis de er i budgetunderskud.',
+        category: 'budget-economy'
+      },
+      {
+        id: 'q58',
+        text: 'Hvor meget budget er der tilbage i de forskellige puljer?',
+        category: 'budget-economy'
+      },
+      {
+        id: 'q59',
+        text: 'Kan vi se en tendens i overskridelser inden for bestemte fagområder?',
+        category: 'budget-economy'
+      },
+      {
+        id: 'q60',
+        text: 'Hvordan forventes budgettet for 2026 at udvikle sig baseret på historiske data?',
+        category: 'budget-economy'
+      },
+      {
+        id: 'q61',
+        text: 'Hvad er de største udgiftsposter i skolerne, og hvor kan de eventuelt reduceres?',
+        category: 'budget-economy'
       }
     ]
   },

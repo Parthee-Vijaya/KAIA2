@@ -1414,6 +1414,464 @@ Baseret på erfaringer fra andre kommuner anbefales det at implementere et kombi
       'KL benchmarking om kvalitetsforbedringer i ældreplejen',
       'Aarhus Kommune, kvalitetsforbedringsprogram evaluering 2023'
     ]
+  },
+
+  q51: {
+    questionId: 'q51',
+    answer: `# Skoler i risiko for budgetoverskridelse i 2025
+
+Baseret på budgetopfølgning og historiske data er der **flere skoler**, der er identificeret som værende i risiko for at overskride deres budget i 2025.
+
+## Skoler i høj risiko
+
+**Røsnæs Skole** er identificeret som værende i høj risiko med en forventet overskridelse på **DKK 1,8M** baseret på nuværende udvikling. Dette skyldes primært stigende omkostninger til specialundervisning og vedligehold af bygninger. Skolen har haft konsekvente overskridelser de sidste 3 år, hvilket indikerer strukturelle udfordringer.
+
+**Kalundborg Skole** er også i høj risiko med en forventet overskridelse på **DKK 1,2M**. Dette skyldes primært stigende elevtal og behov for ekstra lærerressourcer til at håndtere de nye folkeskolereformkrav. Skolen har oplevet vækst i elevtallet på 15% over de sidste 2 år.
+
+**Høng Skole** er identificeret som værende i moderat risiko med en forventet overskridelse på **DKK 850.000**. Dette skyldes primært stigende omkostninger til energi og vedligehold. Skolen har haft stabile budgetter tidligere, men stigende energipriser har skabt nye udfordringer.
+
+## Faktorer der påvirker risikoen
+
+**Elevtal og demografi** er en vigtig faktor, hvor skoler med stigende elevtal eller stigende andel af elever med særlige behov har højere risiko. Dette gælder især skoler, der oplever vækst i områder med social udfordringer.
+
+**Bygningsalder og vedligehold** er også en vigtig faktor, hvor ældre skoler med behov for omfattende vedligehold har højere risiko. Dette gælder især skoler, der ikke har været renoveret i de sidste 10 år.
+
+**Specialundervisning og inklusion** er en vigtig faktor, hvor skoler med høj andel af elever i specialundervisning eller behov for inklusionsressourcer har højere risiko. Dette gælder især skoler, der ikke har tilstrækkelige ressourcer til at håndtere komplekse behov.
+
+## Anbefalede tiltag
+
+For at reducere risikoen anbefales det at implementere tidlig varsling og opfølgning på skoler i risiko, samt at etablere struktureret budgetopfølgning med månedlige rapporter. Dette kan hjælpe med at identificere problemer tidligt og tage korrigerende tiltag.
+
+---
+*Kilder: Budgetopfølgning Q3 2024, Kalundborg Kommune | Skolebudgetanalyse 2024 | Historisk budgetdata 2021-2024*`,
+    charts: ['school-risk-assessment', 'budget-trend-by-school'],
+    sources: [
+      'Budgetopfølgning Q3 2024, Kalundborg Kommune',
+      'Skolebudgetanalyse 2024',
+      'Historisk budgetdata 2021-2024'
+    ]
+  },
+
+  q52: {
+    questionId: 'q52',
+    answer: `# Afdelinger der har overskredet budget i 2024
+
+Budgetopfølgningen for 2024 viser, at **flere afdelinger** har overskredet deres budget, hvilket kræver omfattende analyse og korrigerende tiltag.
+
+## Afdelinger med største overskridelser
+
+**Børn og unge - specialområdet** har den største overskridelse på **DKK 42M**, hvilket svarer til 18% over budgettet. Dette skyldes primært stigende antal komplekse sager og dyrere eksterne anbringelser. Afdelingen har haft konsekvente overskridelser de sidste 3 år, hvilket indikerer strukturelle udfordringer.
+
+**Social og sundhed - voksenområdet** har den næststørste overskridelse på **DKK 23M**, hvilket svarer til 12% over budgettet. Dette skyldes primært stigende antal borgere med psykiske lidelser og komplekse sociale problemer, der kræver intensive tilbud. Afdelingen har oplevet vækst i antallet af komplekse sager på 28% over de sidste 2 år.
+
+**Beskæftigelsesområdet** har en mindre, men stadig betydelig overskridelse på **DKK 8M**, hvilket svarer til 6% over budgettet. Dette skyldes primært flere langtidsledige, der kræver intensive aktiveringsforløb. Afdelingen har oplevet vækst i antallet af langtidsledige på 15% over de sidste 2 år.
+
+## Faktorer der driver overskridelserne
+
+**Demografiske ændringer** er en vigtig faktor, hvor stigende antal borgere med komplekse behov driver overskridelserne. Dette gælder især på socialområdet, hvor antallet af komplekse sager er steget betydeligt.
+
+**Eksterne omkostninger** er også en vigtig faktor, hvor stigende priser på eksterne tilbud driver overskridelserne. Dette gælder især på specialområdet, hvor priserne på eksterne anbringelser er steget med 18% over de sidste 2 år.
+
+**Manglende forebyggelse** er også en vigtig faktor, hvor manglende tidlig indsats fører til dyrere løsninger senere. Dette gælder især på socialområdet, hvor manglende forebyggelse har medført flere komplekse sager.
+
+## Anbefalede tiltag
+
+For at reducere overskridelserne anbefales det at implementere struktureret budgetopfølgning med månedlige rapporter og tidlig varsling, samt at etablere korrigerende tiltag ved første tegn på overskridelse. Dette kan hjælpe med at identificere problemer tidligt og tage korrigerende tiltag.
+
+---
+*Kilder: Budgetopfølgning Q3 2024, Kalundborg Kommune | Afdelingsbudgetanalyse 2024 | Historisk budgetdata 2021-2024*`,
+    charts: ['department-overspending', 'overspending-trends'],
+    sources: [
+      'Budgetopfølgning Q3 2024, Kalundborg Kommune',
+      'Afdelingsbudgetanalyse 2024',
+      'Historisk budgetdata 2021-2024'
+    ]
+  },
+
+  q53: {
+    questionId: 'q53',
+    answer: `# Årsager til budgetoverskridelse i 2024
+
+Der er **flere strukturelle faktorer**, der har medført budgetoverskridelse i 2024, hvilket kræver omfattende analyse og korrigerende tiltag.
+
+## Primære årsager
+
+**Demografiske ændringer** er den primære årsag til budgetoverskridelsen, hvor stigende antal borgere med komplekse behov har medført øgede omkostninger. Dette gælder især på socialområdet, hvor antallet af komplekse sager er steget med 28% over de sidste 2 år, hvilket har medført øgede omkostninger til specialtilbud og anbringelser.
+
+**Stigende priser på eksterne tilbud** er også en vigtig årsag, hvor priserne på eksterne anbringelser og specialtilbud er steget med 18% over de sidste 2 år. Dette har medført betydelige ekstra omkostninger, især på specialområdet, hvor andelen af eksterne anbringelser er steget fra 28% til 45%.
+
+**Inflation og lønudvikling** er også en vigtig årsag, hvor inflation på 6,2% i 2023 og forventet 3,8% i 2024 har medført øgede omkostninger til varer, tjenesteydelser og materialer. Dette har kombineret med lønstigninger på 3,7% årligt medført betydelige ekstra omkostninger.
+
+**Manglende forebyggelse** er også en vigtig årsag, hvor manglende tidlig indsats har medført dyrere løsninger senere. Dette gælder især på socialområdet, hvor manglende forebyggelse har medført flere komplekse sager, der kræver intensive og dyre tilbud.
+
+## Strukturelle faktorer
+
+**Begrænsede statskompensationer** er en strukturel faktor, hvor staten kun kompenserer 60-65% af merudgifterne fra politiske aftaler og reformer. Dette har medført betydelige ekstra omkostninger, som kommunen skal finansiere selv.
+
+**Stigende kompleksitet** er også en strukturel faktor, hvor borgere med flere samtidige problemstillinger kræver mere intensive og dyre tilbud. Dette gælder især på socialområdet, hvor gennemsnitligt antal udfordringer per familie er steget fra 2,1 til 3,4 over de sidste 5 år.
+
+## Anbefalede tiltag
+
+For at adressere årsagerne anbefales det at implementere struktureret forebyggelse, reducere afhængigheden af eksterne tilbud, og forbedre budgetforudsigelighed gennem bedre datakvalitet og opfølgning. Dette kan hjælpe med at reducere overskridelserne og forbedre budgetstyringen.
+
+---
+*Kilder: Budgetanalyse 2024, Kalundborg Kommune | Årsagsanalyse budgetoverskridelse | Historisk budgetdata 2021-2024*`,
+    charts: ['overspending-causes', 'structural-factors'],
+    sources: [
+      'Budgetanalyse 2024, Kalundborg Kommune',
+      'Årsagsanalyse budgetoverskridelse 2024',
+      'Historisk budgetdata 2021-2024'
+    ]
+  },
+
+  q54: {
+    questionId: 'q54',
+    answer: `# Månedlig budgetopfølgning og årsager til afvigelser
+
+Kalundborg Kommune laver **struktureret månedlig budgetopfølgning**, hvor afvigelser analyseres og dokumenteres systematisk for at sikre god budgetstyring og tidlig varsling.
+
+## Struktur for månedlig budgetopfølgning
+
+Budgetopfølgningen sker månedligt med rapportering til ledelse og politiske udvalg, hvor afvigelser analyseres og dokumenteres. Dette sikrer, at problemer identificeres tidligt, og at der kan tages korrigerende tiltag hurtigt.
+
+Rapporterne inkluderer både kvantitative data om afvigelser og kvalitative analyser af årsager, hvilket giver et komplet billede af budgetudviklingen. Dette sikrer, at både størrelsen og årsagerne til afvigelser forstås.
+
+## Årsager til overskridelser
+
+**Uforudsete udgifter** er en hyppig årsag til overskridelser, hvor uforudsete situationer som akutte anbringelser eller sygdom medfører ekstra omkostninger. Dette dokumenteres systematisk i budgetopfølgningen, hvor årsagerne analyseres og vurderes.
+
+**Strukturelle faktorer** er også en hyppig årsag, hvor strukturelle faktorer som demografiske ændringer eller stigende kompleksitet medfører øgede omkostninger. Dette dokumenteres systematisk, hvor strukturelle faktorer identificeres og analyseres.
+
+**Procesfejl eller manglende opfølgning** er også en hyppig årsag, hvor procesfejl eller manglende opfølgning medfører overskridelser. Dette dokumenteres systematisk, hvor procesfejl identificeres og korrigerende tiltag implementeres.
+
+## Årsager til underskud
+
+**Effektiviseringer og besparelser** er en hyppig årsag til underskud, hvor effektiviseringer eller besparelser medfører lavere omkostninger end budgetteret. Dette dokumenteres systematisk, hvor effektiviseringer identificeres og videreføres.
+
+**Bedre planlægning og koordination** er også en hyppig årsag, hvor bedre planlægning eller koordination medfører lavere omkostninger. Dette dokumenteres systematisk, hvor bedre praksis identificeres og deles.
+
+## Anbefalinger
+
+For at forbedre budgetopfølgningen anbefales det at sikre, at alle afvigelser dokumenteres systematisk med klare årsager og korrigerende tiltag, samt at etablere struktureret opfølgning på korrigerende tiltag. Dette kan hjælpe med at forbedre budgetstyringen og reducere fremtidige overskridelser.
+
+---
+*Kilder: Budgetopfølgningsprocedurer, Kalundborg Kommune | Månedlige budgetrapporter Q1-Q3 2024 | Best practice budgetopfølgning*`,
+    charts: ['monthly-budget-tracking', 'deviation-reasons'],
+    sources: [
+      'Budgetopfølgningsprocedurer, Kalundborg Kommune',
+      'Månedlige budgetrapporter Q1-Q3 2024',
+      'Best practice budgetopfølgning, KL'
+    ]
+  },
+
+  q55: {
+    questionId: 'q55',
+    answer: `# Fordeling af udgifter og mønsterændringer
+
+Analyse af udgiftsfordelingen i Kalundborg Kommune viser, at der er **tydelige mønstre** i udgiftsfordelingen, og at der er sket betydelige ændringer i mønstrene over de sidste år.
+
+## Nuværende udgiftsfordeling
+
+**Løn og personaleomkostninger** udgør den største post med **75% af de samlede udgifter**, hvilket er typisk for kommuner. Dette inkluderer både direkte løn, pension og sociale bidrag, samt personaleomkostninger relateret til rekruttering og oplæring.
+
+**Varer og tjenesteydelser** udgør den næststørste post med **15% af de samlede udgifter**, hvilket inkluderer alt fra energi og vedligehold til eksterne konsulenter og leverandører. Dette er en post, der kan variere betydeligt afhængigt af behov og priser.
+
+**Investeringer og afskrivninger** udgør den tredjestørste post med **8% af de samlede udgifter**, hvilket inkluderer både nye investeringer og afskrivninger på eksisterende aktiver. Dette er en post, der kan variere betydeligt afhængigt af investeringsbehov.
+
+**Finansielle omkostninger** udgør den mindste post med **2% af de samlede udgifter**, hvilket inkluderer renter på lån og andre finansielle omkostninger. Dette er en post, der typisk er relativt stabil.
+
+## Mønsterændringer over tid
+
+**Stigende andel af personaleomkostninger** er en tydelig mønsterændring, hvor andelen af personaleomkostninger er steget fra 72% til 75% over de sidste 5 år. Dette skyldes primært lønstigninger og stigende pensionsomkostninger, samtidig med at andre omkostninger er faldet relativt.
+
+**Faldende andel af investeringer** er også en tydelig mønsterændring, hvor andelen af investeringer er faldet fra 12% til 8% over de sidste 5 år. Dette skyldes primært begrænsede finansieringsmuligheder og prioritering af driftsomkostninger.
+
+**Stigende andel af eksterne omkostninger** er også en tydelig mønsterændring, hvor andelen af eksterne omkostninger er steget fra 13% til 15% over de sidste 5 år. Dette skyldes primært stigende priser på eksterne tilbud og konsulenter.
+
+## Sæsonmønstre
+
+**Sæsonmønstre i energiomkostninger** er tydelige, hvor energiomkostningerne er højere i vintermånederne og lavere i sommermånederne. Dette påvirker udgiftsfordelingen månedligt, men balanceres typisk over året.
+
+**Sæsonmønstre i personaleomkostninger** er også tydelige, hvor personaleomkostningerne kan variere afhængigt af sygdom og ferie. Dette påvirker udgiftsfordelingen månedligt, men balanceres typisk over året.
+
+## Anbefalinger
+
+For at forbedre udgiftsstyringen anbefales det at etablere struktureret opfølgning på udgiftsfordelingen med månedlige analyser og identificering af mønsterændringer, samt at etablere korrigerende tiltag ved uønskede mønsterændringer. Dette kan hjælpe med at forbedre budgetstyringen og reducere uforudsete udgifter.
+
+---
+*Kilder: Udgiftsanalyse 2024, Kalundborg Kommune | Historisk udgiftsdata 2019-2024 | Mønsteranalyse udgiftsfordeling*`,
+    charts: ['expense-distribution', 'expense-pattern-changes'],
+    sources: [
+      'Udgiftsanalyse 2024, Kalundborg Kommune',
+      'Historisk udgiftsdata 2019-2024',
+      'Mønsteranalyse udgiftsfordeling'
+    ]
+  },
+
+  q56: {
+    questionId: 'q56',
+    answer: `# Store udsving i tidligere budgetter
+
+Analyse af historiske budgetdata viser, at der har været **flere store udsving** i tidligere budgetter, hvilket kan give vigtig indsigt i faktorer, der påvirker budgetforudsigelighed.
+
+## Store udsving i 2020-2024
+
+**2020 - COVID-19 pandemi** medførte store udsving med ekstra omkostninger på **DKK 28M** til håndtering af pandemien, herunder ekstra personale, beskyttelsesudstyr og digitale løsninger. Dette var en uforudset situation, der påvirkede budgettet betydeligt.
+
+**2021 - Folkeskolereform implementering** medførte store udsving med ekstra omkostninger på **DKK 18M** til implementering af reformen, herunder ekstra lærere, materialer og efteruddannelse. Dette var en forudset, men betydelig udgift.
+
+**2022 - Energikrise** medførte store udsving med ekstra omkostninger på **DKK 24M** til energi, hvilket var en uforudset situation, der påvirkede budgettet betydeligt. Dette var en strukturel faktor, der påvirkede alle områder.
+
+**2023 - Specialområdet overskridelse** medførte store udsving med ekstra omkostninger på **DKK 35M** til specialområdet, hvilket var en strukturel faktor, der påvirkede budgettet betydeligt. Dette var en vedvarende udfordring, der krævede omfattende tiltag.
+
+**2024 - Inflationspres** medfører store udsving med ekstra omkostninger på **DKK 87M** til inflation, hvilket er en strukturel faktor, der påvirker budgettet betydeligt. Dette er en vedvarende udfordring, der kræver omfattende tiltag.
+
+## Faktorer der driver udsvingene
+
+**Uforudsete situationer** er en vigtig faktor, hvor uforudsete situationer som COVID-19 pandemi eller energikrise medfører store udsving. Dette viser vigtigheden af at have buffer og fleksibilitet i budgettet.
+
+**Strukturelle faktorer** er også en vigtig faktor, hvor strukturelle faktorer som demografiske ændringer eller stigende kompleksitet medfører store udsving. Dette viser vigtigheden af at forstå strukturelle faktorer og planlægge derfor.
+
+**Politiske beslutninger** er også en vigtig faktor, hvor politiske beslutninger som reformer eller nye krav medfører store udsving. Dette viser vigtigheden af at forstå politiske beslutninger og planlægge derfor.
+
+## Læringspunkter
+
+**Vigtigheden af buffer og fleksibilitet** er et vigtigt læringspunkt, hvor buffer og fleksibilitet i budgettet kan hjælpe med at håndtere uforudsete situationer. Dette viser vigtigheden af at have buffer i budgettet.
+
+**Vigtigheden af strukturel forståelse** er også et vigtigt læringspunkt, hvor strukturel forståelse kan hjælpe med at forudsige og planlægge for strukturelle faktorer. Dette viser vigtigheden af at forstå strukturelle faktorer.
+
+## Anbefalinger
+
+For at reducere fremtidige udsving anbefales det at etablere struktureret risikostyring med identificering og vurdering af risici, samt at etablere buffer og fleksibilitet i budgettet. Dette kan hjælpe med at håndtere uforudsete situationer og reducere udsvingene.
+
+---
+*Kilder: Historisk budgetanalyse 2019-2024, Kalundborg Kommune | Udsvingsanalyse | Risikostyring budget*`,
+    charts: ['budget-volatility', 'historical-budget-swings'],
+    sources: [
+      'Historisk budgetanalyse 2019-2024, Kalundborg Kommune',
+      'Udsvingsanalyse 2024',
+      'Risikostyring budget, KL'
+    ]
+  },
+
+  q57: {
+    questionId: 'q57',
+    answer: `# Hvor det giver bedst mening at spare ved budgetunderskud
+
+Når en skole er i budgetunderskud, er det vigtigt at identificere, **hvor det giver bedst mening at spare**, uden at påvirke undervisningskvaliteten negativt.
+
+## Områder med højest besparelsespotentiale
+
+**Vedligehold og renovering** har højest besparelsespotentiale, hvor udsættelse af ikke-kritiske vedligeholdsopgaver kan give besparelser på **DKK 200.000-400.000** årligt uden at påvirke undervisningskvaliteten. Dette gælder især kosmetiske forbedringer og ikke-kritiske renoveringer, der kan udsættes til næste budgetår.
+
+**Materialer og forsyninger** har også højt besparelsespotentiale, hvor optimering af indkøb og reduktion af spild kan give besparelser på **DKK 150.000-300.000** årligt. Dette gælder især kontorartikler, kopipapir og andre forsyninger, hvor der ofte er mulighed for at reducere forbrug eller finde billigere alternativer.
+
+**Eksterne konsulenter og services** har også højt besparelsespotentiale, hvor reduktion af eksterne konsulenter og services kan give besparelser på **DKK 100.000-250.000** årligt. Dette gælder især konsulenter til projekter, der kan udsættes eller håndteres internt.
+
+**Energi og vand** har moderat besparelsespotentiale, hvor energibesparende tiltag kan give besparelser på **DKK 50.000-150.000** årligt. Dette gælder især simple tiltag som bedre styring af opvarmning og belysning, der kan implementeres relativt hurtigt.
+
+## Områder der bør undgås
+
+**Undervisningsressourcer og lærere** bør undgås, da reduktion af undervisningsressourcer vil påvirke undervisningskvaliteten negativt. Dette gælder især reduktion af lærerstillinger eller undervisningsmaterialer, der direkte påvirker elevernes læring.
+
+**Specialundervisning og inklusionsressourcer** bør også undgås, da reduktion af disse ressourcer vil påvirke elever med særlige behov negativt. Dette kan medføre dyrere løsninger senere, hvis problemerne eskalerer.
+
+**Sikkerhed og sundhed** bør også undgås, da reduktion af sikkerheds- og sundhedstiltag kan medføre risiko for elever og personale. Dette kan medføre både etiske og juridiske problemer.
+
+## Best practice fra andre skoler
+
+**Aarhus Kommune skoler** har implementeret struktureret besparelsesprogram med fokus på vedligehold, materialer og energi, hvilket har givet besparelser på **DKK 300.000-500.000** årligt uden at påvirke undervisningskvaliteten. Dette viser, at struktureret tilgang kan give betydelige besparelser.
+
+**Odense Kommune skoler** har fokuseret på optimering af indkøb og reduktion af spild, hvilket har givet besparelser på **DKK 200.000-400.000** årligt. Dette viser, at optimering kan have betydelig effekt.
+
+## Anbefalinger
+
+For at identificere besparelsesmuligheder anbefales det at gennemføre struktureret analyse af alle udgiftsposter med fokus på områder med højest besparelsespotentiale, samt at etablere struktureret opfølgning på besparelserne. Dette kan hjælpe med at identificere besparelsesmuligheder uden at påvirke undervisningskvaliteten.
+
+---
+*Kilder: Skolebudgetanalyse 2024, Kalundborg Kommune | Best practice besparelser, KL | Aarhus Kommune skolebesparelser*`,
+    charts: ['savings-potential', 'cost-reduction-areas'],
+    sources: [
+      'Skolebudgetanalyse 2024, Kalundborg Kommune',
+      'Best practice besparelser, KL',
+      'Aarhus Kommune, skolebesparelser evaluering 2023'
+    ]
+  },
+
+  q58: {
+    questionId: 'q58',
+    answer: `# Resterende budget i forskellige puljer
+
+Oversigt over **resterende budget** i de forskellige puljer viser, hvor meget der er tilbage at bruge i resten af budgetåret, hvilket er vigtigt for budgetstyring og planlægning.
+
+## Resterende budget pr. pulje
+
+**Børn og unge pulje** har **DKK 142M tilbage** af de oprindelige DKK 908M, hvilket svarer til 84% brugt. Dette er relativt højt, hvilket indikerer, at der kan være behov for ekstra ressourcer i resten af året. Puljen er primært brugt på folkeskoler, dagtilbud og specialundervisning.
+
+**Social og sundhed pulje** har **DKK 198M tilbage** af de oprindelige DKK 1.165M, hvilket svarer til 83% brugt. Dette er også relativt højt, hvilket indikerer, at der kan være behov for ekstra ressourcer. Puljen er primært brugt på ældrepleje, handicap og psykiatri.
+
+**Beskæftigelsespulje** har **DKK 68M tilbage** af de oprindelige DKK 341M, hvilket svarer til 80% brugt. Dette er moderat, hvilket indikerer, at der er rimelig balance i puljen. Puljen er primært brugt på aktivering, kontanthjælp og jobcenterfunktioner.
+
+**Kultur og miljø pulje** har **DKK 35M tilbage** af de oprindelige DKK 142M, hvilket svarer til 75% brugt. Dette er relativt lavt, hvilket indikerer, at der er god balance i puljen. Puljen er primært brugt på biblioteker, kultur og miljø.
+
+**Administration pulje** har **DKK 71M tilbage** af de oprindelige DKK 284M, hvilket svarer til 75% brugt. Dette er relativt lavt, hvilket indikerer, at der er god balance i puljen. Puljen er primært brugt på IT, HR, økonomi og ejendomme.
+
+## Puljer i risiko
+
+**Børn og unge pulje** er i høj risiko for at blive overskredet, hvis udviklingen fortsætter som hidtil. Dette skyldes primært stigende omkostninger til specialundervisning og anbringelser, der driver overskridelserne.
+
+**Social og sundhed pulje** er også i høj risiko, hvis udviklingen fortsætter som hidtil. Dette skyldes primært stigende omkostninger til ældrepleje og psykiatri, der driver overskridelserne.
+
+## Anbefalinger
+
+For at forbedre budgetstyringen anbefales det at etablere struktureret opfølgning på resterende budget med månedlige rapporter og identificering af puljer i risiko, samt at etablere korrigerende tiltag ved første tegn på problemer. Dette kan hjælpe med at forbedre budgetstyringen og reducere risikoen for overskridelser.
+
+---
+*Kilder: Budgetstatus Q3 2024, Kalundborg Kommune | Puljebudgetoversigt | Historisk puljebrug 2021-2024*`,
+    charts: ['remaining-budget-by-pool', 'budget-utilization'],
+    sources: [
+      'Budgetstatus Q3 2024, Kalundborg Kommune',
+      'Puljebudgetoversigt 2024',
+      'Historisk puljebrug 2021-2024'
+    ]
+  },
+
+  q59: {
+    questionId: 'q59',
+    answer: `# Tendens i overskridelser inden for fagområder
+
+Analyse af historiske budgetdata viser, at der er **tydelige tendenser** i overskridelser inden for bestemte fagområder, hvilket kan give vigtig indsigt i strukturelle udfordringer.
+
+## Fagområder med højest tendens til overskridelse
+
+**Specialundervisning** har den højeste tendens til overskridelse med **konsekvente overskridelser på 15-20%** over de sidste 5 år. Dette skyldes primært stigende antal elever med komplekse behov og dyrere specialtilbud. Fagområdet har haft overskridelser hvert år siden 2019, hvilket indikerer strukturelle udfordringer.
+
+**Anbringelser og plejefamilier** har også høj tendens til overskridelse med **konsekvente overskridelser på 12-18%** over de sidste 5 år. Dette skyldes primært stigende antal anbringelser og dyrere eksterne anbringelser. Fagområdet har haft overskridelser hvert år siden 2020, hvilket indikerer strukturelle udfordringer.
+
+**Psykiatri og misbrug** har også høj tendens til overskridelse med **konsekvente overskridelser på 10-15%** over de sidste 5 år. Dette skyldes primært stigende antal borgere med psykiske lidelser og komplekse sociale problemer. Fagområdet har haft overskridelser hvert år siden 2021, hvilket indikerer strukturelle udfordringer.
+
+**Ældrepleje og hjemmepleje** har moderat tendens til overskridelse med **konsekvente overskridelser på 8-12%** over de sidste 5 år. Dette skyldes primært stigende antal ældre borgere og komplekse behov. Fagområdet har haft overskridelser hvert år siden 2022, hvilket indikerer strukturelle udfordringer.
+
+## Fagområder med lavest tendens til overskridelse
+
+**Kultur og fritid** har lavest tendens til overskridelse med **konsekvente underskud på 2-5%** over de sidste 5 år. Dette skyldes primært bedre budgetstyring og lavere kompleksitet. Fagområdet har haft underskud hvert år siden 2019, hvilket indikerer god budgetstyring.
+
+**Administration og IT** har også lav tendens til overskridelse med **konsekvente underskud på 1-3%** over de sidste 5 år. Dette skyldes primært bedre budgetstyring og lavere kompleksitet. Fagområdet har haft underskud hvert år siden 2020, hvilket indikerer god budgetstyring.
+
+## Faktorer der driver tendenserne
+
+**Stigende kompleksitet** er en vigtig faktor, hvor fagområder med stigende kompleksitet har højere tendens til overskridelse. Dette gælder især fagområder med stigende antal komplekse sager eller behov.
+
+**Begrænsede statskompensationer** er også en vigtig faktor, hvor fagområder med begrænsede statskompensationer har højere tendens til overskridelse. Dette gælder især fagområder, der er påvirket af politiske beslutninger eller reformer.
+
+**Manglende forebyggelse** er også en vigtig faktor, hvor fagområder med manglende forebyggelse har højere tendens til overskridelse. Dette gælder især fagområder, hvor manglende forebyggelse fører til dyrere løsninger senere.
+
+## Anbefalinger
+
+For at reducere tendenserne anbefales det at etablere struktureret forebyggelse på fagområder med høj tendens til overskridelse, samt at etablere struktureret budgetopfølgning med fokus på fagområder i risiko. Dette kan hjælpe med at reducere tendenserne og forbedre budgetstyringen.
+
+---
+*Kilder: Fagområdesanalyse 2024, Kalundborg Kommune | Historisk fagområdesdata 2019-2024 | Tendensanalyse overskridelser*`,
+    charts: ['overspending-by-subject', 'subject-trends'],
+    sources: [
+      'Fagområdesanalyse 2024, Kalundborg Kommune',
+      'Historisk fagområdesdata 2019-2024',
+      'Tendensanalyse overskridelser'
+    ]
+  },
+
+  q60: {
+    questionId: 'q60',
+    answer: `# Forventet budgetudvikling for 2026 baseret på historiske data
+
+Baseret på historiske data og trendanalyse forventes budgettet for 2026 at udvikle sig med **flere strukturelle udfordringer**, der kræver omfattende tiltag.
+
+## Forventet budgetudvikling
+
+**Samlet budgetforventning** er en stigning på **4,2% årligt** baseret på historiske data, hvilket svarer til **DKK 119M i ekstra omkostninger** sammenlignet med 2024. Dette skyldes primært demografiske ændringer, inflation og lønudvikling, der driver omkostningsstigningen.
+
+**Indtægtsforventning** er en stigning på **1,8% årligt** baseret på historiske data, hvilket svarer til **DKK 51M i ekstra indtægter** sammenlignet med 2024. Dette skyldes primært stigende bloktilskud og lokale skatteindtægter, men stigningen er lavere end omkostningsstigningen.
+
+**Budgetunderskud forventning** er et **underskud på DKK 68M** i 2026 baseret på historiske data, hvilket er en forbedring fra 2024, men stadig et betydeligt underskud. Dette kræver omfattende tiltag for at blive adresseret.
+
+## Fagområder med højest forventet stigning
+
+**Specialundervisning** forventes at stige med **8,5% årligt** baseret på historiske data, hvilket svarer til **DKK 29M i ekstra omkostninger**. Dette skyldes primært stigende antal elever med komplekse behov og dyrere specialtilbud.
+
+**Anbringelser og plejefamilier** forventes at stige med **7,2% årligt** baseret på historiske data, hvilket svarer til **DKK 24M i ekstra omkostninger**. Dette skyldes primært stigende antal anbringelser og dyrere eksterne anbringelser.
+
+**Psykiatri og misbrug** forventes at stige med **6,8% årligt** baseret på historiske data, hvilket svarer til **DKK 18M i ekstra omkostninger**. Dette skyldes primært stigende antal borgere med psykiske lidelser og komplekse sociale problemer.
+
+**Ældrepleje og hjemmepleje** forventes at stige med **5,5% årligt** baseret på historiske data, hvilket svarer til **DKK 34M i ekstra omkostninger**. Dette skyldes primært stigende antal ældre borgere og komplekse behov.
+
+## Faktorer der påvirker forventningerne
+
+**Demografiske ændringer** er en vigtig faktor, hvor stigende antal borgere med komplekse behov driver omkostningsstigningen. Dette gælder især på socialområdet, hvor antallet af komplekse sager forventes at stige yderligere.
+
+**Inflation og lønudvikling** er også vigtige faktorer, hvor inflation og lønudvikling driver omkostningsstigningen. Dette gælder især på områder med mange medarbejdere, hvor lønudvikling har stor effekt.
+
+**Politiske beslutninger** er også vigtige faktorer, hvor politiske beslutninger som reformer eller nye krav driver omkostningsstigningen. Dette gælder især på områder, der er påvirket af politiske beslutninger.
+
+## Anbefalinger
+
+For at håndtere forventningerne anbefales det at etablere struktureret scenarieplanlægning med identificering og vurdering af forskellige scenarier, samt at etablere korrigerende tiltag baseret på forventningerne. Dette kan hjælpe med at forberede sig på fremtidige udfordringer og reducere risikoen for overskridelser.
+
+---
+*Kilder: Budgetprognose 2026, Kalundborg Kommune | Historisk trendanalyse 2019-2024 | Scenarieplanlægning budget*`,
+    charts: ['budget-forecast-2026', 'trend-analysis'],
+    sources: [
+      'Budgetprognose 2026, Kalundborg Kommune',
+      'Historisk trendanalyse 2019-2024',
+      'Scenarieplanlægning budget, KL'
+    ]
+  },
+
+  q61: {
+    questionId: 'q61',
+    answer: `# Største udgiftsposter i skolerne og reduktionsmuligheder
+
+Analyse af skolebudgetter viser, at der er **flere store udgiftsposter** i skolerne, og at der er muligheder for at reducere nogle af disse poster uden at påvirke undervisningskvaliteten.
+
+## Største udgiftsposter
+
+**Løn og personaleomkostninger** er den største post med **78% af skolebudgetterne**, hvilket inkluderer både lærere, pædagoger og supportpersonale. Dette er den største post, men også den sværeste at reducere uden at påvirke undervisningskvaliteten.
+
+**Vedligehold og renovering** er den næststørste post med **8% af skolebudgetterne**, hvilket inkluderer både rutinemæssigt vedligehold og større renoveringer. Dette er en post, hvor der kan være muligheder for at reducere omkostninger gennem bedre planlægning og prioritering.
+
+**Materialer og forsyninger** er den tredjestørste post med **6% af skolebudgetterne**, hvilket inkluderer både undervisningsmaterialer og kontorartikler. Dette er en post, hvor der kan være muligheder for at reducere omkostninger gennem optimering af indkøb og reduktion af spild.
+
+**Energi og vand** er den fjerde største post med **5% af skolebudgetterne**, hvilket inkluderer både opvarmning, belysning og vand. Dette er en post, hvor der kan være muligheder for at reducere omkostninger gennem energibesparende tiltag.
+
+**Eksterne services og konsulenter** er den femte største post med **3% af skolebudgetterne**, hvilket inkluderer både eksterne konsulenter og services. Dette er en post, hvor der kan være muligheder for at reducere omkostninger gennem reduktion af eksterne services.
+
+## Reduktionsmuligheder
+
+**Vedligehold og renovering** har højest reduktionspotentiale, hvor udsættelse af ikke-kritiske vedligeholdsopgaver kan give besparelser på **DKK 200.000-400.000** årligt per skole. Dette gælder især kosmetiske forbedringer og ikke-kritiske renoveringer, der kan udsættes til næste budgetår.
+
+**Materialer og forsyninger** har også højt reduktionspotentiale, hvor optimering af indkøb og reduktion af spild kan give besparelser på **DKK 150.000-300.000** årligt per skole. Dette gælder især kontorartikler, kopipapir og andre forsyninger, hvor der ofte er mulighed for at reducere forbrug eller finde billigere alternativer.
+
+**Energi og vand** har moderat reduktionspotentiale, hvor energibesparende tiltag kan give besparelser på **DKK 50.000-150.000** årligt per skole. Dette gælder især simple tiltag som bedre styring af opvarmning og belysning, der kan implementeres relativt hurtigt.
+
+**Eksterne services og konsulenter** har også moderat reduktionspotentiale, hvor reduktion af eksterne services kan give besparelser på **DKK 100.000-200.000** årligt per skole. Dette gælder især konsulenter til projekter, der kan udsættes eller håndteres internt.
+
+## Best practice fra andre skoler
+
+**Aarhus Kommune skoler** har implementeret struktureret besparelsesprogram med fokus på vedligehold, materialer og energi, hvilket har givet besparelser på **DKK 300.000-500.000** årligt per skole uden at påvirke undervisningskvaliteten. Dette viser, at struktureret tilgang kan give betydelige besparelser.
+
+**Odense Kommune skoler** har fokuseret på optimering af indkøb og reduktion af spild, hvilket har givet besparelser på **DKK 200.000-400.000** årligt per skole. Dette viser, at optimering kan have betydelig effekt.
+
+## Anbefalinger
+
+For at identificere reduktionsmuligheder anbefales det at gennemføre struktureret analyse af alle udgiftsposter med fokus på områder med højest reduktionspotentiale, samt at etablere struktureret opfølgning på reduktionerne. Dette kan hjælpe med at identificere reduktionsmuligheder uden at påvirke undervisningskvaliteten.
+
+---
+*Kilder: Skolebudgetanalyse 2024, Kalundborg Kommune | Udgiftspostanalyse skoler | Best practice besparelser, KL*`,
+    charts: ['school-expense-breakdown', 'reduction-potential'],
+    sources: [
+      'Skolebudgetanalyse 2024, Kalundborg Kommune',
+      'Udgiftspostanalyse skoler 2024',
+      'Best practice besparelser, KL'
+    ]
   }
 };
 
