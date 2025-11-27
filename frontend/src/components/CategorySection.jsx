@@ -6,9 +6,27 @@ import { motion, AnimatePresence } from 'framer-motion';
  * CategorySection - Expandable category with questions
  */
 const CategorySection = ({ category, isExpanded, onToggle, onQuestionClick }) => {
+  // Map category IDs to colors (hex values)
+  const categoryColorMap = {
+    'budget-economy': '#3B82F6',      // Blue
+    'social-services': '#10B981',      // Green
+    'reforms-legislation': '#8B5CF6',  // Purple
+    'analysis-forecasting': '#F59E0B', // Amber
+    'hr-personnel': '#EC4899',         // Pink
+    'economic-analysis': '#06B6D4',   // Cyan
+  };
+
+  const categoryColor = categoryColorMap[category.id] || '#3B82F6';
 
   return (
-    <div className="category-section">
+    <motion.div
+      className={`category-section ${isExpanded ? 'category-section-active' : ''}`}
+      style={isExpanded ? {
+        borderLeft: `4px solid ${categoryColor}`,
+      } : {}}
+      whileHover={{ y: -2 }}
+      transition={{ duration: 0.2 }}
+    >
       {/* Category Header */}
       <button
         onClick={onToggle}
@@ -16,9 +34,16 @@ const CategorySection = ({ category, isExpanded, onToggle, onQuestionClick }) =>
         aria-expanded={isExpanded}
       >
         <div className="flex items-center gap-3">
-          <span className="text-2xl" role="img" aria-label={category.title}>
-            {category.icon}
-          </span>
+          <div
+            className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shadow-elevation-1"
+            style={{
+              background: `linear-gradient(135deg, ${categoryColor} 0%, ${categoryColor}dd 100%)`,
+            }}
+          >
+            <span role="img" aria-label={category.title}>
+              {category.icon}
+            </span>
+          </div>
           <h3 className="text-xl font-semibold text-gray-900">
             {category.title}
           </h3>
@@ -58,12 +83,14 @@ const CategorySection = ({ category, isExpanded, onToggle, onQuestionClick }) =>
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: index * 0.05 }}
                 >
-                  <button
+                  <motion.button
                     onClick={() => onQuestionClick(question.id, question.text)}
-                    className="w-full text-left px-4 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg smooth-transition text-gray-900"
+                    className="w-full text-left px-4 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg smooth-transition text-gray-900 hover:shadow-elevation-1 hover:border-gray-300"
+                    whileHover={{ x: 4 }}
+                    transition={{ duration: 0.2 }}
                   >
                     {question.text}
-                  </button>
+                  </motion.button>
                 </motion.li>
               ))}
             </ul>

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { motion } from 'framer-motion';
 import {
   LineChart,
   Line,
@@ -158,14 +159,19 @@ const ChartViewer = ({ chartData }) => {
   };
 
   return (
-    <div className="chart-container my-6">
+    <motion.div
+      className="chart-container my-6"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       {title && (
         <h4 className="text-lg font-semibold text-gray-900 mb-4">{title}</h4>
       )}
-      <div className="bg-white border border-gray-200 p-4 rounded-xl shadow-sm">
+      <div className="glass-card p-6 rounded-xl">
         {renderChart()}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -112,7 +112,7 @@ function App() {
       <Navigation />
 
       {/* Sticky Search Bar */}
-      <div className="sticky top-0 z-40 bg-white/95 backdrop-blur-xl border-b border-gray-200 shadow-sm">
+      <div className="sticky top-0 z-40 bg-gradient-subtle backdrop-blur-xl border-b border-gray-200 shadow-elevation-1">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <SearchBar onSubmit={handleSearch} placeholder="spørg mig..." />
         </div>
@@ -162,7 +162,7 @@ function App() {
           <div className="flex justify-center pt-8 pb-8">
             <button
               onClick={() => setMessages([])}
-              className="btn-secondary flex items-center gap-2"
+              className="btn-secondary flex items-center gap-2 hover:shadow-elevation-2 hover:-translate-y-0.5"
             >
               <span>←</span>
               <span>Tilbage til kategorier</span>

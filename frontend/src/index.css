@@ -49,21 +49,40 @@
 
   /* Chat Message Bubbles */
   .chat-bubble-user {
-    @apply bg-kaia-blue text-white px-4 py-3 rounded-2xl max-w-2xl ml-auto;
+    @apply bg-gradient-primary text-white px-5 py-3 rounded-2xl max-w-2xl ml-auto shadow-elevation-2;
+    position: relative;
+  }
+
+  .chat-bubble-user::after {
+    content: '';
+    position: absolute;
+    right: -8px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-left-color: #2563EB;
+    border-bottom: 0;
+    margin-bottom: -8px;
   }
 
   .chat-bubble-ai {
-    @apply bg-white border border-gray-200 rounded-xl px-6 py-5 max-w-5xl shadow-sm;
+    @apply glass-card-strong rounded-2xl px-6 py-5 max-w-5xl;
+    border-left: 4px solid #3B82F6;
   }
 
   /* Category Accordion */
   .category-section {
-    @apply bg-white border border-gray-200 rounded-xl p-6 smooth-transition hover:bg-gray-50 shadow-sm;
+    @apply bg-white border border-gray-200 rounded-xl p-6 smooth-transition hover:shadow-elevation-2 hover:-translate-y-0.5 shadow-elevation-1;
+  }
+
+  .category-section-active {
+    @apply border-l-4 shadow-elevation-2;
   }
 
   /* Follow-up Question Chips */
   .chip {
-    @apply px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-sm smooth-transition hover:bg-kaia-blue hover:border-kaia-blue hover:text-white cursor-pointer text-kaia-text;
+    @apply px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-sm smooth-transition hover:bg-gradient-primary hover:border-transparent hover:text-white hover:shadow-elevation-2 hover:scale-105 cursor-pointer text-kaia-text;
   }
 
   /* Analysis Panel */
@@ -105,35 +124,39 @@
   /* Prose Typography (for markdown content) - Light theme */
   .prose {
     @apply text-kaia-text;
-    line-height: 1.75;
+    line-height: 1.6;
+    font-size: 1rem;
   }
 
   .prose h1 {
-    @apply text-3xl font-bold mb-6 mt-8 text-gray-900 first:mt-0;
+    @apply text-4xl font-bold mb-6 mt-8 text-gray-900 first:mt-0 leading-tight;
+    letter-spacing: -0.02em;
   }
 
   .prose h2 {
-    @apply text-2xl font-semibold mb-4 mt-6 text-gray-900;
+    @apply text-3xl font-semibold mb-4 mt-8 text-gray-900 leading-tight;
+    letter-spacing: -0.01em;
   }
 
   .prose h3 {
-    @apply text-xl font-semibold mb-3 mt-5 text-gray-900;
+    @apply text-2xl font-semibold mb-3 mt-6 text-gray-900 leading-snug;
   }
 
   .prose h4 {
-    @apply text-lg font-semibold mb-2 mt-4 text-gray-900;
+    @apply text-xl font-semibold mb-2 mt-5 text-gray-900 leading-snug;
   }
 
   .prose h5 {
-    @apply text-base font-semibold mb-2 mt-3 text-gray-900;
+    @apply text-lg font-semibold mb-2 mt-4 text-gray-900;
   }
 
   .prose h6 {
-    @apply text-sm font-semibold mb-2 mt-3 text-gray-700;
+    @apply text-base font-semibold mb-2 mt-3 text-gray-700;
   }
 
   .prose p {
-    @apply mb-4 leading-relaxed text-gray-700;
+    @apply mb-5 leading-relaxed text-gray-700;
+    font-size: 1rem;
   }
 
   .prose ul,
@@ -196,17 +219,34 @@
     @apply bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent;
   }
 
-  /* Shadow System */
-  .shadow-kaia-sm {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  /* Shadow System - Layered depth */
+  .shadow-elevation-1 {
+    @apply shadow-elevation-1;
   }
 
-  .shadow-kaia-md {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  .shadow-elevation-2 {
+    @apply shadow-elevation-2;
   }
 
-  .shadow-kaia-lg {
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  .shadow-elevation-3 {
+    @apply shadow-elevation-3;
+  }
+
+  .shadow-elevation-4 {
+    @apply shadow-elevation-4;
+  }
+
+  .shadow-elevation-5 {
+    @apply shadow-elevation-5;
+  }
+
+  /* Glassmorphism */
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20 shadow-elevation-2;
+  }
+
+  .glass-card-strong {
+    @apply bg-white/90 backdrop-blur-2xl border border-white/30 shadow-elevation-3;
   }
 
   /* Typing Animation */

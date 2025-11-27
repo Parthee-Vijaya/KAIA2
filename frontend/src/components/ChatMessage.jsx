@@ -39,11 +39,29 @@ const ChatMessage = ({ message, onFollowUpClick }) => {
       className={`mb-8 ${isUser ? 'flex justify-end' : 'flex justify-start'}`}
     >
       {isUser ? (
-        // User Message - Right aligned
+        // User Message - Right aligned with gradient
         <div className="max-w-2xl w-full">
-          <div className="bg-kaia-blue text-white px-5 py-3 rounded-2xl rounded-tr-sm shadow-sm">
+          <motion.div
+            className="bg-gradient-primary text-white px-5 py-3 rounded-2xl rounded-tr-sm shadow-elevation-2"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.3 }}
+            style={{
+              position: 'relative',
+            }}
+          >
             {message.content}
-          </div>
+            {/* Tail pointer */}
+            <div
+              className="absolute right-0 bottom-0 w-0 h-0"
+              style={{
+                border: '8px solid transparent',
+                borderLeftColor: '#2563EB',
+                borderBottom: 'none',
+                transform: 'translateX(100%)',
+              }}
+            />
+          </motion.div>
           {message.timestamp && (
             <div className="text-xs text-gray-400 mt-1 text-right px-1">
               {formatTime(message.timestamp)}
@@ -53,7 +71,15 @@ const ChatMessage = ({ message, onFollowUpClick }) => {
       ) : (
         // AI Message - Left aligned with rich content
         <div className="max-w-5xl w-full group">
-          <div className="bg-white border border-gray-200 px-6 py-5 rounded-2xl rounded-tl-sm shadow-sm">
+          <motion.div
+            className="glass-card-strong px-6 py-5 rounded-2xl rounded-tl-sm"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.3 }}
+            style={{
+              borderLeft: '4px solid #3B82F6',
+            }}
+          >
             {/* Copy button - appears on hover */}
             <div className="flex justify-end mb-2">
               <button
@@ -105,12 +131,14 @@ const ChatMessage = ({ message, onFollowUpClick }) => {
                 <h5 className="text-sm font-semibold text-gray-600 mb-3">Kilder:</h5>
                 <div className="flex flex-wrap gap-2">
                   {message.sources.map((source, index) => (
-                    <a
+                    <motion.a
                       key={index}
                       href={typeof source === 'string' ? '#' : source.url || '#'}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-3 py-2 bg-gray-50 hover:bg-gray-100 rounded-lg text-sm smooth-transition border border-gray-200"
+                      className="flex items-center gap-2 px-3 py-2 bg-gray-50 hover:bg-gray-100 rounded-lg text-sm smooth-transition border border-gray-200 hover:shadow-elevation-1"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
                     >
                       <svg
                         className="w-4 h-4 text-kaia-blue"
@@ -128,12 +156,12 @@ const ChatMessage = ({ message, onFollowUpClick }) => {
                       <span className="text-gray-700">
                         {typeof source === 'string' ? source : source.title || `Kilde ${index + 1}`}
                       </span>
-                    </a>
+                    </motion.a>
                   ))}
                 </div>
               </div>
             )}
-          </div>
+          </motion.div>
 
           {/* Timestamp */}
           {message.timestamp && (
